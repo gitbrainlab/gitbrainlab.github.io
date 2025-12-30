@@ -14,9 +14,10 @@ A clean, accessible, static website that:
 
 - **Pure HTML + CSS** – No build step required
 - **No external dependencies** – Self-contained, no CDNs
+- **Typography** – Uses JetBrains Mono (self-hosted) for labels/module titles; font files included under `assets/fonts/jetbrains-mono/` with OFL license
 - **Mobile-responsive** – Works on all screen sizes
 - **Accessible** – Skip links, semantic HTML, high contrast, keyboard navigation
-- **Dark mode** – Respects `prefers-color-scheme`
+- **Dark mode** – Premium dark theme by default
 
 ## Preview Locally
 
@@ -96,7 +97,12 @@ Note: DNS changes are handled outside this repository.
 └── assets/
     ├── logo.svg        # GitBrain logo
     ├── favicon.svg     # Site favicon
-    └── social-card.svg # Open Graph/Twitter card image
+    ├── social-card.svg # Open Graph/Twitter card image
+    └── fonts/
+        └── jetbrains-mono/  # Self-hosted JetBrains Mono font
+            ├── JetBrainsMono-Regular.woff2
+            ├── JetBrainsMono-SemiBold.woff2
+            └── OFL.txt      # Font license (SIL Open Font License)
 ```
 
 ## License
