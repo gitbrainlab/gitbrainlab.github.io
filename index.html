@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>GitBrain – Open frameworks for collaborative development</title>
+    <meta name="description" content="GitBrain provides open frameworks for collaborative development, data visualization, and composable systems. Explore spec-first artifacts and browser-friendly tools.">
+    <link rel="canonical" href="https://gitbrain.com/">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="/styles/main.css">
+    
+    <!-- OpenGraph metadata -->
+    <meta property="og:title" content="GitBrain – Open frameworks for collaborative development">
+    <meta property="og:description" content="GitBrain provides open frameworks for collaborative development, data visualization, and composable systems.">
+    <meta property="og:url" content="https://gitbrain.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gitbrain.com/assets/social-card.svg">
+    
+    <!-- Twitter Card metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GitBrain – Open frameworks for collaborative development">
+    <meta name="twitter:description" content="GitBrain provides open frameworks for collaborative development, data visualization, and composable systems.">
+    <meta name="twitter:image" content="https://gitbrain.com/assets/social-card.svg">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <header class="header">
+        <div class="container">
+            <img src="/assets/logo.svg" alt="GitBrain" class="logo" width="200" height="50">
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Architecture Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <h1>GitBrain</h1>
+                        <p class="hero-tagline">Composable frameworks for spec-driven development and data systems</p>
+                        <div class="cta-group">
+                            <a href="#projects" class="btn btn-primary">Explore projects</a>
+                            <a href="https://github.com/gitbrainlab" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="hero-diagram">
+                        <div class="system-map" role="img" aria-label="GitBrain system architecture diagram">
+                            <div class="map-title">System Map</div>
+                            <div class="map-layer foundation-layer">
+                                <div class="map-node foundation-node">
+                                    <span class="node-label">context</span>
+                                    <span class="node-desc">cross-runtime layer</span>
+                                </div>
+                            </div>
+                            <div class="map-connector"></div>
+                            <div class="map-layer app-layer">
+                                <div class="map-node">
+                                    <span class="node-label">ChartSpec</span>
+                                    <span class="node-desc">spec → viz</span>
+                                </div>
+                                <div class="map-node">
+                                    <span class="node-label">ShelfSignals</span>
+                                    <span class="node-desc">domain toolkit</span>
+                                </div>
+                            </div>
+                            <div class="map-layer workflow-layer">
+                                <div class="map-node">
+                                    <span class="node-label">CrowdCode</span>
+                                    <span class="node-desc">governance</span>
+                                </div>
+                                <div class="map-node">
+                                    <span class="node-label">happenstance</span>
+                                    <span class="node-desc">gen → publish</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Catalog (Bento Grid) -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Project Catalog</h2>
+                <div class="bento-grid">
+                    <article class="bento-tile" data-size="large">
+                        <div class="tile-header">
+                            <h3>context</h3>
+                            <div class="tile-meta">
+                                <span class="meta-item">Type: Runtime</span>
+                                <span class="meta-item">Surface: CLI / Library</span>
+                            </div>
+                        </div>
+                        <p class="tile-description">Execution boundary and cross-runtime layer for portable, composable development</p>
+                        <a href="https://github.com/gitbrainlab/context" class="tile-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    </article>
+
+                    <article class="bento-tile" data-size="medium">
+                        <div class="tile-header">
+                            <h3>ChartSpec</h3>
+                            <div class="tile-meta">
+                                <span class="meta-item">Type: Specification</span>
+                                <span class="meta-item">Output: Visualization</span>
+                            </div>
+                        </div>
+                        <p class="tile-description">Spec-first visualization with declarative chart definitions</p>
+                        <a href="https://github.com/gitbrainlab/ChartSpec" class="tile-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    </article>
+
+                    <article class="bento-tile" data-size="medium">
+                        <h3>ShelfSignals</h3>
+                        <div class="tile-meta">
+                            <span class="meta-item">Type: Toolkit</span>
+                            <span class="meta-item">Domain: Analytics</span>
+                        </div>
+                        <p class="tile-description">Domain-scale toolkit for composable data visualization and analytics</p>
+                        <a href="https://github.com/gitbrainlab/ShelfSignals" class="tile-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    </article>
+
+                    <article class="bento-tile" data-size="small">
+                        <h3>CrowdCode</h3>
+                        <div class="tile-meta">
+                            <span class="meta-item">Type: Framework</span>
+                        </div>
+                        <p class="tile-description">Governance framework for managing change proposals in collaborative environments</p>
+                        <a href="https://github.com/gitbrainlab/CrowdCode" class="tile-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    </article>
+
+                    <article class="bento-tile" data-size="small">
+                        <h3>happenstance</h3>
+                        <div class="tile-meta">
+                            <span class="meta-item">Type: Pattern</span>
+                        </div>
+                        <p class="tile-description">Reference pattern for scheduled generation and static publishing workflows</p>
+                        <a href="https://github.com/gitbrainlab/happenstance" class="tile-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it fits together -->
+        <section class="architecture">
+            <div class="container">
+                <h2>Stack Story</h2>
+                <p class="section-intro">How the pieces compose into a coherent system</p>
+                <div class="architecture-diagram">
+                    <div class="arch-layer">
+                        <div class="arch-box foundation">
+                            <strong>context</strong>
+                            <span>Execution boundary / cross-runtime layer</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-box">
+                            <strong>ChartSpec</strong>
+                            <span>Spec-first visualization</span>
+                        </div>
+                        <div class="arch-box">
+                            <strong>ShelfSignals</strong>
+                            <span>Domain toolkit</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-box">
+                            <strong>CrowdCode</strong>
+                            <span>Governance for changes</span>
+                        </div>
+                        <div class="arch-box">
+                            <strong>happenstance</strong>
+                            <span>Scheduled gen → publish</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Principles -->
+        <section class="principles">
+            <div class="container">
+                <h2>Principles</h2>
+                <ul class="principles-list">
+                    <li>
+                        <strong>Spec-first artifacts</strong>
+                        <span>Start with declarative specifications that can be versioned, reviewed, and reused</span>
+                    </li>
+                    <li>
+                        <strong>Inspectable outputs</strong>
+                        <span>Generate human-readable results that can be examined, debugged, and understood</span>
+                    </li>
+                    <li>
+                        <strong>Composable systems</strong>
+                        <span>Build modular components that work together without tight coupling</span>
+                    </li>
+                    <li>
+                        <strong>Browser-friendly experiences</strong>
+                        <span>Prioritize tools and outputs that work well in web environments where possible</span>
+                    </li>
+                    <li>
+                        <strong>Reproducible flows</strong>
+                        <span>Enable workflows that produce consistent results across different environments</span>
+                    </li>
+                    <li>
+                        <strong>Portable execution</strong>
+                        <span>Design for cross-runtime compatibility without sacrificing functionality</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <a href="https://github.com/gitbrainlab" target="_blank" rel="noopener noreferrer">GitHub Organization</a>
+            </nav>
+            <p class="footer-copyright">© 2024 GitBrain. Open source projects.</p>
+        </div>
+    </footer>
+</body>
+</html>
