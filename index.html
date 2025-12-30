@@ -32,51 +32,109 @@
     </header>
 
     <main id="main">
-        <!-- Hero Section -->
+        <!-- Architecture Hero Section -->
         <section class="hero">
             <div class="container">
-                <h1>GitBrain</h1>
-                <p class="hero-tagline">Open frameworks for collaborative development, data visualization, and composable systems</p>
-                <div class="cta-group">
-                    <a href="#projects" class="btn btn-primary">Explore projects</a>
-                    <a href="https://github.com/gitbrainlab" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <h1>GitBrain</h1>
+                        <p class="hero-tagline">Composable frameworks for spec-driven development and data systems</p>
+                        <div class="cta-group">
+                            <a href="#projects" class="btn btn-primary">Explore projects</a>
+                            <a href="https://github.com/gitbrainlab" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="hero-diagram">
+                        <div class="system-map" role="img" aria-label="GitBrain system architecture diagram">
+                            <div class="map-title">System Map</div>
+                            <div class="map-layer foundation-layer">
+                                <div class="map-node foundation-node">
+                                    <span class="node-label">context</span>
+                                    <span class="node-desc">cross-runtime layer</span>
+                                </div>
+                            </div>
+                            <div class="map-connector"></div>
+                            <div class="map-layer app-layer">
+                                <div class="map-node">
+                                    <span class="node-label">ChartSpec</span>
+                                    <span class="node-desc">spec → viz</span>
+                                </div>
+                                <div class="map-node">
+                                    <span class="node-label">ShelfSignals</span>
+                                    <span class="node-desc">domain toolkit</span>
+                                </div>
+                            </div>
+                            <div class="map-layer workflow-layer">
+                                <div class="map-node">
+                                    <span class="node-label">CrowdCode</span>
+                                    <span class="node-desc">governance</span>
+                                </div>
+                                <div class="map-node">
+                                    <span class="node-label">happenstance</span>
+                                    <span class="node-desc">gen → publish</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Grid -->
+        <!-- Projects Catalog (Bento Grid) -->
         <section id="projects" class="projects">
             <div class="container">
-                <h2>Projects</h2>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <h3>context</h3>
-                        <p>Execution boundary and cross-runtime layer for portable, composable development</p>
-                        <a href="https://github.com/gitbrainlab/context" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                <h2>Project Catalog</h2>
+                <div class="bento-grid">
+                    <article class="bento-tile" data-size="large">
+                        <div class="tile-header">
+                            <h3>context</h3>
+                            <div class="tile-meta">
+                                <span class="meta-item">Type: Runtime</span>
+                                <span class="meta-item">Surface: CLI / Library</span>
+                            </div>
+                        </div>
+                        <p class="tile-description">Execution boundary and cross-runtime layer for portable, composable development</p>
+                        <a href="https://github.com/gitbrainlab/context" class="tile-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
                     </article>
 
-                    <article class="project-card">
-                        <h3>ChartSpec</h3>
-                        <p>Spec-first visualization with declarative chart definitions</p>
-                        <a href="https://github.com/gitbrainlab/ChartSpec" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    <article class="bento-tile" data-size="medium">
+                        <div class="tile-header">
+                            <h3>ChartSpec</h3>
+                            <div class="tile-meta">
+                                <span class="meta-item">Type: Specification</span>
+                                <span class="meta-item">Output: Visualization</span>
+                            </div>
+                        </div>
+                        <p class="tile-description">Spec-first visualization with declarative chart definitions</p>
+                        <a href="https://github.com/gitbrainlab/ChartSpec" class="tile-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
                     </article>
 
-                    <article class="project-card">
+                    <article class="bento-tile" data-size="medium">
                         <h3>ShelfSignals</h3>
-                        <p>Domain-scale toolkit for composable data visualization and analytics</p>
-                        <a href="https://github.com/gitbrainlab/ShelfSignals" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                        <div class="tile-meta">
+                            <span class="meta-item">Type: Toolkit</span>
+                            <span class="meta-item">Domain: Analytics</span>
+                        </div>
+                        <p class="tile-description">Domain-scale toolkit for composable data visualization and analytics</p>
+                        <a href="https://github.com/gitbrainlab/ShelfSignals" class="tile-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
                     </article>
 
-                    <article class="project-card">
+                    <article class="bento-tile" data-size="small">
                         <h3>CrowdCode</h3>
-                        <p>Governance framework for managing change proposals in collaborative environments</p>
-                        <a href="https://github.com/gitbrainlab/CrowdCode" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                        <div class="tile-meta">
+                            <span class="meta-item">Type: Framework</span>
+                        </div>
+                        <p class="tile-description">Governance framework for managing change proposals in collaborative environments</p>
+                        <a href="https://github.com/gitbrainlab/CrowdCode" class="tile-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
                     </article>
 
-                    <article class="project-card">
+                    <article class="bento-tile" data-size="small">
                         <h3>happenstance</h3>
-                        <p>Reference pattern for scheduled generation and static publishing workflows</p>
-                        <a href="https://github.com/gitbrainlab/happenstance" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                        <div class="tile-meta">
+                            <span class="meta-item">Type: Pattern</span>
+                        </div>
+                        <p class="tile-description">Reference pattern for scheduled generation and static publishing workflows</p>
+                        <a href="https://github.com/gitbrainlab/happenstance" class="tile-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
                     </article>
                 </div>
             </div>
@@ -85,7 +143,8 @@
         <!-- How it fits together -->
         <section class="architecture">
             <div class="container">
-                <h2>How it fits together</h2>
+                <h2>Stack Story</h2>
+                <p class="section-intro">How the pieces compose into a coherent system</p>
                 <div class="architecture-diagram">
                     <div class="arch-layer">
                         <div class="arch-box foundation">
