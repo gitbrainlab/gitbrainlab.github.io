@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>ShelfSignals – GitBrain</title>
+    <meta name="description" content="Domain-scale toolkit for composable data visualization and analytics">
+    <link rel="canonical" href="https://gitbrain.com/projects/shelfsignals.html">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <nav class="breadcrumb">
+        <div class="container">
+            <nav aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <span>→</span>
+                <a href="/#projects">Projects</a>
+                <span>→</span>
+                <span aria-current="page">ShelfSignals</span>
+            </nav>
+        </div>
+    </nav>
+
+    <header class="project-header">
+        <div class="container">
+            <h1 class="project-title">ShelfSignals</h1>
+            <p class="project-tagline">Domain-scale toolkit for composable data visualization and analytics</p>
+            <div class="project-links">
+                <a href="https://github.com/gitbrainlab/ShelfSignals" target="_blank" rel="noopener noreferrer">
+                    <span>📦</span> View Repository
+                </a>
+                <a href="/docs/shelfsignals.html">
+                    <span>📚</span> Documentation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- At a Glance -->
+        <section class="project-section">
+            <div class="container">
+                <h2>At a Glance</h2>
+                <dl class="project-attrs">
+                    <div>
+                        <dt>Why</dt>
+                        <dd>Data visualization and analytics often require combining multiple low-level primitives. Building domain-specific tooling from scratch for each use case is time-consuming and error-prone.</dd>
+                    </div>
+                    <div>
+                        <dt>Benefit</dt>
+                        <dd>Provides a composable toolkit of higher-level patterns and components for analytics, allowing teams to assemble domain-specific solutions quickly from tested building blocks.</dd>
+                    </div>
+                    <div>
+                        <dt>For</dt>
+                        <dd>Analytics teams, data platform engineers, and domain experts who need to build custom visualization and analysis tools tailored to their specific business context.</dd>
+                    </div>
+                    <div>
+                        <dt>Use</dt>
+                        <dd>Import ShelfSignals components and patterns into your analytics application, compose them to match your domain needs, and extend with custom logic as required.</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Architecture -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Architecture</h2>
+                
+                <h3>Context Diagram</h3>
+                <p>ShelfSignals in the analytics ecosystem:</p>
+                <pre class="diagram" aria-label="Context diagram showing ShelfSignals in the analytics ecosystem">
+┌─────────────────────────────────────────────────────────────┐
+│                  Analytics Team / Users                     │
+│            (building domain-specific tools)                 │
+└───────────────────────┬─────────────────────────────────────┘
+                        │
+                        │ composes from
+                        ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    ShelfSignals                             │
+│              (composable toolkit)                           │
+│                                                             │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
+│  │   Patterns   │  │  Components  │  │   Signals    │     │
+│  │   Library    │  │     Shelf    │  │   System     │     │
+│  └──────────────┘  └──────────────┘  └──────────────┘     │
+└───┬───────────────────────────┬─────────────────────────────┘
+    │                           │
+    │ uses                      │ uses
+    ▼                           ▼
+┌────────────┐          ┌──────────────┐
+│ ChartSpec  │          │   context    │
+│ (viz layer)│          │ (runtime)    │
+└────────────┘          └──────────────┘
+</pre>
+
+                <h3>Internal Architecture</h3>
+                <p>Key modules inside ShelfSignals:</p>
+                <pre class="diagram" aria-label="Internal architecture of ShelfSignals">
+┌─────────────────────────────────────────────────────────────┐
+│                   ShelfSignals Core                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  ┌───────────────────────────────────────────────────┐     │
+│  │              Signals System                       │     │
+│  │  • Reactive data flow                             │     │
+│  │  • State management                               │     │
+│  │  • Cross-component communication                  │     │
+│  └───────────────┬───────────────────────────────────┘     │
+│                  │                                          │
+│                  ▼                                          │
+│  ┌───────────────────────────────────────────────────┐     │
+│  │             Component Shelf                       │     │
+│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐        │     │
+│  │  │  Filter  │  │Aggregate │  │Transform │        │     │
+│  │  │Component │  │Component │  │Component │  ...   │     │
+│  │  └──────────┘  └──────────┘  └──────────┘        │     │
+│  └───────────────┬───────────────────────────────────┘     │
+│                  │                                          │
+│                  ▼                                          │
+│  ┌───────────────────────────────────────────────────┐     │
+│  │           Patterns Library                        │     │
+│  │  • Dashboard composition                          │     │
+│  │  • Multi-view coordination                        │     │
+│  │  • Drill-down hierarchies                         │     │
+│  │  • Time-series analysis                           │     │
+│  └───────────────────────────────────────────────────┘     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+</pre>
+            </div>
+        </section>
+
+        <!-- How to Use -->
+        <section class="project-section">
+            <div class="container">
+                <h2>How to Use</h2>
+                <ol class="step-list">
+                    <li>
+                        <strong>Install ShelfSignals</strong>
+                        <span>Add the toolkit: <code>npm install @gitbrainlab/shelfsignals</code></span>
+                    </li>
+                    <li>
+                        <strong>Choose your patterns</strong>
+                        <span>Browse the patterns library to find pre-built solutions that match your analytics needs (dashboards, drill-downs, etc.).</span>
+                    </li>
+                    <li>
+                        <strong>Compose components</strong>
+                        <span>Assemble components from the shelf into your custom analytics interface, wiring them together with the signals system.</span>
+                    </li>
+                    <li>
+                        <strong>Extend with domain logic</strong>
+                        <span>Add your domain-specific calculations, business rules, and custom visualizations on top of the base toolkit.</span>
+                    </li>
+                    <li>
+                        <strong>Deploy and iterate</strong>
+                        <span>Deploy your analytics tool and iterate based on user feedback, reusing and refining components across use cases.</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Related Projects -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Related Projects</h2>
+                <div class="related-projects">
+                    <a href="/projects/context.html" class="related-project-card">
+                        <h3>context</h3>
+                        <p>Runtime foundation that ShelfSignals builds upon for portability</p>
+                    </a>
+                    <a href="/projects/chartspec.html" class="related-project-card">
+                        <h3>ChartSpec</h3>
+                        <p>Visualization engine used by ShelfSignals for rendering charts</p>
+                    </a>
+                    <a href="/projects/crowdcode.html" class="related-project-card">
+                        <h3>CrowdCode</h3>
+                        <p>Can govern changes to shared ShelfSignals component libraries</p>
+                    </a>
+                    <a href="/architecture.html" class="related-project-card">
+                        <h3>View Ecosystem</h3>
+                        <p>See how ShelfSignals fits into the broader GitBrain architecture</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/#projects">Projects</a>
+                <a href="/architecture.html">Architecture</a>
+                <a href="https://github.com/gitbrainlab" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </nav>
+            <p class="footer-copyright">© 2024 GitBrain. Open source projects.</p>
+        </div>
+    </footer>
+</body>
+</html>

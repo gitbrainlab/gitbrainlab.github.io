@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>CrowdCode – GitBrain</title>
+    <meta name="description" content="Governance framework for managing change proposals in collaborative environments">
+    <link rel="canonical" href="https://gitbrain.com/projects/crowdcode.html">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <nav class="breadcrumb">
+        <div class="container">
+            <nav aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <span>→</span>
+                <a href="/#projects">Projects</a>
+                <span>→</span>
+                <span aria-current="page">CrowdCode</span>
+            </nav>
+        </div>
+    </nav>
+
+    <header class="project-header">
+        <div class="container">
+            <h1 class="project-title">CrowdCode</h1>
+            <p class="project-tagline">Governance framework for managing change proposals in collaborative environments</p>
+            <div class="project-links">
+                <a href="https://github.com/gitbrainlab/CrowdCode" target="_blank" rel="noopener noreferrer">
+                    <span>📦</span> View Repository
+                </a>
+                <a href="/docs/crowdcode.html">
+                    <span>📚</span> Documentation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- At a Glance -->
+        <section class="project-section">
+            <div class="container">
+                <h2>At a Glance</h2>
+                <dl class="project-attrs">
+                    <div>
+                        <dt>Why</dt>
+                        <dd>Open source and collaborative projects struggle with managing change proposals, ensuring quality review, and maintaining consistent governance processes across contributors.</dd>
+                    </div>
+                    <div>
+                        <dt>Benefit</dt>
+                        <dd>Provides a structured framework for proposing, reviewing, and approving changes, with configurable workflows that adapt to different project governance models.</dd>
+                    </div>
+                    <div>
+                        <dt>For</dt>
+                        <dd>Open source maintainers, community managers, and teams building collaborative systems that need formal or semi-formal governance for code and configuration changes.</dd>
+                    </div>
+                    <div>
+                        <dt>Use</dt>
+                        <dd>Configure CrowdCode governance rules for your project, integrate with your development workflow, and let contributors submit proposals that flow through your defined review process.</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Architecture -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Architecture</h2>
+                
+                <h3>Context Diagram</h3>
+                <p>CrowdCode in the collaborative development workflow:</p>
+                <pre class="diagram" aria-label="Context diagram showing CrowdCode in collaborative workflow">
+┌─────────────────────────────────────────────────────────────┐
+│                    Contributors                             │
+│              (propose & review changes)                     │
+└───────────┬───────────────────────────┬─────────────────────┘
+            │                           │
+            │ submit                    │ review
+            ▼                           ▼
+┌─────────────────────────────────────────────────────────────┐
+│                      CrowdCode                              │
+│               (governance framework)                        │
+│                                                             │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
+│  │  Proposal    │  │   Review     │  │  Approval    │     │
+│  │  Tracking    │  │   Workflow   │  │   Rules      │     │
+│  └──────────────┘  └──────────────┘  └──────────────┘     │
+└───────────┬───────────────────────────┬─────────────────────┘
+            │                           │
+            │ integrates                │ notifies
+            ▼                           ▼
+    ┌──────────────┐          ┌──────────────┐
+    │  Git / VCS   │          │  Messaging   │
+    │  (GitHub)    │          │  (Slack, etc)│
+    └──────────────┘          └──────────────┘
+</pre>
+
+                <h3>Internal Architecture</h3>
+                <p>Core components of CrowdCode:</p>
+                <pre class="diagram" aria-label="Internal architecture of CrowdCode">
+┌─────────────────────────────────────────────────────────────┐
+│                    CrowdCode Core                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  ┌───────────────────────────────────────────────────┐     │
+│  │           Governance Engine                       │     │
+│  │  • Rule evaluation                                │     │
+│  │  • Policy enforcement                             │     │
+│  │  • Custom workflow support                        │     │
+│  └───────────────┬───────────────────────────────────┘     │
+│                  │                                          │
+│                  ▼                                          │
+│  ┌───────────────────────────────────────────────────┐     │
+│  │            Proposal System                        │     │
+│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐        │     │
+│  │  │ Proposal │  │  Review  │  │  Voting  │        │     │
+│  │  │  Store   │  │  Queue   │  │  Logic   │        │     │
+│  │  └──────────┘  └──────────┘  └──────────┘        │     │
+│  └───────────────┬───────────────────────────────────┘     │
+│                  │                                          │
+│                  ▼                                          │
+│  ┌───────────────────────────────────────────────────┐     │
+│  │          Integration Layer                        │     │
+│  │  • VCS connectors                                 │     │
+│  │  • Notification handlers                          │     │
+│  │  • Webhook endpoints                              │     │
+│  └───────────────────────────────────────────────────┘     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+</pre>
+            </div>
+        </section>
+
+        <!-- How to Use -->
+        <section class="project-section">
+            <div class="container">
+                <h2>How to Use</h2>
+                <ol class="step-list">
+                    <li>
+                        <strong>Install CrowdCode</strong>
+                        <span>Set up the framework: <code>npm install @gitbrainlab/crowdcode</code></span>
+                    </li>
+                    <li>
+                        <strong>Define governance rules</strong>
+                        <span>Create a governance configuration file specifying approval requirements, review workflows, and voting rules for your project.</span>
+                    </li>
+                    <li>
+                        <strong>Integrate with your repository</strong>
+                        <span>Connect CrowdCode to your VCS (e.g., GitHub) to automatically track proposals and enforce governance rules on pull requests.</span>
+                    </li>
+                    <li>
+                        <strong>Enable contributor workflows</strong>
+                        <span>Contributors submit proposals through standard mechanisms (PRs, issues), and CrowdCode manages the review and approval process according to your rules.</span>
+                    </li>
+                    <li>
+                        <strong>Monitor and refine</strong>
+                        <span>Track proposal metrics, identify bottlenecks, and adjust governance rules to improve collaboration efficiency.</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Related Projects -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Related Projects</h2>
+                <div class="related-projects">
+                    <a href="/projects/context.html" class="related-project-card">
+                        <h3>context</h3>
+                        <p>Provides runtime portability for CrowdCode governance tools</p>
+                    </a>
+                    <a href="/projects/shelfsignals.html" class="related-project-card">
+                        <h3>ShelfSignals</h3>
+                        <p>Can visualize governance metrics and proposal analytics</p>
+                    </a>
+                    <a href="/projects/happenstance.html" class="related-project-card">
+                        <h3>happenstance</h3>
+                        <p>Can automate periodic governance reports and summaries</p>
+                    </a>
+                    <a href="/architecture.html" class="related-project-card">
+                        <h3>View Ecosystem</h3>
+                        <p>See how CrowdCode fits into the broader GitBrain architecture</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/#projects">Projects</a>
+                <a href="/architecture.html">Architecture</a>
+                <a href="https://github.com/gitbrainlab" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </nav>
+            <p class="footer-copyright">© 2024 GitBrain. Open source projects.</p>
+        </div>
+    </footer>
+</body>
+</html>

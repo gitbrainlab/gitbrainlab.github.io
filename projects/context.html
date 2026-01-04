@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>context – GitBrain</title>
+    <meta name="description" content="Execution boundary and cross-runtime layer for portable, composable development">
+    <link rel="canonical" href="https://gitbrain.com/projects/context.html">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <nav class="breadcrumb">
+        <div class="container">
+            <nav aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <span>→</span>
+                <a href="/#projects">Projects</a>
+                <span>→</span>
+                <span aria-current="page">context</span>
+            </nav>
+        </div>
+    </nav>
+
+    <header class="project-header">
+        <div class="container">
+            <h1 class="project-title">context</h1>
+            <p class="project-tagline">Execution boundary and cross-runtime layer for portable, composable development</p>
+            <div class="project-links">
+                <a href="https://github.com/gitbrainlab/context" target="_blank" rel="noopener noreferrer">
+                    <span>📦</span> View Repository
+                </a>
+                <a href="/docs/context.html">
+                    <span>📚</span> Documentation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- At a Glance -->
+        <section class="project-section">
+            <div class="container">
+                <h2>At a Glance</h2>
+                <dl class="project-attrs">
+                    <div>
+                        <dt>Why</dt>
+                        <dd>Modern development requires running code across different environments (Node.js, browsers, Deno, etc.). Managing execution boundaries manually is error-prone and creates tight coupling.</dd>
+                    </div>
+                    <div>
+                        <dt>Benefit</dt>
+                        <dd>Provides a unified abstraction layer that handles runtime differences automatically, enabling truly portable code that works across environments without modification.</dd>
+                    </div>
+                    <div>
+                        <dt>For</dt>
+                        <dd>Library authors, tool builders, and teams building portable systems that need to work across multiple JavaScript/TypeScript runtimes without environment-specific code.</dd>
+                    </div>
+                    <div>
+                        <dt>Use</dt>
+                        <dd>Import the context layer in your code, write against its unified API, and deploy to any supported runtime. The layer handles adaptation and compatibility concerns.</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Architecture -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Architecture</h2>
+                
+                <h3>Context Diagram</h3>
+                <p>How context interacts with the surrounding environment:</p>
+                <pre class="diagram" aria-label="Context diagram showing how context interacts with users and other systems">
+┌─────────────────────────────────────────────────────────────┐
+│                        Developer                            │
+│                    (writes portable code)                   │
+└───────────────────────┬─────────────────────────────────────┘
+                        │
+                        │ uses unified API
+                        ▼
+┌─────────────────────────────────────────────────────────────┐
+│                       context                               │
+│                  (execution boundary)                       │
+│                                                             │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
+│  │   Adapters   │  │   Runtime    │  │  Capability  │     │
+│  │              │  │   Detection  │  │   Registry   │     │
+│  └──────────────┘  └──────────────┘  └──────────────┘     │
+└───┬──────────────┬──────────────┬──────────────┬───────────┘
+    │              │              │              │
+    ▼              ▼              ▼              ▼
+┌────────┐    ┌────────┐    ┌────────┐    ┌────────┐
+│ Node.js│    │Browser │    │  Deno  │    │  Bun   │
+└────────┘    └────────┘    └────────┘    └────────┘
+</pre>
+
+                <h3>Internal Architecture</h3>
+                <p>Key modules inside context:</p>
+                <pre class="diagram" aria-label="Internal architecture diagram of context showing key modules">
+┌─────────────────────────────────────────────────────────────┐
+│                       context Core                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  ┌───────────────────────────────────────────────────┐     │
+│  │             Runtime Detection                     │     │
+│  │  • Identifies current environment                 │     │
+│  │  • Feature capability checks                      │     │
+│  │  • Version compatibility matrix                   │     │
+│  └───────────────┬───────────────────────────────────┘     │
+│                  │                                          │
+│                  ▼                                          │
+│  ┌───────────────────────────────────────────────────┐     │
+│  │             Adapter Layer                         │     │
+│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐        │     │
+│  │  │   I/O    │  │   FS     │  │   HTTP   │        │     │
+│  │  │ Adapter  │  │ Adapter  │  │ Adapter  │  ...   │     │
+│  │  └──────────┘  └──────────┘  └──────────┘        │     │
+│  └───────────────┬───────────────────────────────────┘     │
+│                  │                                          │
+│                  ▼                                          │
+│  ┌───────────────────────────────────────────────────┐     │
+│  │          Unified API Interface                    │     │
+│  │  • Consistent method signatures                   │     │
+│  │  • Standardized error handling                    │     │
+│  │  • Promise-based async operations                 │     │
+│  └───────────────────────────────────────────────────┘     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+</pre>
+            </div>
+        </section>
+
+        <!-- How to Use -->
+        <section class="project-section">
+            <div class="container">
+                <h2>How to Use</h2>
+                <ol class="step-list">
+                    <li>
+                        <strong>Install the package</strong>
+                        <span>Add context to your project using your preferred package manager: <code>npm install @gitbrainlab/context</code></span>
+                    </li>
+                    <li>
+                        <strong>Import the context layer</strong>
+                        <span>Import the unified API in your code: <code>import { context } from '@gitbrainlab/context';</code></span>
+                    </li>
+                    <li>
+                        <strong>Write portable code</strong>
+                        <span>Use the context API instead of runtime-specific APIs. For example, use <code>context.fs.readFile()</code> instead of Node's <code>fs.readFile</code> or Deno's <code>Deno.readTextFile</code>.</span>
+                    </li>
+                    <li>
+                        <strong>Deploy anywhere</strong>
+                        <span>Your code now works across Node.js, browsers, Deno, and other supported runtimes without modification.</span>
+                    </li>
+                    <li>
+                        <strong>Extend with adapters</strong>
+                        <span>Add custom adapters for specialized functionality or new runtime environments as needed.</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Related Projects -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Related Projects</h2>
+                <div class="related-projects">
+                    <a href="/projects/chartspec.html" class="related-project-card">
+                        <h3>ChartSpec</h3>
+                        <p>Builds on context to provide runtime-agnostic visualization specifications</p>
+                    </a>
+                    <a href="/projects/shelfsignals.html" class="related-project-card">
+                        <h3>ShelfSignals</h3>
+                        <p>Uses context as its foundation for cross-runtime analytics tooling</p>
+                    </a>
+                    <a href="/projects/happenstance.html" class="related-project-card">
+                        <h3>happenstance</h3>
+                        <p>Leverages context for portable scheduled generation workflows</p>
+                    </a>
+                    <a href="/architecture.html" class="related-project-card">
+                        <h3>View Ecosystem</h3>
+                        <p>See how context fits into the broader GitBrain architecture</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/#projects">Projects</a>
+                <a href="/architecture.html">Architecture</a>
+                <a href="https://github.com/gitbrainlab" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </nav>
+            <p class="footer-copyright">© 2024 GitBrain. Open source projects.</p>
+        </div>
+    </footer>
+</body>
+</html>

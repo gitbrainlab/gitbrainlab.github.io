@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>happenstance – GitBrain</title>
+    <meta name="description" content="Reference pattern for scheduled generation and static publishing workflows">
+    <link rel="canonical" href="https://gitbrain.com/projects/happenstance.html">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <nav class="breadcrumb">
+        <div class="container">
+            <nav aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <span>→</span>
+                <a href="/#projects">Projects</a>
+                <span>→</span>
+                <span aria-current="page">happenstance</span>
+            </nav>
+        </div>
+    </nav>
+
+    <header class="project-header">
+        <div class="container">
+            <h1 class="project-title">happenstance</h1>
+            <p class="project-tagline">Reference pattern for scheduled generation and static publishing workflows</p>
+            <div class="project-links">
+                <a href="https://github.com/gitbrainlab/happenstance" target="_blank" rel="noopener noreferrer">
+                    <span>📦</span> View Repository
+                </a>
+                <a href="/docs/happenstance.html">
+                    <span>📚</span> Documentation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- At a Glance -->
+        <section class="project-section">
+            <div class="container">
+                <h2>At a Glance</h2>
+                <dl class="project-attrs">
+                    <div>
+                        <dt>Why</dt>
+                        <dd>Many workflows need to generate content (reports, visualizations, documentation) on a schedule and publish it to static sites, but setting up and maintaining these pipelines is complex.</dd>
+                    </div>
+                    <div>
+                        <dt>Benefit</dt>
+                        <dd>Provides a reference pattern and toolkit for building scheduled generation workflows that produce static artifacts and publish them automatically.</dd>
+                    </div>
+                    <div>
+                        <dt>For</dt>
+                        <dd>Teams building automated reporting systems, documentation generators, or any workflow that needs to produce and publish static content on a regular schedule.</dd>
+                    </div>
+                    <div>
+                        <dt>Use</dt>
+                        <dd>Clone the reference pattern, adapt the generation logic to your needs, configure the schedule, and deploy. The pattern handles the orchestration and publishing automatically.</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Architecture -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Architecture</h2>
+                
+                <h3>Context Diagram</h3>
+                <p>happenstance in the content generation workflow:</p>
+                <pre class="diagram" aria-label="Context diagram showing happenstance workflow">
+┌─────────────────────────────────────────────────────────────┐
+│                  Scheduler / Cron                           │
+│              (triggers at intervals)                        │
+└───────────────────────┬─────────────────────────────────────┘
+                        │
+                        │ triggers
+                        ▼
+┌─────────────────────────────────────────────────────────────┐
+│                   happenstance                              │
+│            (generation → publish pattern)                   │
+│                                                             │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
+│  │  Generator   │  │  Transform   │  │  Publisher   │     │
+│  │   Runner     │  │   Pipeline   │  │   Engine     │     │
+│  └──────────────┘  └──────────────┘  └──────────────┘     │
+└───┬────────────────────────────────────────┬────────────────┘
+    │                                        │
+    │ reads                                  │ publishes to
+    ▼                                        ▼
+┌──────────────┐                    ┌──────────────┐
+│ Data Sources │                    │ Static Host  │
+│ (APIs, DBs)  │                    │ (GH Pages)   │
+└──────────────┘                    └──────────────┘
+</pre>
+
+                <h3>Internal Architecture</h3>
+                <p>Components inside happenstance:</p>
+                <pre class="diagram" aria-label="Internal architecture of happenstance">
+┌─────────────────────────────────────────────────────────────┐
+│                 happenstance Core                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  ┌───────────────────────────────────────────────────┐     │
+│  │         Orchestration Layer                       │     │
+│  │  • Schedule management                            │     │
+│  │  • Task coordination                              │     │
+│  │  • Error handling & retries                       │     │
+│  └───────────────┬───────────────────────────────────┘     │
+│                  │                                          │
+│                  ▼                                          │
+│  ┌───────────────────────────────────────────────────┐     │
+│  │          Generation Pipeline                      │     │
+│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐        │     │
+│  │  │   Data   │  │Template  │  │  Static  │        │     │
+│  │  │  Fetch   │  │ Render   │  │  Build   │        │     │
+│  │  └──────────┘  └──────────┘  └──────────┘        │     │
+│  └───────────────┬───────────────────────────────────┘     │
+│                  │                                          │
+│                  ▼                                          │
+│  ┌───────────────────────────────────────────────────┐     │
+│  │          Publishing Layer                         │     │
+│  │  • Git commit & push                              │     │
+│  │  • Deployment triggers                            │     │
+│  │  • Cache invalidation                             │     │
+│  └───────────────────────────────────────────────────┘     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+</pre>
+            </div>
+        </section>
+
+        <!-- How to Use -->
+        <section class="project-section">
+            <div class="container">
+                <h2>How to Use</h2>
+                <ol class="step-list">
+                    <li>
+                        <strong>Clone the reference pattern</strong>
+                        <span>Start with the happenstance template: <code>git clone https://github.com/gitbrainlab/happenstance.git</code></span>
+                    </li>
+                    <li>
+                        <strong>Customize generation logic</strong>
+                        <span>Modify the generator scripts to fetch your data sources, apply your transformations, and produce your desired static output.</span>
+                    </li>
+                    <li>
+                        <strong>Configure scheduling</strong>
+                        <span>Set up cron jobs, GitHub Actions workflows, or other schedulers to trigger the generation pipeline at your desired intervals.</span>
+                    </li>
+                    <li>
+                        <strong>Set publishing target</strong>
+                        <span>Configure where generated artifacts should be published (GitHub Pages, S3, Netlify, etc.) and set up deployment credentials.</span>
+                    </li>
+                    <li>
+                        <strong>Deploy and monitor</strong>
+                        <span>Deploy the workflow, monitor execution logs, and refine generation and publishing logic based on results.</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Related Projects -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Related Projects</h2>
+                <div class="related-projects">
+                    <a href="/projects/context.html" class="related-project-card">
+                        <h3>context</h3>
+                        <p>Enables happenstance generators to run across different runtimes</p>
+                    </a>
+                    <a href="/projects/chartspec.html" class="related-project-card">
+                        <h3>ChartSpec</h3>
+                        <p>Can be used to generate visualizations in happenstance workflows</p>
+                    </a>
+                    <a href="/projects/shelfsignals.html" class="related-project-card">
+                        <h3>ShelfSignals</h3>
+                        <p>Provides analytics components for data-driven generation</p>
+                    </a>
+                    <a href="/architecture.html" class="related-project-card">
+                        <h3>View Ecosystem</h3>
+                        <p>See how happenstance fits into the broader GitBrain architecture</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/#projects">Projects</a>
+                <a href="/architecture.html">Architecture</a>
+                <a href="https://github.com/gitbrainlab" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </nav>
+            <p class="footer-copyright">© 2024 GitBrain. Open source projects.</p>
+        </div>
+    </footer>
+</body>
+</html>
