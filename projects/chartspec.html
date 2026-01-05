@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>ChartSpec – GitBrain</title>
+    <meta name="description" content="Spec-first visualization with declarative chart definitions">
+    <link rel="canonical" href="https://gitbrain.com/projects/chartspec.html">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <nav class="breadcrumb">
+        <div class="container">
+            <nav aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <span>→</span>
+                <a href="/#projects">Projects</a>
+                <span>→</span>
+                <span aria-current="page">ChartSpec</span>
+            </nav>
+        </div>
+    </nav>
+
+    <header class="project-header">
+        <div class="container">
+            <h1 class="project-title">ChartSpec</h1>
+            <p class="project-tagline">Spec-first visualization with declarative chart definitions</p>
+            <div class="project-links">
+                <a href="https://github.com/gitbrainlab/ChartSpec" target="_blank" rel="noopener noreferrer">
+                    <span>📦</span> View Repository
+                </a>
+                <a href="/docs/chartspec.html">
+                    <span>📚</span> Documentation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- At a Glance -->
+        <section class="project-section">
+            <div class="container">
+                <h2>At a Glance</h2>
+                <dl class="project-attrs">
+                    <div>
+                        <dt>Why</dt>
+                        <dd>Traditional charting libraries couple visual definitions with rendering logic, making visualizations hard to version, review, and reuse across different contexts.</dd>
+                    </div>
+                    <div>
+                        <dt>Benefit</dt>
+                        <dd>Separates chart specifications from rendering, enabling charts to be defined declaratively, versioned in git, and rendered in any compatible environment.</dd>
+                    </div>
+                    <div>
+                        <dt>For</dt>
+                        <dd>Data analysts, visualization engineers, and teams who need reproducible, versionable chart definitions that can be reviewed and deployed independently of rendering code.</dd>
+                    </div>
+                    <div>
+                        <dt>Use</dt>
+                        <dd>Define charts using JSON/YAML specifications, version them in source control, and render them using the ChartSpec renderer in your application or workflow.</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Architecture -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Architecture</h2>
+                
+                <h3>Context Diagram</h3>
+                <p>How ChartSpec interacts with users and data sources:</p>
+                <pre class="diagram" aria-label="Context diagram showing ChartSpec interactions">
+┌─────────────────────────────────────────────────────────────┐
+│                    Data Analyst / Dev                       │
+│              (creates chart specifications)                 │
+└───────────────────────┬─────────────────────────────────────┘
+                        │
+                        │ writes/maintains
+                        ▼
+┌─────────────────────────────────────────────────────────────┐
+│                  Chart Specification                        │
+│                   (JSON/YAML files)                         │
+│  • Data source config                                       │
+│  • Visual encodings                                         │
+│  • Interaction definitions                                  │
+└───────────────────────┬─────────────────────────────────────┘
+                        │
+                        │ consumed by
+                        ▼
+┌─────────────────────────────────────────────────────────────┐
+│                     ChartSpec                               │
+│                 (specification engine)                      │
+│                                                             │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
+│  │   Parser     │  │  Validator   │  │   Renderer   │     │
+│  └──────────────┘  └──────────────┘  └──────────────┘     │
+└───────────────────────┬─────────────────────────────────────┘
+                        │
+                        │ fetches
+                        ▼
+                ┌──────────────┐
+                │ Data Sources │
+                │ (APIs, DBs)  │
+                └──────────────┘
+</pre>
+
+                <h3>Internal Architecture</h3>
+                <p>Components inside ChartSpec:</p>
+                <pre class="diagram" aria-label="Internal architecture of ChartSpec">
+┌─────────────────────────────────────────────────────────────┐
+│                      ChartSpec Core                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  ┌───────────────────────────────────────────────────┐     │
+│  │          Specification Parser                     │     │
+│  │  • Reads JSON/YAML definitions                    │     │
+│  │  • Schema validation                              │     │
+│  │  • Resolves references                            │     │
+│  └───────────────┬───────────────────────────────────┘     │
+│                  │                                          │
+│                  ▼                                          │
+│  ┌───────────────────────────────────────────────────┐     │
+│  │           Transformation Layer                    │     │
+│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐        │     │
+│  │  │   Data   │  │  Visual  │  │  Scale   │        │     │
+│  │  │Transform │  │ Encoding │  │ Mapping  │        │     │
+│  │  └──────────┘  └──────────┘  └──────────┘        │     │
+│  └───────────────┬───────────────────────────────────┘     │
+│                  │                                          │
+│                  ▼                                          │
+│  ┌───────────────────────────────────────────────────┐     │
+│  │            Rendering Engine                       │     │
+│  │  • SVG generation                                 │     │
+│  │  • Canvas rendering                               │     │
+│  │  • Interactive layer                              │     │
+│  └───────────────────────────────────────────────────┘     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+</pre>
+            </div>
+        </section>
+
+        <!-- How to Use -->
+        <section class="project-section">
+            <div class="container">
+                <h2>How to Use</h2>
+                <ol class="step-list">
+                    <li>
+                        <strong>Install ChartSpec</strong>
+                        <span>Add to your project: <code>npm install @gitbrainlab/chartspec</code></span>
+                    </li>
+                    <li>
+                        <strong>Create a chart specification</strong>
+                        <span>Define your chart in a JSON or YAML file with data source, visual encodings, and interaction rules.</span>
+                    </li>
+                    <li>
+                        <strong>Validate the specification</strong>
+                        <span>Use the ChartSpec validator to ensure your specification is correct and complete.</span>
+                    </li>
+                    <li>
+                        <strong>Render the chart</strong>
+                        <span>Import and render: <code>chartspec.render(spec, targetElement)</code> to display your visualization.</span>
+                    </li>
+                    <li>
+                        <strong>Version and iterate</strong>
+                        <span>Commit your spec files to version control and iterate on visualizations through code review.</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Related Projects -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Related Projects</h2>
+                <div class="related-projects">
+                    <a href="/projects/context.html" class="related-project-card">
+                        <h3>context</h3>
+                        <p>Provides the cross-runtime foundation that ChartSpec builds upon</p>
+                    </a>
+                    <a href="/projects/shelfsignals.html" class="related-project-card">
+                        <h3>ShelfSignals</h3>
+                        <p>Combines ChartSpec with domain-specific analytics patterns</p>
+                    </a>
+                    <a href="/projects/happenstance.html" class="related-project-card">
+                        <h3>happenstance</h3>
+                        <p>Can generate and publish ChartSpec visualizations on a schedule</p>
+                    </a>
+                    <a href="/architecture.html" class="related-project-card">
+                        <h3>View Ecosystem</h3>
+                        <p>See how ChartSpec fits into the broader GitBrain architecture</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/#projects">Projects</a>
+                <a href="/architecture.html">Architecture</a>
+                <a href="https://github.com/gitbrainlab" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </nav>
+            <p class="footer-copyright">© 2024 GitBrain. Open source projects.</p>
+        </div>
+    </footer>
+</body>
+</html>

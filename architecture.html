@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>Ecosystem Architecture – GitBrain</title>
+    <meta name="description" content="How GitBrain projects compose into a cohesive ecosystem for spec-driven development">
+    <link rel="canonical" href="https://gitbrain.com/architecture.html">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <nav class="breadcrumb">
+        <div class="container">
+            <nav aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <span>→</span>
+                <span aria-current="page">Architecture</span>
+            </nav>
+        </div>
+    </nav>
+
+    <header class="project-header">
+        <div class="container">
+            <h1 class="project-title">Ecosystem Architecture</h1>
+            <p class="project-tagline">How GitBrain projects compose into a cohesive system for spec-driven development</p>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Integrated Diagram -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Integrated System View</h2>
+                <p>All GitBrain projects working together as a composable ecosystem:</p>
+                
+                <pre class="diagram" aria-label="Integrated ecosystem architecture showing all GitBrain projects">
+┌────────────────────────────────────────────────────────────────────────────┐
+│                              User / Developer                              │
+│                   (builds spec-driven systems & tools)                     │
+└────────────┬───────────────────────────────────┬───────────────────────────┘
+             │                                   │
+             │                                   │
+             ▼                                   ▼
+┌────────────────────────┐          ┌────────────────────────┐
+│      CrowdCode         │          │     happenstance       │
+│   (governance layer)   │          │  (gen → publish)       │
+│                        │          │                        │
+│ • Proposal management  │          │ • Scheduled runs       │
+│ • Review workflows     │          │ • Static generation    │
+│ • Approval automation  │          │ • Auto-deployment      │
+└────────────┬───────────┘          └───────────┬────────────┘
+             │                                   │
+             │                                   │
+             ▼                                   ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                    Application & Domain Layer                       │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  ┌──────────────────────┐         ┌──────────────────────┐         │
+│  │    ChartSpec         │         │   ShelfSignals       │         │
+│  │  (spec → viz)        │         │  (domain toolkit)    │         │
+│  │                      │◀────────│                      │         │
+│  │ • Declarative charts │         │ • Component shelf    │         │
+│  │ • Visual encoding    │         │ • Pattern library    │         │
+│  │ • Rendering engine   │         │ • Signal system      │         │
+│  └──────────┬───────────┘         └───────────┬──────────┘         │
+│             │                                  │                    │
+│             └──────────────┬───────────────────┘                    │
+│                            │                                        │
+└────────────────────────────┼────────────────────────────────────────┘
+                             │
+                             │ all build on
+                             ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                        Foundation Layer                             │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│                       ┌──────────────────────┐                      │
+│                       │      context         │                      │
+│                       │  (runtime boundary)  │                      │
+│                       │                      │                      │
+│                       │ • Cross-runtime API  │                      │
+│                       │ • Adapter layer      │                      │
+│                       │ • Portable execution │                      │
+│                       └──────────┬───────────┘                      │
+│                                  │                                  │
+└──────────────────────────────────┼──────────────────────────────────┘
+                                   │
+                                   │ runs on
+                                   ▼
+                    ┌──────────────────────────────┐
+                    │  Runtime Environments        │
+                    │  • Node.js  • Browser        │
+                    │  • Deno     • Bun            │
+                    └──────────────────────────────┘
+</pre>
+            </div>
+        </section>
+
+        <!-- Layer Descriptions -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Architecture Layers</h2>
+                
+                <div class="related-projects">
+                    <div class="related-project-card">
+                        <h3>Foundation Layer</h3>
+                        <p><strong>context</strong> provides the cross-runtime execution boundary that enables all other projects to work portably across different JavaScript/TypeScript environments.</p>
+                    </div>
+                    
+                    <div class="related-project-card">
+                        <h3>Application & Domain Layer</h3>
+                        <p><strong>ChartSpec</strong> and <strong>ShelfSignals</strong> build on the foundation to provide spec-driven visualization and composable analytics tooling for domain-specific needs.</p>
+                    </div>
+                    
+                    <div class="related-project-card">
+                        <h3>Workflow & Governance Layer</h3>
+                        <p><strong>CrowdCode</strong> manages collaborative change processes, while <strong>happenstance</strong> automates content generation and publishing workflows.</p>
+                    </div>
+                    
+                    <div class="related-project-card">
+                        <h3>Integration Points</h3>
+                        <p>Projects compose together: ShelfSignals uses ChartSpec for rendering, happenstance can generate ChartSpec visualizations, CrowdCode can govern shared components.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Links -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Explore Projects</h2>
+                <div class="related-projects">
+                    <a href="/projects/context.html" class="related-project-card">
+                        <h3>context</h3>
+                        <p>Execution boundary and cross-runtime layer for portable development</p>
+                    </a>
+                    
+                    <a href="/projects/chartspec.html" class="related-project-card">
+                        <h3>ChartSpec</h3>
+                        <p>Spec-first visualization with declarative chart definitions</p>
+                    </a>
+                    
+                    <a href="/projects/shelfsignals.html" class="related-project-card">
+                        <h3>ShelfSignals</h3>
+                        <p>Domain-scale toolkit for composable data visualization and analytics</p>
+                    </a>
+                    
+                    <a href="/projects/crowdcode.html" class="related-project-card">
+                        <h3>CrowdCode</h3>
+                        <p>Governance framework for managing change proposals in collaborative environments</p>
+                    </a>
+                    
+                    <a href="/projects/happenstance.html" class="related-project-card">
+                        <h3>happenstance</h3>
+                        <p>Reference pattern for scheduled generation and static publishing workflows</p>
+                    </a>
+                    
+                    <a href="/#projects" class="related-project-card">
+                        <h3>Back to Home</h3>
+                        <p>Return to the main GitBrain landing page</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Principles -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Design Principles</h2>
+                <ul class="principles-list">
+                    <li>
+                        <strong>Layered composition</strong>
+                        <span>Each layer builds on the one below, with clear boundaries and minimal coupling</span>
+                    </li>
+                    <li>
+                        <strong>Spec-first artifacts</strong>
+                        <span>Projects prioritize declarative specifications that can be versioned and reviewed</span>
+                    </li>
+                    <li>
+                        <strong>Runtime portability</strong>
+                        <span>Foundation layer enables projects to work across different execution environments</span>
+                    </li>
+                    <li>
+                        <strong>Composable by default</strong>
+                        <span>Projects are designed to work together without tight coupling or complex integration</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/#projects">Projects</a>
+                <a href="/architecture.html">Architecture</a>
+                <a href="https://github.com/gitbrainlab" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </nav>
+            <p class="footer-copyright">© 2024 GitBrain. Open source projects.</p>
+        </div>
+    </footer>
+</body>
+</html>
