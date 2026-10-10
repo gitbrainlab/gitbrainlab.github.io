@@ -1,0 +1,322 @@
+[
+  {
+    "case_id": "J011",
+    "source_id": "src-0f43112f9f891ebc",
+    "meeting_key": "sullivan-county/thompson/tEb-IVvqSHA",
+    "municipality": "sullivan-county/thompson",
+    "body": "Town Board Meeting",
+    "body_type": "governing",
+    "meeting_date": "2026-10-06",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 54,
+      "end_index_exclusive": 67,
+      "start_seconds": 394,
+      "last_segment_start_seconds": 481,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "73ee1f66f9f3b24a703374a476fbec30e791933bc7307ed8023d26a4f730841c",
+    "audio_verified": false
+  },
+  {
+    "case_id": "J012",
+    "source_id": "src-0f43112f9f891ebc",
+    "meeting_key": "sullivan-county/thompson/tEb-IVvqSHA",
+    "municipality": "sullivan-county/thompson",
+    "body": "Town Board Meeting",
+    "body_type": "governing",
+    "meeting_date": "2026-10-06",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 74,
+      "end_index_exclusive": 87,
+      "start_seconds": 522,
+      "last_segment_start_seconds": 572,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "ebecebf5bca996d322fea18f6b5adff3f6ad7f1e335290cf5ec3ef3174889fe3",
+    "audio_verified": false
+  },
+  {
+    "case_id": "J021",
+    "source_id": "src-58ee835b17827e6d",
+    "meeting_key": "orange-county/highlands/QC9p2Yc8XVQ",
+    "municipality": "orange-county/highlands",
+    "body": "Town Board Meeting",
+    "body_type": "governing",
+    "meeting_date": "2026-05-11",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 97,
+      "end_index_exclusive": 110,
+      "start_seconds": 465,
+      "last_segment_start_seconds": 579,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "2d6d7c03741ecd57ec4b9243f992f1f593f82dc8ba8aff57ce07a077a3f73ffd",
+    "audio_verified": false
+  },
+  {
+    "case_id": "J022",
+    "source_id": "src-58ee835b17827e6d",
+    "meeting_key": "orange-county/highlands/QC9p2Yc8XVQ",
+    "municipality": "orange-county/highlands",
+    "body": "Town Board Meeting",
+    "body_type": "governing",
+    "meeting_date": "2026-05-11",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 0,
+      "end_index_exclusive": 13,
+      "start_seconds": 27,
+      "last_segment_start_seconds": 95,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "352d51e821f97f387868ce1d86570606a979348c5ba9c15771d661b9907ff3bf",
+    "audio_verified": false
+  },
+  {
+    "case_id": "J031",
+    "source_id": "src-fafbc65a736dcd42",
+    "meeting_key": "ulster-county/rochester/2uiHrBpbp3o",
+    "municipality": "ulster-county/rochester",
+    "body": "Town Board Workshop Meeting Part 2",
+    "body_type": "governing",
+    "meeting_date": "2026-10-08",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 226,
+      "end_index_exclusive": 239,
+      "start_seconds": 1587,
+      "last_segment_start_seconds": 1643,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "f6389fc163f8fa90459106bb0ca79ab6a36a8d8a6999238388ecdc1f9cc97384",
+    "audio_verified": false
+  },
+  {
+    "case_id": "J032",
+    "source_id": "src-fafbc65a736dcd42",
+    "meeting_key": "ulster-county/rochester/2uiHrBpbp3o",
+    "municipality": "ulster-county/rochester",
+    "body": "Town Board Workshop Meeting Part 2",
+    "body_type": "governing",
+    "meeting_date": "2026-10-08",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 3,
+      "end_index_exclusive": 16,
+      "start_seconds": 17,
+      "last_segment_start_seconds": 113,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "3d8383fe5a75400d9c9ac023ab339c92157c6415c1770fbf9c752daf2e8f991e",
+    "audio_verified": false
+  },
+  {
+    "case_id": "J041",
+    "source_id": "src-ceee60d0cf87ef0a",
+    "meeting_key": "monroe-county/irondequoit/cy8B-GgwPNw",
+    "municipality": "monroe-county/irondequoit",
+    "body": "Town Board Meeting",
+    "body_type": "governing",
+    "meeting_date": "2026-09-30",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 70,
+      "end_index_exclusive": 83,
+      "start_seconds": 1185,
+      "last_segment_start_seconds": 1249,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "5dfdc779790c84d99dcb9392a89a349e399236d248bf510604ea74a0bfc83e0a",
+    "audio_verified": false
+  },
+  {
+    "case_id": "J042",
+    "source_id": "src-ceee60d0cf87ef0a",
+    "meeting_key": "monroe-county/irondequoit/cy8B-GgwPNw",
+    "municipality": "monroe-county/irondequoit",
+    "body": "Town Board Meeting",
+    "body_type": "governing",
+    "meeting_date": "2026-09-30",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 33,
+      "end_index_exclusive": 46,
+      "start_seconds": 993,
+      "last_segment_start_seconds": 1039,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "fa9181306fb8b0ee75e723b1f526eab81fe3e5b66307831ea6031e507299b75d",
+    "audio_verified": false
+  },
+  {
+    "case_id": "J051",
+    "source_id": "src-a47a7ef82ecc2c57",
+    "meeting_key": "orange-county/goshen/9I67Q1MQ-KE",
+    "municipality": "orange-county/goshen",
+    "body": "Town Board Meeting. .",
+    "body_type": "governing",
+    "meeting_date": "2026-04-09",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 0,
+      "end_index_exclusive": 13,
+      "start_seconds": 0,
+      "last_segment_start_seconds": 578,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "6c0130183262109fafb0d3bb1babb43069f1bcb67e340f09b614bd77cf533abf",
+    "audio_verified": false
+  },
+  {
+    "case_id": "J052",
+    "source_id": "src-a47a7ef82ecc2c57",
+    "meeting_key": "orange-county/goshen/9I67Q1MQ-KE",
+    "municipality": "orange-county/goshen",
+    "body": "Town Board Meeting. .",
+    "body_type": "governing",
+    "meeting_date": "2026-04-09",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 13,
+      "end_index_exclusive": 26,
+      "start_seconds": 585,
+      "last_segment_start_seconds": 662,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "896983d0a81e5ebbd9e65de6d32c33a0a754f1255c544c9dbf4f1e8d9deffff1",
+    "audio_verified": false
+  },
+  {
+    "case_id": "J061",
+    "source_id": "src-7e4391d8c417d3fe",
+    "meeting_key": "dutchess-county/village-fishkill/hjhuBKoFqaE",
+    "municipality": "dutchess-county/village-fishkill",
+    "body": "Village of Fishkill Trustees",
+    "body_type": "governing",
+    "meeting_date": "2026-06-22",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 11,
+      "end_index_exclusive": 24,
+      "start_seconds": 88,
+      "last_segment_start_seconds": 186,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "4de712b145739d4012c96e26e7bc2b96370a3dd80c38062d5af605cb7d156f64",
+    "audio_verified": false
+  },
+  {
+    "case_id": "J062",
+    "source_id": "src-7e4391d8c417d3fe",
+    "meeting_key": "dutchess-county/village-fishkill/hjhuBKoFqaE",
+    "municipality": "dutchess-county/village-fishkill",
+    "body": "Village of Fishkill Trustees",
+    "body_type": "governing",
+    "meeting_date": "2026-06-22",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 101,
+      "end_index_exclusive": 114,
+      "start_seconds": 683,
+      "last_segment_start_seconds": 790,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "147a02be732faa0b496a10cf6c1f2ec8029f0c22707e00f2a5e4e8e1433852d4",
+    "audio_verified": false
+  },
+  {
+    "case_id": "J071",
+    "source_id": "src-a4cb140d5a555f74",
+    "meeting_key": "greene-county/new-baltimore/PQxQoxzOQUs",
+    "municipality": "greene-county/new-baltimore",
+    "body": "Town Board Meeting",
+    "body_type": "governing",
+    "meeting_date": "2026-06-08",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 2,
+      "end_index_exclusive": 15,
+      "start_seconds": 36,
+      "last_segment_start_seconds": 130,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "72cdb3d2e4cd69d7e55bbf610aa6000f41c7e5dac9249c01078fbaac976ec56d",
+    "audio_verified": false
+  },
+  {
+    "case_id": "J072",
+    "source_id": "src-a4cb140d5a555f74",
+    "meeting_key": "greene-county/new-baltimore/PQxQoxzOQUs",
+    "municipality": "greene-county/new-baltimore",
+    "body": "Town Board Meeting",
+    "body_type": "governing",
+    "meeting_date": "2026-06-08",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 98,
+      "end_index_exclusive": 111,
+      "start_seconds": 696,
+      "last_segment_start_seconds": 769,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "82b810643f179f502cb577689e15bf015ad236b1e0d6a4b9aae89cd9ccf81bbd",
+    "audio_verified": false
+  },
+  {
+    "case_id": "J081",
+    "source_id": "src-34eb038097a3690d",
+    "meeting_key": "ulster-county/ellenville/Kv8S9PLz7jg",
+    "municipality": "ulster-county/ellenville",
+    "body": "'s Board Meeting",
+    "body_type": "governing",
+    "meeting_date": "2026-06-08",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 36,
+      "end_index_exclusive": 49,
+      "start_seconds": 503,
+      "last_segment_start_seconds": 564,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "5c10b432455b6e28efdd84468cfec0eed02ea1e3cd339f216690d8d49d84c961",
+    "audio_verified": false
+  },
+  {
+    "case_id": "J082",
+    "source_id": "src-34eb038097a3690d",
+    "meeting_key": "ulster-county/ellenville/Kv8S9PLz7jg",
+    "municipality": "ulster-county/ellenville",
+    "body": "'s Board Meeting",
+    "body_type": "governing",
+    "meeting_date": "2026-06-08",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 66,
+      "end_index_exclusive": 79,
+      "start_seconds": 651,
+      "last_segment_start_seconds": 715,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "3eeffeb4cd8d7702fc4fdcef2b4cc4de9228b9deb2b140284cd5e4b0c227530b",
+    "audio_verified": false
+  }
+]

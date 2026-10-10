@@ -1,0 +1,13 @@
+{
+  "event": "draft_2_frozen_before_reserved_transcript_content_read",
+  "at": "2026-10-10T15:56:48.730932+00:00",
+  "files": {
+    "profiles/controlled-english/v2.json": "82823f500371ac27b9198894aa6dcae7a22b7fac5e20a95a70a387db8f119a68",
+    "scripts/controlled_english_v2.py": "ddeffa96dbbe90d672328917a1d0256064eccf49eb07bd9e77399fb4094db6e1",
+    "scripts/controlled_english_guard.py": "be46589bfa7072685c3a407ebfc4c6d6bc031010890a53144f77df781a0bf9d3",
+    "evaluations/controlled-english-2026-10-10/development-cases.json": "d236daa50dc127936b5745eae9271adc939a08fa21dee60d7247daafb24b14d3",
+    "evaluations/controlled-english-2026-10-10/round-1.json": "3b1f93dbb8954e7a99e0d05e9b6faa0c8de48fe13d489ddb2a4af29fda32f124"
+  },
+  "label_corrections": [],
+  "refinement_sources": "Development T02 D02 D03 D04 D07 and missed mutation dimensions only."
+}

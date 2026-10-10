@@ -1,0 +1,20 @@
+{
+  "evaluation_id": "civicspec-cce-2026-10-10",
+  "status": "preregistered_before_round_1",
+  "purpose": "Develop and refine a controlled-English authoring and semantic-preservation profile using real public-record cases.",
+  "baseline_release": "0.1.0-rc.1",
+  "design": "Existing 24 source-grounded cases for development; additional meeting transcripts reserved by municipality for this iteration; deterministic action probes and semantic mutation tests scored separately.",
+  "development_label_policy": "Retain prior expected labels and groups. Eleven supported positives, five negative controls, eight outside historical classifier scope. No relabeling for score improvement.",
+  "reserved_selection": "Exclude all 87 previously fetched meeting keys and every municipality in the 24 development labels. For each body_type in sorted order, rank candidates by SHA256('civicspec-cce-20261010:' + k). Select up to three distinct municipalities globally. Require ts=true and thin=false. Eleven meetings selected from 249 eligible rows in the frozen index.",
+  "reserved_excerpt_selection": "After freezing draft.2, choose at most two non-overlapping 13-segment windows per reserved meeting: first procedural anchor, then first finance/condition anchor at least 13 segments away. If no anchor exists, use the middle 13 segments. Record selection coverage; do not replace difficult cases.",
+  "procedural_anchor_regex": "motion|resolved|resolution|approve|accept.*minutes",
+  "risk_anchor_regex": "subject to|provided that|contingent|grant|budget|payment|purchase|contract|not to exceed|million",
+  "primary_metrics": ["correct, incorrect, and abstaining action labels among supported positives", "false action labels on negative controls", "out-of-scope and unresolved cases reported separately", "valid rewrite false rejections", "detected and missed injected semantic losses by field and source split", "source-byte and selector integrity"],
+  "mutation_fields": ["actor", "action", "target", "basis", "polarity", "conditions", "quantities", "evidence", "modality", "outcome", "attribution", "time", "source_state", "coverage", "relations", "unresolved"],
+  "mutation_design": "For each applicable populated field, modify or remove one semantic dimension in a copy of a source-anchored ledger. Mutations are synthetic errors, not observed bot errors. Keep valid copies and wording-only changes as acceptance controls. Empty/not-applicable dimensions do not receive vacuous detection credit.",
+  "freeze_policy": "Hash draft.1 code/profile before round 1. Freeze development labels and round-1 outputs. Refine only using development failures. Hash draft.2 code/profile before reading reserved transcript content. Do not tune on reserved outcomes. Label corrections require separate entries.",
+  "candidate_gates": {"development_new_incorrect_actions": 0, "development_valid_rewrite_false_rejections": 0, "reserved_new_incorrect_actions": 0, "reserved_valid_rewrite_false_rejections": 0, "critical_semantic_losses_missed": 0},
+  "independence": "Single assistant develops code and source-grounded labels. Reserved by source/municipality for this iteration, not independently adjudicated or a blinded multi-model benchmark.",
+  "nonclaims": ["No production rollout", "No independent model API experiment", "No original-audio verification", "No statewide representativeness", "No full-document recall estimate", "No certification of legal compliance", "No causal estimate of STE prompting effectiveness"],
+  "publication_basis": "Public source URLs, source/selector digests and newly authored annotations only. Do not publish complete transcript/PDF archives. Preserve source access and redaction restrictions. Existing licensing status remains unchanged."
+}

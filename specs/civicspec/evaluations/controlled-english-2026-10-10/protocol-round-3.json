@@ -1,0 +1,11 @@
+{
+  "reason": "Draft.2 did not improve first-reserved action recognition beyond draft.1: 2 correct, 2 wrong single-action labels, 2 abstentions among six supported cases.",
+  "development_scope": "Original 24 development cases plus the now-exposed 20 first-reserved cases. Keep original split names in reports; first-reserved cases are regression material for draft.3.",
+  "new_reserved_selection": "From the original frozen index, exclude every previously fetched key and every municipality in both prior case sets. Keep governing records with ts=true and thin=false. SHA256-rank 'civicspec-cce-validation2-20261010:' + meeting key. Select first eight distinct municipalities. 177 candidate records were eligible.",
+  "new_excerpt_selection": "Use the same first-procedural/first-nonoverlapping-risk 13-segment-window procedure as protocol.json. No outcome-based replacements or favorable extra spans.",
+  "freeze_order": "Select municipality metadata, freeze draft.3 code and profile, fetch/read second-reserved content, freeze source-grounded labels, execute all three candidates.",
+  "label_rule": "A supported multi-treatment window requires ambiguous from this scalar probe; returning one correct component alone is incomplete and scored incorrect. Unknown/noisy and unsupported categories remain separate.",
+  "new_gates": {"new_incorrect_labels_vs_v2":0,"new_valid_rewrite_false_rejections":0,"synthetic_semantic_loss_misses":0},
+  "production_gate": "Any observed wrong consequential action or unresolved multi-event handling blocks automatic fact promotion. Non-regression alone is insufficient for production adoption.",
+  "nonclaims": ["Second-reserved labels are not independently adjudicated", "No model prompt comparison", "No whole-document extraction recall", "No municipality-level statistical reliability estimate"]
+}

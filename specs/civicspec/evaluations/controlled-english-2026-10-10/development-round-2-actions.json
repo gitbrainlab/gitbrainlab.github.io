@@ -1,0 +1,170 @@
+[
+  {
+    "case_id": "T01",
+    "expected": "abstain",
+    "observed": "abstain",
+    "group": "negative_control",
+    "result": "correct"
+  },
+  {
+    "case_id": "T02",
+    "expected": "grant_application",
+    "observed": "grant_application",
+    "group": "supported_positive",
+    "result": "correct"
+  },
+  {
+    "case_id": "T03",
+    "expected": null,
+    "observed": "schedule_public_hearing",
+    "group": "outside_classifier_scope",
+    "result": "outside_scope"
+  },
+  {
+    "case_id": "T04",
+    "expected": "abstain",
+    "observed": "abstain",
+    "group": "negative_control",
+    "result": "correct"
+  },
+  {
+    "case_id": "T05",
+    "expected": "abstain",
+    "observed": "abstain",
+    "group": "negative_control",
+    "result": "correct"
+  },
+  {
+    "case_id": "T06",
+    "expected": null,
+    "observed": "abstain",
+    "group": "outside_classifier_scope",
+    "result": "outside_scope"
+  },
+  {
+    "case_id": "T07",
+    "expected": "abstain",
+    "observed": "abstain",
+    "group": "negative_control",
+    "result": "correct"
+  },
+  {
+    "case_id": "T08",
+    "expected": null,
+    "observed": "abstain",
+    "group": "outside_classifier_scope",
+    "result": "outside_scope"
+  },
+  {
+    "case_id": "T09",
+    "expected": "abstain",
+    "observed": "abstain",
+    "group": "negative_control",
+    "result": "correct"
+  },
+  {
+    "case_id": "T10",
+    "expected": "tabled",
+    "observed": "tabled",
+    "group": "supported_positive",
+    "result": "correct"
+  },
+  {
+    "case_id": "T11",
+    "expected": "minutes_approval",
+    "observed": "minutes_approval",
+    "group": "supported_positive",
+    "result": "correct"
+  },
+  {
+    "case_id": "T12",
+    "expected": "minutes_approval",
+    "observed": "minutes_approval",
+    "group": "supported_positive",
+    "result": "correct"
+  },
+  {
+    "case_id": "D01",
+    "expected": null,
+    "observed": "abstain",
+    "group": "outside_classifier_scope",
+    "result": "outside_scope"
+  },
+  {
+    "case_id": "D02",
+    "expected": "tabled",
+    "observed": "tabled",
+    "group": "supported_positive",
+    "result": "correct"
+  },
+  {
+    "case_id": "D03",
+    "expected": "contract_authorization",
+    "observed": "contract_authorization",
+    "group": "supported_positive",
+    "result": "correct"
+  },
+  {
+    "case_id": "D04",
+    "expected": "conditional_appointment",
+    "observed": "conditional_appointment",
+    "group": "supported_positive",
+    "result": "correct"
+  },
+  {
+    "case_id": "D05",
+    "expected": "spending_authorization",
+    "observed": "spending_authorization",
+    "group": "supported_positive",
+    "result": "correct"
+  },
+  {
+    "case_id": "D06",
+    "expected": null,
+    "observed": "abstain",
+    "group": "outside_classifier_scope",
+    "result": "outside_scope"
+  },
+  {
+    "case_id": "D07",
+    "expected": "executive_session",
+    "observed": "executive_session",
+    "group": "supported_positive",
+    "result": "correct"
+  },
+  {
+    "case_id": "D08",
+    "expected": null,
+    "observed": "schedule_public_hearing",
+    "group": "outside_classifier_scope",
+    "result": "outside_scope"
+  },
+  {
+    "case_id": "D09",
+    "expected": "minutes_approval",
+    "observed": "minutes_approval",
+    "group": "supported_positive",
+    "result": "correct"
+  },
+  {
+    "case_id": "D10",
+    "expected": "appointment",
+    "observed": "appointment",
+    "group": "supported_positive",
+    "result": "correct"
+  },
+  {
+    "case_id": "D11",
+    "expected": null,
+    "observed": "appointment",
+    "group": "outside_classifier_scope",
+    "result": "outside_scope"
+  },
+  {
+    "case_id": "D12",
+    "expected": null,
+    "observed": "abstain",
+    "group": "outside_classifier_scope",
+    "result": "outside_scope"
+  }
+]

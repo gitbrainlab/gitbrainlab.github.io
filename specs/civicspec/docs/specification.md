@@ -1,6 +1,6 @@
 # CivicSpec Adoption and Maintenance Specification
 
-Status: Experimental public adoption contract, release candidate 0.1.0-rc.1. Public edition dated October 10, 2026, hosted under `specs/civicspec` in `gitbrainlab/gitbrainlab.github.io`. This public edition preserves the 23-section adoption contract and updates its publication location and audience. It extends the September research baseline; it does not declare production ontology conformance or a deployed signal desk. See [validation scope](validation.md) for checks implemented in this repository.
+Status: Experimental public adoption contract, release candidate 0.1.0-rc.2. Public edition dated October 10, 2026, hosted under `specs/civicspec` in `gitbrainlab/gitbrainlab.github.io`. This edition retains the 23-section adoption contract and adds the optional [Controlled English profile](controlled-english.md), its [implementation guidance](controlled-english-integration.md), and a reproducible source-grounded evaluation. It extends the September research baseline; it does not declare production ontology conformance or a deployed signal desk. See [validation scope](validation.md) for checks implemented in this repository.
 
 ## 1 Purpose and required outcome
 
@@ -10,7 +10,7 @@ Implement CivicSpec as a maintained contract shared by the bot farm. Its durable
 
 The initial outcome is a published, immutable experimental release; a verified discovery path; bot startup and output contracts; a candidate-assertion pipeline operating alongside current outputs; and an evidence-based process for improving that pipeline. Production promotion follows demonstrated acceptance criteria.
 
-The words MUST, MUST NOT, SHOULD and MAY indicate required behavior, recommended behavior and optional behavior under this proposed contract. An assigned implementer must identify actual owners and services during discovery instead of assuming proposed paths or roles already exist.
+Uppercase MUST, MUST NOT, SHOULD, SHOULD NOT and MAY use the meanings defined by BCP 14 (RFC 2119 and RFC 8174): requirement, prohibition, recommendation, discouraged behavior with possible justified exceptions, and option. Lowercase uses retain their ordinary English meanings; normative requirements can also be expressed without these keywords. New requirements under the optional language profile use stable CCE identifiers and explicit actors. An assigned implementer must identify actual owners and services during discovery instead of assuming proposed paths or roles already exist.
 
 ## 2 Publication comes first
 
@@ -51,6 +51,8 @@ Maintain separate identifiers for:
 - The publication/rule profile and its applicability interval.
 
 This adoption document's `0.1.0-rc.1` is its own contract version. It does not rename the September ontology to version 0.6 or claim any proposed extension is already accepted.
+
+The `0.1.0-rc.2` revision retains that separation. Controlled English has its own `0.1-draft.3` identifier; the original illustrative fixture schema retains its `0.1.0-rc.1` identifier. The new evaluation ledger is a separate limited schema. [Migration notes](../migrations/0.1.0-rc.2.md) describe the optional adoption boundary.
 
 ## 4 Repository and release layout
 
@@ -149,6 +151,8 @@ Retain the existing search-before-read pattern and the owner-configured limits o
 | CS-14 | Corrections create a new version and explicit supersession/contradiction relationships; evidence history is preserved. |
 
 These invariants must be part of mandatory runtime guidance and tested where mechanically enforceable. A bot must not replace them with a summary that omits the operative distinctions.
+
+An implementation adopting the [Controlled English profile](controlled-english.md) must also apply CCE-01 through CCE-24 within their declared scope. The profile preserves these invariants during instruction authoring and interpretation rendering. A short sentence, scalar action label or successful preservation check does not establish a complete or true civic claim. The published source evaluation contains unresolved recognition errors and does not authorize automatic fact promotion.
 
 ## 9 Identity and joins
 

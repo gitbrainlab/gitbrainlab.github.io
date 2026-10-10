@@ -10,5 +10,8 @@
 | [Publication](publication.md) | Discover, pin, verify, publish, revoke, and roll back releases |
 | [Validation](validation.md) | Executed checks, historical results, and unsupported claims |
 | [Profiles](profiles.md) | Scope a producer, jurisdiction, legal, or domain extension |
+| [Controlled English](controlled-english.md) | Combine writing rules, requirement strength, terminology and meaning preservation |
+| [Controlled English implementation](controlled-english-integration.md) | Integrate the profile, reproduce tests and run the separately required model study |
+| [Controlled English backtest](../evaluations/controlled-english-2026-10-10/REPORT.md) | Three versions, real source cases, two reserved tests and remaining failures |
 
 Project-wide documents: [contributing](../CONTRIBUTING.md), [governance](../GOVERNANCE.md), [roadmap](../ROADMAP.md), [license status](../LICENSE_STATUS.md), and [changelog](../CHANGELOG.md).

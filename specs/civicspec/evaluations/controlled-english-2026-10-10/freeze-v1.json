@@ -1,0 +1,12 @@
+{
+  "event": "draft_1_frozen",
+  "at": "2026-10-10T15:54:53.075587+00:00",
+  "files": {
+    "profiles/controlled-english/v1.json": "59bc36fff32a343c2af75acfd283b3b455b8c2e9fb7dcb624e7f7b6d5a70c65c",
+    "scripts/controlled_english_v1.py": "5d3f0d0e80407e71ff324ce574b6604d6e146875fa36c475b20916ea8f9cd6f0",
+    "scripts/controlled_english_guard.py": "be46589bfa7072685c3a407ebfc4c6d6bc031010890a53144f77df781a0bf9d3",
+    "evaluations/controlled-english-2026-10-10/protocol.json": "97bbf779fdabb09e42234ebcc558091f3b4970a1d8b83433d28035313060d086"
+  },
+  "development_labels_sha256": "e56b7203de21f5fcb94f6f72f2687d67984f4fd7550b231080baedb88d314e30",
+  "reserved_selection_sha256": "d71be23d1a9ebf5215aa84d66fdde9a555eddac503e87c524fe2069994a3d67e"
+}

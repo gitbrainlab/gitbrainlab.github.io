@@ -18,6 +18,8 @@ The draft fixture schema intentionally permits null operational timestamps and r
 
 ## Historical observations
 
+The new [Controlled English study](../evaluations/controlled-english-2026-10-10/REPORT.md) is a separate, reproducible evaluation of 60 source-grounded cases and three deterministic implementation versions. It publishes source locators, hashes, labels, selection rules, freezes and results. The optional replay fetches verified public sources and runs excerpt-level action probes. Offline tests replay ledger-preservation mutations and validate case records. Neither mode calls an independent language model or verifies source truth. The study found remaining fresh-source errors; see its report before interpreting the successful preservation checks.
+
 The October 10 research exercise reported:
 
 | Measure | Result | Interpretation |

@@ -1,0 +1,1455 @@
+[
+  {
+    "case_id": "T01",
+    "split": "development",
+    "title": "Newburgh: phase-out intention",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "T01",
+      "actor": {
+        "government": "orange-county/newburgh",
+        "body": "City Council Meeting"
+      },
+      "action": "source_statement",
+      "target": "Flock camera contract",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "money.amount": 500000,
+        "money.currency": "USD",
+        "money.role": "estimated_immediate_termination_cost",
+        "money.qualifier": "approximately; conditional scenario"
+      },
+      "evidence": [
+        {
+          "source_id": "src-d10fef9995ddd9ae",
+          "selector": {
+            "segment_indices": [
+              901,
+              902,
+              903,
+              904,
+              905,
+              906,
+              907,
+              908
+            ],
+            "start_seconds": 5405,
+            "end_seconds": 5447
+          },
+          "selected_text_sha256": "ff049a86edec507cbecf3a67a42cb9152393f4c3de58a467d2dc26cb24759d50",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "intention",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "time.meeting_date": "2026-07-13"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "A termination vote, executed termination, or paid termination fee."
+      ],
+      "wording": "A phase-out intention and conditional cost are reported."
+    }
+  },
+  {
+    "case_id": "T02",
+    "split": "development",
+    "title": "Hyde Park: amended grant application",
+    "expected_action": "grant_application",
+    "group": "supported_positive",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "T02",
+      "actor": {
+        "government": "dutchess-county/hyde-park",
+        "body": "Town Board"
+      },
+      "action": "authorize_grant_application",
+      "target": "914-14 of 2026 (ASR normalization; verify official number)",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-f68e52672cf0d6f4",
+          "selector": {
+            "segment_indices": [
+              974,
+              975,
+              976,
+              977,
+              978,
+              979,
+              980,
+              981,
+              982,
+              983
+            ],
+            "start_seconds": 4813,
+            "end_seconds": 4869
+          },
+          "selected_text_sha256": "509ebf8908ea972b3c31e8b60b632a9d9a4120e6e63df31d0c607ed6c68833b4",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decision",
+      "outcome": {
+        "vote.result": "passed_as_reported",
+        "vote.aggregate_description": "Carried as amended; individual roll-call incomplete in ASR"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "time.meeting_date": "2026-09-14"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        "prior amendment vote",
+        "motion on amended application"
+      ],
+      "unresolved": [
+        "Grant award, receipt, purchase, or reliable individual vote count."
+      ],
+      "wording": "An amended application motion carried."
+    }
+  },
+  {
+    "case_id": "T03",
+    "split": "development",
+    "title": "Mamakating: hearing versus moratorium",
+    "expected_action": null,
+    "group": "outside_classifier_scope",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "T03",
+      "actor": {
+        "government": "sullivan-county/mamakating",
+        "body": "Town Board Meeting"
+      },
+      "action": "schedule_public_hearing",
+      "target": "Data-center moratorium hearing",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-7204d0ee424e9d3b",
+          "selector": {
+            "segment_indices": [
+              577,
+              578,
+              579,
+              580,
+              581,
+              582
+            ],
+            "start_seconds": 2899,
+            "end_seconds": 2937
+          },
+          "selected_text_sha256": "392cb7dd6ff61b2a6ab0bde75efadace5c2d3c0366c9aebb0ed5a19af2c8a2a0",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decision",
+      "outcome": {
+        "vote.result": "passed_as_reported",
+        "vote.aggregate_description": "All in favor as transcribed"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "time.meeting_date": "2026-10-06"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Adoption of the moratorium itself."
+      ],
+      "wording": "The vote schedules a hearing on a proposed moratorium."
+    }
+  },
+  {
+    "case_id": "T04",
+    "split": "development",
+    "title": "Clifton Park: disputed signature timing",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "T04",
+      "actor": {
+        "government": "saratoga-county/clifton-park",
+        "body": "Town Board"
+      },
+      "action": "source_statement",
+      "target": "Settlement",
+      "basis": "source_reported",
+      "polarity": "contested",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-c4cf1257a86ed634",
+          "selector": {
+            "segment_indices": [
+              85,
+              86,
+              87,
+              88,
+              89,
+              90,
+              91,
+              92
+            ],
+            "start_seconds": 682,
+            "end_seconds": 720
+          },
+          "selected_text_sha256": "a409c502a2f8a84c2ffcf5bdfb408a42510a2c55f292f1e9ec5427ffdf9837b7",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "contested",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "time.meeting_date": "2026-07-07"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "An executed settlement or confirmed improper signature timing."
+      ],
+      "wording": "Keep the allegation and response as separate attributed assertions."
+    }
+  },
+  {
+    "case_id": "T05",
+    "split": "development",
+    "title": "Greece: resident requests rescission",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "T05",
+      "actor": {
+        "government": "monroe-county/greece",
+        "body": "Live Stream |"
+      },
+      "action": "source_statement",
+      "target": "Operation Stonegarden grant",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "money.amount": 50000,
+        "money.currency": "USD",
+        "money.role": "speaker_reported_grant_amount"
+      },
+      "evidence": [
+        {
+          "source_id": "src-802e6f27b461fc08",
+          "selector": {
+            "segment_indices": [
+              138,
+              139,
+              140,
+              141,
+              142,
+              143,
+              144,
+              145,
+              146
+            ],
+            "start_seconds": 840,
+            "end_seconds": 894
+          },
+          "selected_text_sha256": "4f6aae0fd6221d993f9491c9686b3d1ed49ac5002c095e79bc59c67c3242d982",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "request",
+      "outcome": {},
+      "attribution": "public commenter",
+      "time": {
+        "time.meeting_date": "2026-08-13"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "A board rescission vote or grant disbursement in this passage."
+      ],
+      "wording": "A public commenter seeks rescission and cites an amount."
+    }
+  },
+  {
+    "case_id": "T06",
+    "split": "development",
+    "title": "Sullivan: revenue forecast stages",
+    "expected_action": null,
+    "group": "outside_classifier_scope",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "T06",
+      "actor": {
+        "government": "sullivan-county/sullivan-county-legislature",
+        "body": "Management & Budget Committee"
+      },
+      "action": "source_statement",
+      "target": "Sales-tax budget forecast",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "money.components": [
+          {
+            "amount": 80000000,
+            "role": "earlier projection"
+          },
+          {
+            "amount": 75000000,
+            "role": "proposed lower estimate"
+          },
+          {
+            "amount": 77500000,
+            "role": "reported adopted estimate"
+          }
+        ],
+        "money.currency": "USD",
+        "money.role": "forecast_not_receipt",
+        "money.qualifier": "Figures spoken in millions"
+      },
+      "evidence": [
+        {
+          "source_id": "src-c8c85cc4542b255b",
+          "selector": {
+            "segment_indices": [
+              752,
+              753,
+              754,
+              755,
+              756,
+              757,
+              758,
+              759,
+              760,
+              761,
+              762,
+              763,
+              764,
+              765,
+              766,
+              767,
+              768,
+              769,
+              770,
+              771,
+              772,
+              773,
+              774,
+              775,
+              776,
+              777,
+              778,
+              779,
+              780,
+              781,
+              782,
+              783,
+              784,
+              785,
+              786,
+              787,
+              788,
+              789,
+              790,
+              791,
+              792
+            ],
+            "start_seconds": 3240,
+            "end_seconds": 3350
+          },
+          "selected_text_sha256": "f2a9765bd4c9d72e4d3f268af97706520d682c22b5cb891d5e91b317cb6b270b",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "forecast",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "time.meeting_date": "2026-10-08"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Realized receipts equal to any forecast."
+      ],
+      "wording": "The passage distinguishes successive estimates and uncertainty about reaching them."
+    }
+  },
+  {
+    "case_id": "T07",
+    "split": "development",
+    "title": "Putnam: allocation intention",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "T07",
+      "actor": {
+        "government": "putnam-county/putnam-county-legislature",
+        "body": "Putnam County Legislative Meeting"
+      },
+      "action": "source_statement",
+      "target": "Municipal distribution of held funds",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "money.amount": 6500000,
+        "money.currency": "USD",
+        "money.role": "reported_held_funds"
+      },
+      "evidence": [
+        {
+          "source_id": "src-0c0abdf361e29ad7",
+          "selector": {
+            "segment_indices": [
+              2076,
+              2077,
+              2078,
+              2079,
+              2080,
+              2081,
+              2082,
+              2083,
+              2084,
+              2085,
+              2086,
+              2087,
+              2088,
+              2089,
+              2090,
+              2091,
+              2092,
+              2093,
+              2094,
+              2095,
+              2096,
+              2097,
+              2098,
+              2099,
+              2100,
+              2101,
+              2102,
+              2103,
+              2104,
+              2105
+            ],
+            "start_seconds": 8420,
+            "end_seconds": 8558
+          },
+          "selected_text_sha256": "6c4cf27c604d4d5ab6e7c71d0994594c5b8fad14dc8442b05ce6a09712fb981c",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "intention",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "time.meeting_date": "2026-10-06"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "An authorized transfer or cash disbursed to municipalities."
+      ],
+      "wording": "A distribution is proposed, with no vote possible that night according to the speaker."
+    }
+  },
+  {
+    "case_id": "T08",
+    "split": "development",
+    "title": "Niskayuna: physical inventory counts",
+    "expected_action": null,
+    "group": "outside_classifier_scope",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "T08",
+      "actor": {
+        "government": "schenectady-county/niskayuna",
+        "body": "Committee / commission"
+      },
+      "action": "source_statement",
+      "target": "Service-line inventory",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "measurement.total": 49,
+        "measurement.unit": "service lines",
+        "measurement.components": {
+          "lead": 23,
+          "copper": 14,
+          "unknown_or_withdrawn": 9
+        },
+        "measurement.reconciliation": {
+          "component_sum": 46,
+          "reported_total": 49,
+          "unexplained_difference": 3
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "src-ae3887de3f385c7f",
+          "selector": {
+            "segment_indices": [
+              571,
+              572,
+              573,
+              574,
+              575,
+              576,
+              577
+            ],
+            "start_seconds": 3210,
+            "end_seconds": 3242
+          },
+          "selected_text_sha256": "6de9091d42c641ad52c771df9297fdc6ff9d81eea76fb32a8059cb38b3e89f56",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_measurement",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "time.meeting_date": "2026-08-04"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "A corrected total, percentage of all town lines, or audio-verified counts."
+      ],
+      "wording": "Preserve reported counts and flag the difference of three."
+    }
+  },
+  {
+    "case_id": "T09",
+    "split": "development",
+    "title": "Niskayuna: negated topic",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "T09",
+      "actor": {
+        "government": "schenectady-county/niskayuna",
+        "body": "Planning Board"
+      },
+      "action": "source_statement",
+      "target": "Office computing discussion",
+      "basis": "source_reported",
+      "polarity": "negated",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-5a90a28f04643e2a",
+          "selector": {
+            "segment_indices": [
+              597,
+              598,
+              599,
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606
+            ],
+            "start_seconds": 2920,
+            "end_seconds": 2965
+          },
+          "selected_text_sha256": "0b52ccdaacb64d22e1dc5f4afe15d285d51d9736fadd005bfbf3f10061a940cc",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "denial",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "time.meeting_date": "2026-09-28"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "A proposed data-center project solely from this keyword hit."
+      ],
+      "wording": "This passage denies the data-center characterization."
+    }
+  },
+  {
+    "case_id": "T10",
+    "split": "development",
+    "title": "Brighton: hearing tabled",
+    "expected_action": "tabled",
+    "group": "supported_positive",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "T10",
+      "actor": {
+        "government": "monroe-county/brighton",
+        "body": "September 9, 2026 Brighton Town Board Meeting"
+      },
+      "action": "table_matter",
+      "target": "Battery storage incentive-zoning amendment hearing",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-bc851df56ef3da7c",
+          "selector": {
+            "segment_indices": [
+              273,
+              274,
+              275,
+              276
+            ],
+            "start_seconds": 1729,
+            "end_seconds": 1748
+          },
+          "selected_text_sha256": "ee879b976803266d1ebfa519123686f72f91fc91deedbbaaab93c6be66e28bc2",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decision",
+      "outcome": {
+        "vote.result": "passed_as_reported",
+        "vote.yes_count": 5
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "time.meeting_date": "2026-09-09"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Adoption on September 9 or outcome of a subsequent meeting."
+      ],
+      "wording": "The public hearing was tabled to the next meeting, with five ayes in the transcript."
+    }
+  },
+  {
+    "case_id": "T11",
+    "split": "development",
+    "title": "Niskayuna school district: minutes approval",
+    "expected_action": "minutes_approval",
+    "group": "supported_positive",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "T11",
+      "actor": {
+        "government": "schenectady-county/niskayuna-csd",
+        "body": "Board of Education Meeting"
+      },
+      "action": "approve_minutes",
+      "target": "not_established",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-82c3ab0aa67c51cd",
+          "selector": {
+            "segment_indices": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "start_seconds": 39,
+            "end_seconds": 60
+          },
+          "selected_text_sha256": "854217505ffa19a9d2a0f6e379fa0c9f99ae1566dc42d557e729a1e0cc0efc9a",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decision",
+      "outcome": {
+        "vote.yes_count": 6,
+        "vote.result": "passed_as_reported"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "time.meeting_date": "2026-08-18",
+        "reference.prior_act_date": "2026-07-07"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "A Town Board action or school district identity derived only from county geography."
+      ],
+      "wording": "The school board approved prior minutes; six affirmative votes are stated."
+    }
+  },
+  {
+    "case_id": "T12",
+    "split": "development",
+    "title": "Ellenville school district: minutes acceptance",
+    "expected_action": "minutes_approval",
+    "group": "supported_positive",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "T12",
+      "actor": {
+        "government": "ulster-county/ellenville-csd",
+        "body": "ECSD Board of Education Meeting"
+      },
+      "action": "approve_minutes",
+      "target": "not_established",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-c2f513889f6b1718",
+          "selector": {
+            "segment_indices": [
+              151,
+              152,
+              153
+            ],
+            "start_seconds": 1009,
+            "end_seconds": 1022
+          },
+          "selected_text_sha256": "822460b1e7998c3f71c7280e8194af982009ea38cd00dcbec5a597d64832df3f",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decision",
+      "outcome": {
+        "vote.result": "passed_as_reported",
+        "vote.no_count": 0,
+        "vote.aggregate_description": "Motion carries; opposed no one; total ayes not stated"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "time.meeting_date": "2026-05-12",
+        "reference.prior_act_date": "2026-04-21"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "An exact affirmative vote count."
+      ],
+      "wording": "Prior minutes accepted with no opposition reported."
+    }
+  },
+  {
+    "case_id": "D01",
+    "split": "development",
+    "title": "Troy: two votes on one ordinance",
+    "expected_action": null,
+    "group": "outside_classifier_scope",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "D01",
+      "actor": {
+        "government": "rensselaer-county/troy",
+        "body": "Troy City Council Finance Meeting"
+      },
+      "action": "source_statement",
+      "target": "46",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-6d30cad05fc5ff39",
+          "selector": {
+            "page": 1,
+            "char_start": 1028,
+            "char_end": 1416
+          },
+          "selected_text_sha256": "1eb078315366099d853bb7fdfa705b9e70fd0b3d3e80b51575c9da513737448a",
+          "representation": "prior_pdf_text_extraction",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_event",
+      "outcome": {
+        "vote.yes_count": 4,
+        "vote.no_count": 0,
+        "vote.abstain_count": 2,
+        "vote.absent_count": 1,
+        "vote.abstain_name_field": [
+          "Struber",
+          "Favreau"
+        ],
+        "vote.result": "passed_as_reported"
+      },
+      "attribution": "minutes",
+      "time": {
+        "time.meeting_date": "2026-10-01"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "purpose": "add to agenda",
+          "vote": {
+            "yes": 6,
+            "no": 0,
+            "abstain": 0,
+            "absent": 1
+          }
+        },
+        {
+          "purpose": "pass ordinance",
+          "vote": {
+            "yes": 4,
+            "no": 0,
+            "abstain": 2,
+            "absent": 1
+          }
+        }
+      ],
+      "unresolved": [
+        "A unanimous substantive vote or permanent public-body identity inferred from the portal label."
+      ],
+      "wording": "Two VoteEvents are required: 6-0 for agenda inclusion, then 4-0 with two abstentions for passage."
+    }
+  },
+  {
+    "case_id": "D02",
+    "split": "development",
+    "title": "Niskayuna: approval heading but tabled action",
+    "expected_action": "tabled",
+    "group": "supported_positive",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "D02",
+      "actor": {
+        "government": "schenectady-county/niskayuna",
+        "body": "Finance & General Government Committee"
+      },
+      "action": "table_matter",
+      "target": "Revised annual disclosure statement policy",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-4b29aade11012f52",
+          "selector": {
+            "page": 1,
+            "char_start": 914,
+            "char_end": 1571
+          },
+          "selected_text_sha256": "8821dafeda09444baa595df4758a4d1c7f0859270a8c7d49daf68e2d734ebe44",
+          "representation": "prior_pdf_text_extraction",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_event",
+      "outcome": {},
+      "attribution": "minutes",
+      "time": {
+        "time.meeting_date": "2026-08-11"
+      },
+      "source_state": "draft",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Policy adoption or final minutes approval."
+      ],
+      "wording": "The document reports tabling despite its approval heading. The PDF is visibly marked DRAFT."
+    }
+  },
+  {
+    "case_id": "D03",
+    "split": "development",
+    "title": "Ballston Spa: conditional engineering contract",
+    "expected_action": "contract_authorization",
+    "group": "supported_positive",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "D03",
+      "actor": {
+        "government": "saratoga-county/ballston-spa",
+        "body": "Village Board of Trustees"
+      },
+      "action": "approve_conditional_contract_addendum",
+      "target": "Water-meter replacement engineering addendum",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [
+        {
+          "text": "Village receives grant and moves forward with project",
+          "logic": "all_required",
+          "resolution": "not_established",
+          "evidence_scope": "D03"
+        }
+      ],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-f230c18bb1243198",
+          "selector": {
+            "page": 2,
+            "char_start": 1703,
+            "char_end": 2044
+          },
+          "selected_text_sha256": "8daac688792ee464bdfc3553b2a9b0309139c53f189cb073a90dd4ac504f4012",
+          "representation": "prior_pdf_text_extraction",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_event",
+      "outcome": {
+        "vote.result": "passed_as_reported"
+      },
+      "attribution": "minutes",
+      "time": {
+        "time.meeting_date": "2026-09-28"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "An executed contract, grant receipt, unconditional commitment, or vendor payment."
+      ],
+      "wording": "The contract addendum was approved subject to two conditions."
+    }
+  },
+  {
+    "case_id": "D04",
+    "split": "development",
+    "title": "Ballston Spa: conditional hire",
+    "expected_action": "conditional_appointment",
+    "group": "supported_positive",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "D04",
+      "actor": {
+        "government": "saratoga-county/ballston-spa",
+        "body": "Village Board of Trustees"
+      },
+      "action": "appoint_employee_conditionally",
+      "target": "DPW laborer",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [
+        {
+          "text": "Completion of background check",
+          "logic": "all_required",
+          "resolution": "not_established",
+          "evidence_scope": "D04"
+        }
+      ],
+      "quantities": {
+        "labor.salary_reference": "USD 24.24 per hour"
+      },
+      "evidence": [
+        {
+          "source_id": "src-f230c18bb1243198",
+          "selector": {
+            "page": 2,
+            "char_start": 720,
+            "char_end": 977
+          },
+          "selected_text_sha256": "bf14fb6c1cb421d563a1e0f2a31a4f12a746c3c9f32eb5bc5d8d5b608f433ddb",
+          "representation": "prior_pdf_text_extraction",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_event",
+      "outcome": {
+        "vote.result": "passed_as_reported"
+      },
+      "attribution": "minutes",
+      "time": {
+        "time.meeting_date": "2026-09-28",
+        "time.effective_date": "2026-09-30"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Completion of the background check or actual employment commencement."
+      ],
+      "wording": "The hire is approved with a condition and stated start date."
+    }
+  },
+  {
+    "case_id": "D05",
+    "split": "development",
+    "title": "Ballston Spa: purchase authorization",
+    "expected_action": "spending_authorization",
+    "group": "supported_positive",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "D05",
+      "actor": {
+        "government": "saratoga-county/ballston-spa",
+        "body": "Village Board of Trustees"
+      },
+      "action": "authorize_purchase",
+      "target": "2 AEDs and 3 cases for Eagle-Matt Lee Fire Company",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "money.amount": 4184.01,
+        "money.currency": "USD",
+        "money.role": "authorized_purchase_amount"
+      },
+      "evidence": [
+        {
+          "source_id": "src-f230c18bb1243198",
+          "selector": {
+            "page": 2,
+            "char_start": 0,
+            "char_end": 214
+          },
+          "selected_text_sha256": "7482e3fe84f24af0e1cdb760f3ededb93263921eb06de5f94463051d52d1e203",
+          "representation": "prior_pdf_text_extraction",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_event",
+      "outcome": {
+        "vote.result": "passed_as_reported"
+      },
+      "attribution": "minutes",
+      "time": {
+        "time.meeting_date": "2026-09-28"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "An invoice paid, delivery completed, or separate payment authority beyond the purchase motion."
+      ],
+      "wording": "A purchase for USD 4,184.01 was authorized."
+    }
+  },
+  {
+    "case_id": "D06",
+    "split": "development",
+    "title": "Ballston Spa: reported cash receipt",
+    "expected_action": null,
+    "group": "outside_classifier_scope",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "D06",
+      "actor": {
+        "government": "saratoga-county/ballston-spa",
+        "body": "Village Board of Trustees"
+      },
+      "action": "source_statement",
+      "target": "not_established",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "money.amount": 140731,
+        "money.currency": "USD",
+        "money.role": "reported_revenue_received",
+        "money.source_timing": "2026-09-21"
+      },
+      "evidence": [
+        {
+          "source_id": "src-f230c18bb1243198",
+          "selector": {
+            "page": 3,
+            "char_start": 0,
+            "char_end": 212
+          },
+          "selected_text_sha256": "10476aaed93759ad684731757f93b06af747955b42fe5193529f9372eba0bd62",
+          "representation": "prior_pdf_text_extraction",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_event",
+      "outcome": {},
+      "attribution": "Treasurer report summarized by Mayor",
+      "time": {
+        "time.meeting_date": "2026-09-28"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Independent bank verification; the word received upgrades only the reported stage."
+      ],
+      "wording": "Minutes report receipt of USD 140,731 on September 21."
+    }
+  },
+  {
+    "case_id": "D07",
+    "split": "development",
+    "title": "Ballston Spa: executive session negative assertion",
+    "expected_action": "executive_session",
+    "group": "supported_positive",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "D07",
+      "actor": {
+        "government": "saratoga-county/ballston-spa",
+        "body": "Village Board of Trustees"
+      },
+      "action": "source_statement",
+      "target": "not_established",
+      "basis": "source_reported",
+      "polarity": "negated",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-f230c18bb1243198",
+          "selector": {
+            "page": 3,
+            "char_start": 2824,
+            "char_end": 2966
+          },
+          "selected_text_sha256": "47918eb34e8d1b88ae2783da20a2dbf157f0f162d4fed338ae3d560e0fdc04d2",
+          "representation": "prior_pdf_text_extraction",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_event",
+      "outcome": {},
+      "attribution": "minutes",
+      "time": {
+        "time.meeting_date": "2026-09-28"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Independent verification of what occurred in closed session."
+      ],
+      "wording": "The source explicitly reports no executive-session action."
+    }
+  },
+  {
+    "case_id": "D08",
+    "split": "development",
+    "title": "Niskayuna: hearing authorization",
+    "expected_action": null,
+    "group": "outside_classifier_scope",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "D08",
+      "actor": {
+        "government": "schenectady-county/niskayuna",
+        "body": "Town Board"
+      },
+      "action": "schedule_public_hearing",
+      "target": "2026-198",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-bc9d55dbdc50fa91",
+          "selector": {
+            "page": 1,
+            "char_start": 887,
+            "char_end": 1229
+          },
+          "selected_text_sha256": "c02eb8102fac87beedde24dc0a91ba79d1d0877bb271d98cf4e11032cc615a6d",
+          "representation": "prior_pdf_text_extraction",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_event",
+      "outcome": {
+        "vote.yes_count": 4,
+        "vote.aggregate_description": "Inherited from explicit default of four ayes unless otherwise noted",
+        "vote.result": "passed_as_reported"
+      },
+      "attribution": "minutes",
+      "time": {
+        "time.meeting_date": "2026-08-11"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Adoption of the local law or a hearing date absent from this excerpt."
+      ],
+      "wording": "Resolution 2026-198 sets a public hearing; default voting language supplies four ayes."
+    }
+  },
+  {
+    "case_id": "D09",
+    "split": "development",
+    "title": "Newburgh ARC: time-dependent attendance",
+    "expected_action": "minutes_approval",
+    "group": "supported_positive",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "D09",
+      "actor": {
+        "government": "orange-county/newburgh",
+        "body": "City of Newburgh Architectural Review Commission"
+      },
+      "action": "approve_minutes",
+      "target": "not_established",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-c6eb55ebc16ad01d",
+          "selector": {
+            "page": 1,
+            "char_start": 513,
+            "char_end": 1115
+          },
+          "selected_text_sha256": "d23491b205939c4bad8ba250d1c55ba8d6a44ad96b35366cf69e7f6395c1aa74",
+          "representation": "prior_pdf_text_extraction",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_event",
+      "outcome": {
+        "vote.absent_voters": [
+          "Chris Hanson"
+        ],
+        "vote.yes_count": 5,
+        "vote.no_count": 0
+      },
+      "attribution": "minutes",
+      "time": {
+        "time.meeting_date": "2026-08-11",
+        "time.actual_call_to_order": "18:40",
+        "reference.prior_act_date": "2026-07-14"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Six opening voters simply because six names appear under members present."
+      ],
+      "wording": "One listed member arrived at 7:20; the opening approval records five affirmative votes."
+    }
+  },
+  {
+    "case_id": "D10",
+    "split": "development",
+    "title": "Niskayuna: interim appointment",
+    "expected_action": "appointment",
+    "group": "supported_positive",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "D10",
+      "actor": {
+        "government": "schenectady-county/niskayuna",
+        "body": "Town Board"
+      },
+      "action": "appoint_employee",
+      "target": "2026-197",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-bc9d55dbdc50fa91",
+          "selector": {
+            "page": 1,
+            "char_start": 979,
+            "char_end": 1048
+          },
+          "selected_text_sha256": "40223d5f9a950739e7ec6bc0406b3d2a8f1b97be436f731b389d4eb7cd6c0c03",
+          "representation": "prior_pdf_text_extraction",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_event",
+      "outcome": {},
+      "attribution": "minutes",
+      "time": {
+        "time.meeting_date": "2026-08-11"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Appointee name or employment commencement from this short passage."
+      ],
+      "wording": "The resolution concerns appointment of an interim highway superintendent."
+    }
+  },
+  {
+    "case_id": "D11",
+    "split": "development",
+    "title": "Niskayuna: default vote and amendment scope",
+    "expected_action": null,
+    "group": "outside_classifier_scope",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "D11",
+      "actor": {
+        "government": "schenectady-county/niskayuna",
+        "body": "Town Board"
+      },
+      "action": "source_statement",
+      "target": "2026-222",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-47a2d40200418f3a",
+          "selector": {
+            "page": 1,
+            "char_start": 905,
+            "char_end": 1416
+          },
+          "selected_text_sha256": "58f908f33127ea152578f530d667bbc5640311e9a2542d9a80135bee02b27287",
+          "representation": "prior_pdf_text_extraction",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_event",
+      "outcome": {
+        "vote.yes_count": 5,
+        "vote.aggregate_description": "Default five ayes unless otherwise noted"
+      },
+      "attribution": "minutes",
+      "time": {
+        "time.meeting_date": "2026-09-15"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "A separate exact roll call for the amendment or unconditional target identity from position alone."
+      ],
+      "wording": "Preserve the default vote and a separate textual amendment with a qualified target relationship."
+    }
+  },
+  {
+    "case_id": "D12",
+    "split": "development",
+    "title": "Niskayuna: reported physical completion",
+    "expected_action": null,
+    "group": "outside_classifier_scope",
+    "label_provenance": "retained_prior_single_assistant_label",
+    "independent_gold": false,
+    "ledger": {
+      "id": "D12",
+      "actor": {
+        "government": "schenectady-county/niskayuna",
+        "body": "Highway, Parks & Recreation Committee"
+      },
+      "action": "source_statement",
+      "target": "Rembrandt Drainage Project",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "measurement.quantity": 40,
+        "measurement.unit": "feet of pipe"
+      },
+      "evidence": [
+        {
+          "source_id": "src-8d883db48ff4d6c8",
+          "selector": {
+            "page": 1,
+            "char_start": 1115,
+            "char_end": 1506
+          },
+          "selected_text_sha256": "5bf473d51a52630774559c08d0a940a0b41927ff18d644025b710bb827c547c0",
+          "representation": "prior_pdf_text_extraction",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_event",
+      "outcome": {},
+      "attribution": "Highway & Parks report",
+      "time": {
+        "time.meeting_date": "2026-07-09",
+        "time.performance_date": "yesterday relative to source heading; retain as reported"
+      },
+      "source_state": "not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Independent site verification or a calendar date resolved without checking internal document chronology."
+      ],
+      "wording": "The report says the drainage project was completed and describes 40 feet of pipe replacement."
+    }
+  }
+]

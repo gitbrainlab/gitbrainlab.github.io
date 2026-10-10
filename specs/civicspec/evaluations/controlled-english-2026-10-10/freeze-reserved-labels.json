@@ -1,0 +1,7 @@
+{
+  "event": "reserved_labels_frozen_before_prediction_execution",
+  "at": "2026-10-10T16:00:09.627967+00:00",
+  "sha256": "4c3cf3da8a093ffc6646ed1bb892c5c409e83862e2d2c895b7736d7f704dcef6",
+  "cases": 20,
+  "note": "Same assistant annotated and implemented. Not blinded or independently adjudicated."
+}

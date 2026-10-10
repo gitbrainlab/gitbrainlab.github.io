@@ -1,0 +1,17 @@
+{
+  "status": "specified_not_executed",
+  "reason": "No independent model runner or model API credentials configured in this session.",
+  "model_calls_in_executed_reference_study": 0,
+  "arms": {
+    "A": "Existing adopted CivicSpec instructions and output contract at a recorded commit.",
+    "B": "Same semantics and tools as A; controlled English, explicit actors, consistent terms and advisory short sentences only.",
+    "C": "Draft.3 integrated instructions, full claim ledger, and separately measured validation. Record first-pass output before repairs."
+  },
+  "controls": ["Same model and exact model version", "Same source snapshot and allowed context", "Same tool and output budgets", "Same decoding settings where supported", "Independent sessions; counterbalanced arm order", "Repeat runs with declared seeds or repeated independent sessions", "Record prompt length and token differences"],
+  "split": "Use a NEW source-level and matter-aware holdout. All 60 published cases are now regression material.",
+  "labels": "Independent source-first annotations, reviewer disagreement records and adjudication before viewing candidate outputs.",
+  "metrics": ["Supported claim precision and coverage", "Unsupported consequential promotions", "Missing treatments and incorrect vote links", "Condition/polarity/modality/quantity/time loss", "Evidence resolvability", "Abstention and review burden", "Tokens, latency, retries and cost"],
+  "gates_before_automatic_publication": ["No unresolved observed critical false promotion in the evaluated cohort", "No regression on approved regression suite", "Reviewed minimum coverage and abstention budgets", "Independent review of remaining ambiguities", "Recorded owner authorization for cohort adoption", "Working rollback and impact-based correction"],
+  "statistics": "Publish counts and denominators by source family, body and split. Cluster comparisons by meeting. Do not interpret a small mutation suite as an accuracy estimate or claim causality from combined code/prompt changes.",
+  "output_receipt": ["run_id", "arm", "model_id", "model_version", "decoding_configuration", "prompt_sha256", "profile_sha256", "source_snapshot_digest", "case_set_digest", "raw_output_location", "first_pass_metrics", "post_review_metrics", "reviewer_provenance", "token_usage", "latency", "cost", "failed_or_skipped_cases"]
+}

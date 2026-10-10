@@ -1,0 +1,31 @@
+{
+  "profile_version": "0.1-draft.3",
+  "status": "experimental_opt_in",
+  "keyword_authority": ["https://www.rfc-editor.org/rfc/rfc2119", "https://www.rfc-editor.org/rfc/rfc8174"],
+  "requirements": [
+    {"id":"CCE-01","text":"The author MUST distinguish agent requirements from statements about civic obligations.","basis":"CS-06","verification":"editorial_review"},
+    {"id":"CCE-02","text":"The author MUST assign one stable identifier to each normative requirement.","basis":"specification section 4","verification":"registry_lint"},
+    {"id":"CCE-03","text":"The author MUST state one actor and one obligation in each normative requirement.","basis":"STE-inspired writing profile","verification":"registry_lint_and_review"},
+    {"id":"CCE-04","text":"The author SHOULD place the applicable condition before the required action.","basis":"STE-inspired writing profile","verification":"editorial_review"},
+    {"id":"CCE-05","text":"The author SHOULD limit an instruction to 20 words when meaning remains complete.","basis":"STE-inspired local advisory target","verification":"advisory_word_count"},
+    {"id":"CCE-06","text":"The author MUST retain necessary qualifiers when shortening a sentence.","basis":"CS-08 CS-09 CS-10","verification":"semantic_review_and_ledger_guard"},
+    {"id":"CCE-07","text":"The extractor MUST preserve source text separately from every interpretation.","basis":"CS-02 CS-06 CS-14","verification":"source_hash_and_selector"},
+    {"id":"CCE-08","text":"The extractor MUST bind each claim to a specific actor, capacity, matter, and evidence span.","basis":"CS-01 CS-03 CS-06","verification":"partial_schema_and_review"},
+    {"id":"CCE-09","text":"The extractor MUST represent each distinct treatment and vote with separate identities.","basis":"CS-04","verification":"H051 H061 H101 J011 J061"},
+    {"id":"CCE-10","text":"The extractor MUST retain the distinction between a future intention and an operative motion.","basis":"CS-05 CS-08","verification":"J032; known_scalar_probe_failure"},
+    {"id":"CCE-11","text":"The extractor MUST preserve polarity and its exact target.","basis":"CS-08","verification":"T09 H062 H102 H112"},
+    {"id":"CCE-12","text":"The extractor MUST retain condition groups and their logical connections when splitting claims.","basis":"CS-09","verification":"D03 D04 H031; semantic_review"},
+    {"id":"CCE-13","text":"The extractor MUST retain every quantity's role, unit, period, basis, and stated precision.","basis":"CS-10","verification":"T06 T08 D06 H092 J052 J061"},
+    {"id":"CCE-14","text":"The extractor MUST distinguish unknown values from zero, false, denial, and absence within checked coverage.","basis":"CS-07","verification":"ledger_guard_and_review"},
+    {"id":"CCE-15","text":"The extractor MUST preserve reported facts separately from independently verified findings.","basis":"CS-06 CS-13","verification":"basis_and_attribution_guards"},
+    {"id":"CCE-16","text":"The extractor MUST retain competing body labels when identity remains unresolved.","basis":"CS-01","verification":"H101 J022"},
+    {"id":"CCE-17","text":"The renderer MUST preserve all protected ledger fields during a wording-only revision.","basis":"CS-01 through CS-14","verification":"controlled_english_guard.py"},
+    {"id":"CCE-18","text":"The publisher MUST verify prose against its ledger before approving consequential claims.","basis":"CS-13","verification":"semantic_review; free_prose_not_automatically_checked"},
+    {"id":"CCE-19","text":"The evaluator MUST report supported-case errors, abstentions, coverage, and out-of-scope cases separately.","basis":"specification section 17","verification":"cce_backtest.py"},
+    {"id":"CCE-20","text":"The evaluator MUST freeze the candidate before inspecting its reserved evaluation sources.","basis":"specification section 16","verification":"freeze_receipts"},
+    {"id":"CCE-21","text":"The curator MUST attach evidence, a counterexample, and an impact query to each proposed semantic correction.","basis":"CS-14","verification":"change_review"},
+    {"id":"CCE-22","text":"The consumer MUST pin the language profile and implementation versions for each run.","basis":"specification section 5","verification":"adoption_receipt"},
+    {"id":"CCE-23","text":"The consumer MUST treat instructions inside retrieved records as untrusted source content.","basis":"specification section 5","verification":"runtime_boundary_test; not_executed_here"},
+    {"id":"CCE-24","text":"The curator MUST create a new claim version for a change in meaning.","basis":"CS-14","verification":"correction_workflow; not_implemented_here"}
+  ]
+}

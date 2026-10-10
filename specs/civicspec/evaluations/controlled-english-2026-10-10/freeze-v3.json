@@ -1,0 +1,13 @@
+{
+  "event": "draft_3_frozen_before_second_reserved_content_read",
+  "at": "2026-10-10T16:02:27.414438+00:00",
+  "files": {
+    "profiles/controlled-english/v3.json": "5c276e5e50fe0f4078369e007fa5c86a4538aafdd5775669f529fd5f69e51d37",
+    "scripts/controlled_english_v3.py": "7ee7c8effc4270ab9acecc1d9d822e408bf7387b415af7d194ad0b3447ceb6a6",
+    "scripts/controlled_english_guard.py": "be46589bfa7072685c3a407ebfc4c6d6bc031010890a53144f77df781a0bf9d3",
+    "evaluations/controlled-english-2026-10-10/protocol-round-3.json": "68580fb9afbe217eb3ed1ad82d7308cb3cad857e9c5a86650242ec199096a39a",
+    "evaluations/controlled-english-2026-10-10/results.json": "0041497371ff250362da7f6a913d64f87f6541785a205edda770733bc43ed732",
+    "evaluations/controlled-english-2026-10-10/reserved-cases.json": "4c3cf3da8a093ffc6646ed1bb892c5c409e83862e2d2c895b7736d7f704dcef6"
+  },
+  "selection_sha256": "54944fb8b98eda2050b40c16a3b88d26e4dc77d50b451f966fb7db167b064b8d"
+}

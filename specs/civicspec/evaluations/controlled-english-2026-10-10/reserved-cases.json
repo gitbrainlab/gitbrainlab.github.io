@@ -1,0 +1,1219 @@
+[
+  {
+    "case_id": "H011",
+    "split": "reserved",
+    "title": "Supervisor report approval; separate clerk remittances",
+    "expected_action": null,
+    "group": "outside_classifier_scope",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "Report approval is outside the declared label set; do not collapse distinct fund flows.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H011",
+      "actor": {
+        "government": "albany-county/coeymans",
+        "body": "Committee / commission"
+      },
+      "action": "approve_report",
+      "target": "Supervisor report approval; separate clerk remittances",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "withdrawals_total_usd": "380000",
+        "clerk_remittance_total_usd": "5927.76",
+        "roles_are_distinct": true
+      },
+      "evidence": [
+        {
+          "source_id": "src-9418b48e402e227a",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 115,
+            "end_index_exclusive": 128,
+            "start_seconds": 880,
+            "last_segment_start_seconds": 948,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "bdecb6ad9359a7071d378f2018986cade78b197b0c799ea288b78f332f0f3714",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decision",
+      "outcome": {
+        "voice_vote": "affirmative_responses"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-06-25",
+        "report_month": "2026-05"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Report approval is outside the declared label set; do not collapse distinct fund flows."
+      ],
+      "wording": "Supervisor report approval; separate clerk remittances"
+    }
+  },
+  {
+    "case_id": "H012",
+    "split": "reserved",
+    "title": "Future pin sale and intended food-bank proceeds",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "No procurement authorization or completed donation is established.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H012",
+      "actor": {
+        "government": "albany-county/coeymans",
+        "body": "Committee / commission"
+      },
+      "action": "fundraising_intention",
+      "target": "Future pin sale and intended food-bank proceeds",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "unit_price_usd": "2",
+        "quantity_description": "couple hundred pins"
+      },
+      "evidence": [
+        {
+          "source_id": "src-9418b48e402e227a",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 20,
+            "end_index_exclusive": 33,
+            "start_seconds": 407,
+            "last_segment_start_seconds": 474,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "431e0abf14ba42568a46a6622e332268c9e12a038d3623143ad73374e4bc402f",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "intention",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-06-25",
+        "sale_date_as_spoken": "July 11"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "No procurement authorization or completed donation is established."
+      ],
+      "wording": "Future pin sale and intended food-bank proceeds"
+    }
+  },
+  {
+    "case_id": "H021",
+    "split": "reserved",
+    "title": "Local law J text discussed in a noisy transcript",
+    "expected_action": null,
+    "group": "unresolved_source",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "No adoption vote in this window; several speech segments are unreliable.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H021",
+      "actor": {
+        "government": "albany-county/albany",
+        "body": "Committee / commission"
+      },
+      "action": "proposed_local_law_discussion",
+      "target": "Local law J text discussed in a noisy transcript",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-5680fe884894abe8",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 28,
+            "end_index_exclusive": 41,
+            "start_seconds": 226,
+            "last_segment_start_seconds": 703,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "c98c5721461b84dda3a4a11b795999f5251416e5f5812087c34478ad528889c6",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "proposal",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-07-28"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "local_law": "J of 2026",
+          "target": "public-meeting notice requirements"
+        }
+      ],
+      "unresolved": [
+        "No adoption vote in this window; several speech segments are unreliable."
+      ],
+      "wording": "Local law J text discussed in a noisy transcript"
+    }
+  },
+  {
+    "case_id": "H031",
+    "split": "reserved",
+    "title": "Applicant requests renewed subdivision approval after a reported lapse",
+    "expected_action": null,
+    "group": "outside_classifier_scope",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "No current reapproval or independently verified satisfaction of conditions.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H031",
+      "actor": {
+        "government": "rensselaer-county/brunswick",
+        "body": "Committee / commission"
+      },
+      "action": "request_subdivision_reapproval",
+      "target": "Applicant requests renewed subdivision approval after a reported lapse",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [
+        {
+          "condition": "National Grid easement",
+          "status": "required_in_prior_approval; current_completion_unresolved"
+        },
+        {
+          "condition": "water and stormwater district extensions",
+          "status": "speaker_reports_complied"
+        }
+      ],
+      "quantities": {
+        "building_lots": 24,
+        "stormwater_lots": 1,
+        "parcel_acres_approximate": 41
+      },
+      "evidence": [
+        {
+          "source_id": "src-523387bb44ba52c2",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 3,
+            "end_index_exclusive": 16,
+            "start_seconds": 261,
+            "last_segment_start_seconds": 340,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "325ce5ae6471e47b2af59ead127f1a68ff889b04d6e2427a940622cee5c48d4a",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "request",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-08-20"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "prior_approval_year": "2024",
+          "status": "lapsed_as_reported"
+        },
+        {
+          "PDD_approval_year": "2019"
+        }
+      ],
+      "unresolved": [
+        "No current reapproval or independently verified satisfaction of conditions."
+      ],
+      "wording": "Applicant requests renewed subdivision approval after a reported lapse"
+    }
+  },
+  {
+    "case_id": "H032",
+    "split": "reserved",
+    "title": "Applicant describes proposed planting and drainage measures",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "Proposed planting and runoff treatment are not completed work.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H032",
+      "actor": {
+        "government": "rensselaer-county/brunswick",
+        "body": "Committee / commission"
+      },
+      "action": "describe_project_proposal",
+      "target": "Applicant describes proposed planting and drainage measures",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [
+        {
+          "condition": "repair construction damage within five days during construction",
+          "status": "applicant_receptive_as_reported"
+        }
+      ],
+      "quantities": {
+        "existing_trees": 19,
+        "proposed_trees": 39,
+        "proposed_evergreen": 35,
+        "proposed_deciduous": 4,
+        "reported_impervious_change_percent": "10.2",
+        "change_basis": "existing_to_proposed"
+      },
+      "evidence": [
+        {
+          "source_id": "src-523387bb44ba52c2",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 370,
+            "end_index_exclusive": 383,
+            "start_seconds": 2287,
+            "last_segment_start_seconds": 2368,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "343f1c5dbc7ba6d5171eb72bb1196b7eac7643afc7fe8a84f7ed06bef88f65fe",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "proposal",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-08-20"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Proposed planting and runoff treatment are not completed work."
+      ],
+      "wording": "Applicant describes proposed planting and drainage measures"
+    }
+  },
+  {
+    "case_id": "H041",
+    "split": "reserved",
+    "title": "Motion to reopen a public hearing with affirmative responses",
+    "expected_action": null,
+    "group": "outside_classifier_scope",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "Reopening differs from scheduling a new hearing; no exact tally.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H041",
+      "actor": {
+        "government": "putnam-county/philipstown",
+        "body": "Town Board Meeting Thursday"
+      },
+      "action": "reopen_public_hearing",
+      "target": "Motion to reopen a public hearing with affirmative responses",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-88002dfb2f1ec50d",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 24,
+            "end_index_exclusive": 37,
+            "start_seconds": 148,
+            "last_segment_start_seconds": 182,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "dd52ce5dc63ff683d30a062b911b0a87c08b1da8004619d4f8580d1c99480412",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decision",
+      "outcome": {
+        "voice_vote": "affirmative_responses"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-04-09",
+        "notice_date": "2026-02-18"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Reopening differs from scheduling a new hearing; no exact tally."
+      ],
+      "wording": "Motion to reopen a public hearing with affirmative responses"
+    }
+  },
+  {
+    "case_id": "H042",
+    "split": "reserved",
+    "title": "Reports of permits and a request for updated zoning books",
+    "expected_action": null,
+    "group": "outside_classifier_scope",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "Reported permit decisions and the books request concern different acts; no purchase vote here.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H042",
+      "actor": {
+        "government": "putnam-county/philipstown",
+        "body": "Town Board Meeting Thursday"
+      },
+      "action": "multiple_reports_and_request",
+      "target": "Reports of permits and a request for updated zoning books",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-88002dfb2f1ec50d",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 173,
+            "end_index_exclusive": 186,
+            "start_seconds": 802,
+            "last_segment_start_seconds": 865,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "a1eb91badcadc792bdb59547057acc9c2221fa4909bbe625c6bfc460016390c8",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_events_and_request",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-04-09"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "action": "reported_special_use_permit",
+          "object": "shed"
+        },
+        {
+          "action": "reported_variance",
+          "object": "six-foot fence"
+        },
+        {
+          "action": "request_books",
+          "object": "zoning books"
+        }
+      ],
+      "unresolved": [
+        "Reported permit decisions and the books request concern different acts; no purchase vote here."
+      ],
+      "wording": "Reports of permits and a request for updated zoning books"
+    }
+  },
+  {
+    "case_id": "H051",
+    "split": "reserved",
+    "title": "Separate agenda-amendment and prior-minutes motions",
+    "expected_action": "ambiguous",
+    "group": "supported_positive",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "A scalar action label loses one of two distinct treatments; no employment appointment is established.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H051",
+      "actor": {
+        "government": "dutchess-county/fishkill",
+        "body": "Town Board"
+      },
+      "action": "multiple_treatments",
+      "target": "Separate agenda-amendment and prior-minutes motions",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-81755620e7f17a3a",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 13,
+            "end_index_exclusive": 26,
+            "start_seconds": 43,
+            "last_segment_start_seconds": 87,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "530203ec2146c3cda331a28df7ad53f09920eaf9426c289e776c210fc11644b0",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decisions",
+      "outcome": {
+        "agenda_motion": "affirmative_responses",
+        "minutes_motion": "affirmative_responses"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-09-16"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "sequence": 1,
+          "action": "amend_agenda",
+          "target": "janitorial RFP"
+        },
+        {
+          "sequence": 2,
+          "action": "accept_minutes",
+          "target": "September 2 meeting"
+        }
+      ],
+      "unresolved": [
+        "A scalar action label loses one of two distinct treatments; no employment appointment is established."
+      ],
+      "wording": "Separate agenda-amendment and prior-minutes motions"
+    }
+  },
+  {
+    "case_id": "H052",
+    "split": "reserved",
+    "title": "Budget-to-actual revenue report with timing explanation",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "Current reported revenue is not an independently verified bank receipt.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H052",
+      "actor": {
+        "government": "dutchess-county/fishkill",
+        "body": "Town Board"
+      },
+      "action": "financial_status_report",
+      "target": "Budget-to-actual revenue report with timing explanation",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "hotel_tax_reported_revenue_usd": "293000",
+        "hotel_tax_rate_percent": "2.5",
+        "basis": "year_to_date_budget_to_actual"
+      },
+      "evidence": [
+        {
+          "source_id": "src-81755620e7f17a3a",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 120,
+            "end_index_exclusive": 133,
+            "start_seconds": 511,
+            "last_segment_start_seconds": 565,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "15803fa728715a4b413daa53764a8c61f083a09d499925d1074031766dcf3904",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_measurement",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-09-16",
+        "mortgage_tax_expected_second_payment": "late October or early November"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Current reported revenue is not an independently verified bank receipt."
+      ],
+      "wording": "Budget-to-actual revenue report with timing explanation"
+    }
+  },
+  {
+    "case_id": "H061",
+    "split": "reserved",
+    "title": "Several separate resolution motions; one earlier resolution needs no new action",
+    "expected_action": "ambiguous",
+    "group": "supported_positive",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "Preserve payment authorization, hiring and other motions separately; no disbursement evidence.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H061",
+      "actor": {
+        "government": "dutchess-county/pawling",
+        "body": "Town Board Meeting"
+      },
+      "action": "multiple_treatments",
+      "target": "Several separate resolution motions; one earlier resolution needs no new action",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-9e82d5fec7217ef5",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 36,
+            "end_index_exclusive": 49,
+            "start_seconds": 231,
+            "last_segment_start_seconds": 322,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "f145adcb724e8159d40b91554bfc07f9be2b88a1f613bcf6783fe353f7906d0f",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decisions",
+      "outcome": {
+        "several_motions": "affirmative_responses"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-04-08"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "resolution": "71",
+          "action": "payment_of_bills_motion"
+        },
+        {
+          "resolution": "73",
+          "action": "no_new_action_needed; passed_previously"
+        },
+        {
+          "resolution": "86",
+          "action": "hire_part_time_recreation_assistant"
+        },
+        {
+          "resolution": "87",
+          "action": "authorize_training"
+        }
+      ],
+      "unresolved": [
+        "Preserve payment authorization, hiring and other motions separately; no disbursement evidence."
+      ],
+      "wording": "Several separate resolution motions; one earlier resolution needs no new action"
+    }
+  },
+  {
+    "case_id": "H062",
+    "split": "reserved",
+    "title": "Tree-management powers described for public land with approval condition",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "Private property is excluded in the discussion; no completed tree work.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H062",
+      "actor": {
+        "government": "dutchess-county/pawling",
+        "body": "Town Board Meeting"
+      },
+      "action": "describe_scoped_authority",
+      "target": "Tree-management powers described for public land with approval condition",
+      "basis": "source_reported",
+      "polarity": "mixed",
+      "conditions": [
+        {
+          "condition": "highway superintendent approval",
+          "status": "required_as_described"
+        }
+      ],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-9e82d5fec7217ef5",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 17,
+            "end_index_exclusive": 30,
+            "start_seconds": 123,
+            "last_segment_start_seconds": 192,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "fdfeb712b17ae6c8677091ab9902286f894e25b2dc39d649875a885d9e85aaaf",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "policy_description",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-04-08"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "included_scope": "public rights-of-way and public land"
+        },
+        {
+          "excluded_scope": "private property"
+        }
+      ],
+      "unresolved": [
+        "Private property is excluded in the discussion; no completed tree work."
+      ],
+      "wording": "Tree-management powers described for public land with approval condition"
+    }
+  },
+  {
+    "case_id": "H071",
+    "split": "reserved",
+    "title": "Thanks for earlier bond-related resolutions and reported submission",
+    "expected_action": null,
+    "group": "unresolved_source",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "Retrospective reference lacks resolution identifiers and precise borrowing terms.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H071",
+      "actor": {
+        "government": "albany-county/rensselaerville",
+        "body": "Other / unknown"
+      },
+      "action": "retrospective_resolution_reference",
+      "target": "Thanks for earlier bond-related resolutions and reported submission",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-ebd29a379b312a67",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 0,
+            "end_index_exclusive": 13,
+            "start_seconds": 2,
+            "last_segment_start_seconds": 59,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "f37494d9ff751cbda601b65df626540f64e57511bb560fa97c580ecc9c1f5130",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_prior_events",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-06-11",
+        "resolution_time": "prior_meeting; exact_date_unresolved"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "submission_to": "EFC",
+          "status": "speaker_affirmed"
+        }
+      ],
+      "unresolved": [
+        "Retrospective reference lacks resolution identifiers and precise borrowing terms."
+      ],
+      "wording": "Thanks for earlier bond-related resolutions and reported submission"
+    }
+  },
+  {
+    "case_id": "H072",
+    "split": "reserved",
+    "title": "Motion to pay signed vouchers and bills",
+    "expected_action": "spending_authorization",
+    "group": "supported_positive",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "Vote wording is incomplete; neither final tally nor actual payment is established.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H072",
+      "actor": {
+        "government": "albany-county/rensselaerville",
+        "body": "Other / unknown"
+      },
+      "action": "payment_authorization_motion",
+      "target": "Motion to pay signed vouchers and bills",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-ebd29a379b312a67",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 26,
+            "end_index_exclusive": 39,
+            "start_seconds": 95,
+            "last_segment_start_seconds": 196,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "c6f9c5e01df2bfb81b3b36d7d3b11b6c6c2f9afaae6f1bb559e50c08c110da59",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "proposal",
+      "outcome": {
+        "final_result": "not_established_in_window"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-06-11"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "separate_statement": "no budget modifications or transfers"
+        },
+        {
+          "separate_matter": "possible well sites"
+        }
+      ],
+      "unresolved": [
+        "Vote wording is incomplete; neither final tally nor actual payment is established."
+      ],
+      "wording": "Motion to pay signed vouchers and bills"
+    }
+  },
+  {
+    "case_id": "H081",
+    "split": "reserved",
+    "title": "Comments on a shed request and introduction of correspondence",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "Supportive comments and absent audience participation do not establish a board decision; introductions are withheld.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H081",
+      "actor": {
+        "government": "albany-county/colonie",
+        "body": "Other / unknown"
+      },
+      "action": "application_discussion",
+      "target": "Comments on a shed request and introduction of correspondence",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-6abdb0e834a85932",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 168,
+            "end_index_exclusive": 181,
+            "start_seconds": 455,
+            "last_segment_start_seconds": 509,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "fcc1c219ea5dbf8e1ab057be03f630295297d2b4304e7cccf7fe74e4f356b1d9",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "discussion",
+      "outcome": {},
+      "attribution": "unresolved_speaker; public_reader_redactions_preserved",
+      "time": {
+        "meeting_date_from_index": "2026-08-19"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_with_withheld_speaker_introductions",
+      "relations": [],
+      "unresolved": [
+        "Supportive comments and absent audience participation do not establish a board decision; introductions are withheld."
+      ],
+      "wording": "Comments on a shed request and introduction of correspondence"
+    }
+  },
+  {
+    "case_id": "H091",
+    "split": "reserved",
+    "title": "Motion to accept prior town-clerk minutes",
+    "expected_action": "minutes_approval",
+    "group": "supported_positive",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "Affirmative responses are recorded; no exact vote count.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H091",
+      "actor": {
+        "government": "saratoga-county/malta",
+        "body": "Other / unknown"
+      },
+      "action": "approve_minutes",
+      "target": "Motion to accept prior town-clerk minutes",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-e7d4876477c7b12d",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 205,
+            "end_index_exclusive": 218,
+            "start_seconds": 1554,
+            "last_segment_start_seconds": 1599,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "2e364ab6ae19e77279ba83be12dbe6ca8d5e5bc9d127642bde43314aa1f2f7a3",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decision",
+      "outcome": {
+        "voice_vote": "affirmative_responses"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-07-06",
+        "prior_meeting_date_as_spoken": "June 29"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Affirmative responses are recorded; no exact vote count."
+      ],
+      "wording": "Motion to accept prior town-clerk minutes"
+    }
+  },
+  {
+    "case_id": "H092",
+    "split": "reserved",
+    "title": "EMS speaker contrasts approximate receipts with gross billing",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "Do not add billed and received amounts or infer an exact collection rate.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H092",
+      "actor": {
+        "government": "saratoga-county/malta",
+        "body": "Other / unknown"
+      },
+      "action": "financial_status_report",
+      "target": "EMS speaker contrasts approximate receipts with gross billing",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "reported_receipts_usd_range": [
+          "2800000",
+          "2900000"
+        ],
+        "reported_gross_billing_usd": "6200000",
+        "precision": "approximate",
+        "period": "not_established_for_these_amounts"
+      },
+      "evidence": [
+        {
+          "source_id": "src-e7d4876477c7b12d",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 142,
+            "end_index_exclusive": 155,
+            "start_seconds": 1310,
+            "last_segment_start_seconds": 1384,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "d2a4282c41bc649149b44876b2a49de6158f2de8ca8735b888050ae9f87ba2e2",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_measurement",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-07-06"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Do not add billed and received amounts or infer an exact collection rate."
+      ],
+      "wording": "EMS speaker contrasts approximate receipts with gross billing"
+    }
+  },
+  {
+    "case_id": "H101",
+    "split": "reserved",
+    "title": "Appointments followed by a separate bond-resolution discussion",
+    "expected_action": "ambiguous",
+    "group": "supported_positive",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "Separate treatments and votes; index says Planning Board while speech identifies Town Board; no automatic body resolution.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H101",
+      "actor": {
+        "government": "rensselaer-county/poestenkill",
+        "body": "unresolved",
+        "index_label": "Planning Board",
+        "source_label": "Town Board"
+      },
+      "action": "multiple_treatments",
+      "target": "Appointments followed by a separate bond-resolution discussion",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-80a785f5fd68c9ef",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 6,
+            "end_index_exclusive": 19,
+            "start_seconds": 51,
+            "last_segment_start_seconds": 160,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "7a2bfacd66423ae2f472d2df8ce744bf64b0b7f05bf3005f790938f95a238bb7",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decision_and_discussion",
+      "outcome": {
+        "appointment_vote": "abstention_and_yes_responses_recorded",
+        "bond_vote": "not_established_in_window"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-06-17"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "sequence": 1,
+          "action": "planning_board_officer_appointments"
+        },
+        {
+          "sequence": 2,
+          "action": "bond_resolution_discussion"
+        }
+      ],
+      "unresolved": [
+        "Separate treatments and votes; index says Planning Board while speech identifies Town Board; no automatic body resolution."
+      ],
+      "wording": "Appointments followed by a separate bond-resolution discussion"
+    }
+  },
+  {
+    "case_id": "H102",
+    "split": "reserved",
+    "title": "Speaker distinguishes a reported grant reduction from a price increase",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "A reduced grant is not a grant application or proof of a price increase.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H102",
+      "actor": {
+        "government": "rensselaer-county/poestenkill",
+        "body": "Planning Board"
+      },
+      "action": "funding_change_report",
+      "target": "Speaker distinguishes a reported grant reduction from a price increase",
+      "basis": "source_reported",
+      "polarity": "mixed",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-80a785f5fd68c9ef",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 73,
+            "end_index_exclusive": 86,
+            "start_seconds": 361,
+            "last_segment_start_seconds": 391,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "26a4efb7acc8be5cadf6266b0b18910f782947bdf80d309d670ad78b60ff0f2a",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "reported_measurement",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-06-17",
+        "notices_as_spoken": "January"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "reported_change": "grant_reduction"
+        },
+        {
+          "qualified_characterization": "not_necessarily_price_increase"
+        }
+      ],
+      "unresolved": [
+        "A reduced grant is not a grant application or proof of a price increase."
+      ],
+      "wording": "Speaker distinguishes a reported grant reduction from a price increase"
+    }
+  },
+  {
+    "case_id": "H111",
+    "split": "reserved",
+    "title": "Proposed resolution and motion to schedule a public hearing",
+    "expected_action": "schedule_public_hearing",
+    "group": "supported_positive",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "The excerpt ends after the motion; no adoption outcome or hearing date.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H111",
+      "actor": {
+        "government": "albany-county/altamont",
+        "body": "Zoning Board of Appeals"
+      },
+      "action": "schedule_public_hearing",
+      "target": "Proposed resolution and motion to schedule a public hearing",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-954e37810d98e1e5",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 216,
+            "end_index_exclusive": 229,
+            "start_seconds": 1084,
+            "last_segment_start_seconds": 1131,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "ff9c9aabbb98540afa06868e4ffc0175739a84a9340dc89e1be9273ab04681cb",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "proposal",
+      "outcome": {
+        "final_result": "not_established_in_window"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-06-25"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "The excerpt ends after the motion; no adoption outcome or hearing date."
+      ],
+      "wording": "Proposed resolution and motion to schedule a public hearing"
+    }
+  },
+  {
+    "case_id": "H112",
+    "split": "reserved",
+    "title": "Applicant denies current exterior expansion; permit remains conditional",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_2_freeze_before_reserved_predictions",
+    "label_rationale": "Interior fit-out does not establish exterior expansion or approval of the permit.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "H112",
+      "actor": {
+        "government": "albany-county/altamont",
+        "body": "Zoning Board of Appeals"
+      },
+      "action": "describe_application_scope",
+      "target": "Applicant denies current exterior expansion; permit remains conditional",
+      "basis": "source_reported",
+      "polarity": "mixed",
+      "conditions": [
+        {
+          "condition": "board grants special use permit",
+          "status": "hypothetical_pending"
+        }
+      ],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-954e37810d98e1e5",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 67,
+            "end_index_exclusive": 80,
+            "start_seconds": 360,
+            "last_segment_start_seconds": 396,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "fae971cc0cfce83e510c1fea2716bfffe7bb1656b6052995b670a32f21c95f84",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "denial_and_proposal",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-06-25"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "exterior_expansion": "none_proposed_at_this_time"
+        },
+        {
+          "interior_work": "cosmetic_fit_out_proposed"
+        }
+      ],
+      "unresolved": [
+        "Interior fit-out does not establish exterior expansion or approval of the permit."
+      ],
+      "wording": "Applicant denies current exterior expansion; permit remains conditional"
+    }
+  }
+]

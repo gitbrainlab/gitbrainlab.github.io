@@ -13,6 +13,11 @@ def main():
     parser.add_argument('--source-revision', required=True)
     parser.add_argument('--built-at', required=True)
     parser.add_argument('--release-id', required=True)
+    parser.add_argument('--contract-version', default='0.1.0-rc.1')
+    parser.add_argument('--previous-release')
+    parser.add_argument('--evaluation-ref', action='append', default=[])
+    parser.add_argument('--migration-ref', action='append', default=[])
+    parser.add_argument('--compatibility-note', default='Initial public candidate; fixture schema only. No production ontology conformance or bot adoption implied.')
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     safe_path(args.release_id)
@@ -34,11 +39,11 @@ def main():
     manifest = {
         'release_id': args.release_id, 'status': 'candidate',
         'scope': 'experimental_specification_and_reference_toolkit',
-        'contract_version': '0.1.0-rc.1',
+        'contract_version': args.contract_version,
         'ontology_profile': {'id': 'layered_v5_replay', 'baseline_date': '2026-09-07', 'inventory_path': 'research/baseline-manifest.json', 'inventory_sha256': hashlib.sha256(baseline.read_bytes()).hexdigest()},
         'repository': REPOSITORY, 'component_base_path': COMPONENT_BASE_PATH, 'source_revision': args.source_revision, 'built_at': args.built_at,
-        'compatibility': {'production_contract': False, 'supported_consumer_contracts': ['civicspec-github-discovery-v1'], 'requires_explicit_candidate_opt_in': True, 'breaking_changes': [], 'note': 'Initial public candidate; fixture schema only. No production ontology conformance or bot adoption implied.'},
-        'components': components, 'evaluation_refs': ['docs/validation.md'], 'migration_refs': [], 'previous_release': None,
+        'compatibility': {'production_contract': False, 'supported_consumer_contracts': ['civicspec-github-discovery-v1'], 'requires_explicit_candidate_opt_in': True, 'breaking_changes': [], 'note': args.compatibility_note},
+        'components': components, 'evaluation_refs': ['docs/validation.md'] + args.evaluation_ref, 'migration_refs': args.migration_ref, 'previous_release': args.previous_release,
         'license_status': 'No project license selected; see LICENSE_STATUS.md.'
     }
     validate_manifest(manifest)

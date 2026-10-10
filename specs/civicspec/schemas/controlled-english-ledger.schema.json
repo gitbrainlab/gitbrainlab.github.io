@@ -1,0 +1,28 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"urn:civicspec:schema:controlled-english-evaluation-ledger:0.1-draft.3",
+  "title":"Experimental controlled-English evaluation ledger; not a production wire schema",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["id","actor","action","target","basis","polarity","conditions","quantities","evidence","modality","outcome","attribution","time","source_state","coverage","relations","unresolved"],
+  "properties":{
+    "id":{"type":"string","minLength":1},
+    "actor":{"type":"object","required":["government","body"],"properties":{"government":{"type":"string","minLength":1},"body":{"type":"string","minLength":1}},"additionalProperties":true},
+    "action":{"type":"string","minLength":1},
+    "target":{"type":"string","minLength":1},
+    "basis":{"enum":["source_reported","extractor_interpretation","reviewed_finding"]},
+    "polarity":{"enum":["affirmative","negative","negated","mixed","contested","unknown"]},
+    "conditions":{"type":"array","items":{"type":"object"}},
+    "quantities":{"type":"object"},
+    "evidence":{"type":"array","minItems":1,"items":{"type":"object","required":["source_id","selector","selected_text_sha256","representation","audio_verified"],"properties":{"source_id":{"type":"string","pattern":"^src-[0-9a-f]{16}$"},"selector":{"type":"object"},"selected_text_sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},"representation":{"type":"string","minLength":1},"audio_verified":{"type":"boolean"}},"additionalProperties":false}},
+    "modality":{"type":"string","minLength":1},
+    "outcome":{"type":"object"},
+    "attribution":{"type":"string","minLength":1},
+    "time":{"type":"object","minProperties":1},
+    "source_state":{"type":"string","minLength":1},
+    "coverage":{"type":"string","minLength":1},
+    "relations":{"type":"array"},
+    "unresolved":{"type":"array","items":{"type":"string","minLength":1}},
+    "wording":{"type":"string"}
+  }
+}

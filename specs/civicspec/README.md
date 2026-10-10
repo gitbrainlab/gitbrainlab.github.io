@@ -8,7 +8,9 @@ An approved contract is not evidence of a payment. Two votes on one matter may d
 
 ## Status
 
-**Experimental publication: `0.1.0-rc.1`.** This self-contained directory in GitBrainLab’s public documentation repository is the current public home. A dedicated CivicSpec repository can be adopted later through an explicit registry migration. The candidate is a specification and reference toolkit, not a production extractor, certified legal-compliance system, or deployed signal desk. The stable channel is unset. Consumers must explicitly opt into the candidate.
+**Experimental publication: `0.1.0-rc.2`.** This self-contained directory in GitBrainLab’s public documentation repository is the current public home. A dedicated CivicSpec repository can be adopted later through an explicit registry migration. The candidate is a specification and reference toolkit, not a production extractor, certified legal-compliance system, or deployed signal desk. The stable channel is unset. Consumers must explicitly opt into the candidate.
+
+The new [Controlled English profile](docs/controlled-english.md) combines technical writing rules, explicit requirements, civic terminology and a source-linked claim ledger. Its [60-case real-corpus study](evaluations/controlled-english-2026-10-10/REPORT.md) includes two sequential reserved-source tests and publishes remaining failures. The preservation guard is suitable for a reviewed trial; the reference action recognizer remains unsuitable for automatic fact publication. See [implementation guidance](docs/controlled-english-integration.md) and [migration notes](migrations/0.1.0-rc.2.md).
 
 The September 2026 research ontology and the October 2026 adoption contract have separate version histories. Historical mapping results are not production extraction accuracy. See [validation and limitations](docs/validation.md), [research provenance](research/README.md), and [license status](LICENSE_STATUS.md).
 
@@ -20,6 +22,7 @@ The September 2026 research ontology and the October 2026 adoption contract have
 | Read the complete requirements | [Adoption and maintenance specification](docs/specification.md) |
 | Follow evidence into an assertion | [Worked examples](docs/tutorial.md) and [example files](examples/README.md) |
 | Equip an agent | [Agent guide](docs/agents.md), [core instructions](bootstrap/core-instructions.md), and [AGENTS.md](AGENTS.md) |
+| Use controlled technical English | [Language profile](docs/controlled-english.md), [runtime supplement](bootstrap/controlled-english.md), and [test results](evaluations/controlled-english-2026-10-10/REPORT.md) |
 | Integrate an existing pipeline | [Integration guide](docs/integration.md) |
 | Discover and pin a release | [Publication protocol](docs/publication.md) and [release index](releases/README.md) |
 | Improve the specification | [Contribution guide](CONTRIBUTING.md) and [roadmap](ROADMAP.md) |
@@ -36,7 +39,7 @@ python scripts/validate.py
 python -m unittest discover -s tests -v
 ```
 
-The checks validate the draft example schema, source hashes and exact text selectors, fixture expectations, research-file hashes, and repository links. The tests deliberately corrupt examples to ensure failures are caught. They do not run an extractor or verify real-world civic claims. No model API key, database, or private corpus is required.
+The checks validate the draft example schema, source hashes and exact text selectors, fixture expectations, research-file hashes, repository links, and the controlled-English evaluation contract. The tests deliberately corrupt examples to ensure failures are caught. The default suite does not fetch the real corpus, run a model, or verify real-world civic claims. The optional corpus replay runs deterministic excerpt-level action probes. No model API key or database is required.
 
 After publication, verify the candidate manifest and its local components with:
 

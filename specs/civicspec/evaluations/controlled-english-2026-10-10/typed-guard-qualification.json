@@ -1,0 +1,31 @@
+{
+  "implementation": "cce-preservation-guard/1.1",
+  "executed_at": "2026-10-10T16:19:11.206276+00:00",
+  "scope": "Post-study deterministic replay and synthetic type checks; no new holdout or model call.",
+  "corpus_mutations": 803,
+  "detected": 803,
+  "valid_controls": 120,
+  "false_rejections": 0,
+  "synthetic_type_checks": [
+    {
+      "original": 0,
+      "replacement": false,
+      "detected": true
+    },
+    {
+      "original": 1,
+      "replacement": true,
+      "detected": true
+    },
+    {
+      "original": 1,
+      "replacement": "1",
+      "detected": true
+    },
+    {
+      "original": 1,
+      "replacement": 1.0,
+      "detected": true
+    }
+  ]
+}

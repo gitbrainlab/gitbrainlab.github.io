@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.0-rc.2 — 2026-10-10
+
+- Add optional Controlled English `0.1-draft.3`: STE-inspired prose, BCP 14 requirements, civic distinctions, a claim ledger, 24 identified requirements, and runtime guidance.
+- Publish three frozen candidate implementations, 60 source-grounded cases, two sequential reserved-source tests, reproducible action probes and preservation checks.
+- Verify 38 source versions and 60 selectors. Report 803 injected semantic-loss checks and 120 controls separately from action recognition.
+- Document unresolved final-reserved failures and block automatic civic-fact publication by the reference recognizer. No independent model experiment or bot rollout occurred.
+- Add implementation, migration and future model-study guidance. Preserve the prior release and historical research bytes.
+
+This is an experimental documentation/toolkit candidate. Existing schemas and production consumers are not silently migrated.
+
 ## 0.1.0-rc.1 — 2026-10-10
 
 Initial public specification and reference toolkit under `specs/civicspec` in `gitbrainlab/gitbrainlab.github.io`.

@@ -1,0 +1,402 @@
+[
+  {
+    "case_id": "H011",
+    "source_id": "src-9418b48e402e227a",
+    "meeting_key": "albany-county/coeymans/mWq3bkrzZcA",
+    "municipality": "albany-county/coeymans",
+    "body": "Committee / commission",
+    "body_type": "committee",
+    "meeting_date": "2026-06-25",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 115,
+      "end_index_exclusive": 128,
+      "start_seconds": 880,
+      "last_segment_start_seconds": 948,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "bdecb6ad9359a7071d378f2018986cade78b197b0c799ea288b78f332f0f3714",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H012",
+    "source_id": "src-9418b48e402e227a",
+    "meeting_key": "albany-county/coeymans/mWq3bkrzZcA",
+    "municipality": "albany-county/coeymans",
+    "body": "Committee / commission",
+    "body_type": "committee",
+    "meeting_date": "2026-06-25",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 20,
+      "end_index_exclusive": 33,
+      "start_seconds": 407,
+      "last_segment_start_seconds": 474,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "431e0abf14ba42568a46a6622e332268c9e12a038d3623143ad73374e4bc402f",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H021",
+    "source_id": "src-5680fe884894abe8",
+    "meeting_key": "albany-county/albany/vIeli_UGhv0",
+    "municipality": "albany-county/albany",
+    "body": "Committee / commission",
+    "body_type": "committee",
+    "meeting_date": "2026-07-28",
+    "selection_method": "middle_fallback",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 28,
+      "end_index_exclusive": 41,
+      "start_seconds": 226,
+      "last_segment_start_seconds": 703,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "c98c5721461b84dda3a4a11b795999f5251416e5f5812087c34478ad528889c6",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H031",
+    "source_id": "src-523387bb44ba52c2",
+    "meeting_key": "rensselaer-county/brunswick/wAMasLqi4VA",
+    "municipality": "rensselaer-county/brunswick",
+    "body": "Committee / commission",
+    "body_type": "committee",
+    "meeting_date": "2026-08-20",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 3,
+      "end_index_exclusive": 16,
+      "start_seconds": 261,
+      "last_segment_start_seconds": 340,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "325ce5ae6471e47b2af59ead127f1a68ff889b04d6e2427a940622cee5c48d4a",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H032",
+    "source_id": "src-523387bb44ba52c2",
+    "meeting_key": "rensselaer-county/brunswick/wAMasLqi4VA",
+    "municipality": "rensselaer-county/brunswick",
+    "body": "Committee / commission",
+    "body_type": "committee",
+    "meeting_date": "2026-08-20",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 370,
+      "end_index_exclusive": 383,
+      "start_seconds": 2287,
+      "last_segment_start_seconds": 2368,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "343f1c5dbc7ba6d5171eb72bb1196b7eac7643afc7fe8a84f7ed06bef88f65fe",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H041",
+    "source_id": "src-88002dfb2f1ec50d",
+    "meeting_key": "putnam-county/philipstown/IM_Jtmv1Qug",
+    "municipality": "putnam-county/philipstown",
+    "body": "Town Board Meeting Thursday",
+    "body_type": "governing",
+    "meeting_date": "2026-04-09",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 24,
+      "end_index_exclusive": 37,
+      "start_seconds": 148,
+      "last_segment_start_seconds": 182,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "dd52ce5dc63ff683d30a062b911b0a87c08b1da8004619d4f8580d1c99480412",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H042",
+    "source_id": "src-88002dfb2f1ec50d",
+    "meeting_key": "putnam-county/philipstown/IM_Jtmv1Qug",
+    "municipality": "putnam-county/philipstown",
+    "body": "Town Board Meeting Thursday",
+    "body_type": "governing",
+    "meeting_date": "2026-04-09",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 173,
+      "end_index_exclusive": 186,
+      "start_seconds": 802,
+      "last_segment_start_seconds": 865,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "a1eb91badcadc792bdb59547057acc9c2221fa4909bbe625c6bfc460016390c8",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H051",
+    "source_id": "src-81755620e7f17a3a",
+    "meeting_key": "dutchess-county/fishkill/I-fE_ertOgA",
+    "municipality": "dutchess-county/fishkill",
+    "body": "Town Board",
+    "body_type": "governing",
+    "meeting_date": "2026-09-16",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 13,
+      "end_index_exclusive": 26,
+      "start_seconds": 43,
+      "last_segment_start_seconds": 87,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "530203ec2146c3cda331a28df7ad53f09920eaf9426c289e776c210fc11644b0",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H052",
+    "source_id": "src-81755620e7f17a3a",
+    "meeting_key": "dutchess-county/fishkill/I-fE_ertOgA",
+    "municipality": "dutchess-county/fishkill",
+    "body": "Town Board",
+    "body_type": "governing",
+    "meeting_date": "2026-09-16",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 120,
+      "end_index_exclusive": 133,
+      "start_seconds": 511,
+      "last_segment_start_seconds": 565,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "15803fa728715a4b413daa53764a8c61f083a09d499925d1074031766dcf3904",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H061",
+    "source_id": "src-9e82d5fec7217ef5",
+    "meeting_key": "dutchess-county/pawling/8d7RnQ94My4",
+    "municipality": "dutchess-county/pawling",
+    "body": "Town Board Meeting",
+    "body_type": "governing",
+    "meeting_date": "2026-04-08",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 36,
+      "end_index_exclusive": 49,
+      "start_seconds": 231,
+      "last_segment_start_seconds": 322,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "f145adcb724e8159d40b91554bfc07f9be2b88a1f613bcf6783fe353f7906d0f",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H062",
+    "source_id": "src-9e82d5fec7217ef5",
+    "meeting_key": "dutchess-county/pawling/8d7RnQ94My4",
+    "municipality": "dutchess-county/pawling",
+    "body": "Town Board Meeting",
+    "body_type": "governing",
+    "meeting_date": "2026-04-08",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 17,
+      "end_index_exclusive": 30,
+      "start_seconds": 123,
+      "last_segment_start_seconds": 192,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "fdfeb712b17ae6c8677091ab9902286f894e25b2dc39d649875a885d9e85aaaf",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H071",
+    "source_id": "src-ebd29a379b312a67",
+    "meeting_key": "albany-county/rensselaerville/1DzdxN7BK9M",
+    "municipality": "albany-county/rensselaerville",
+    "body": "Other / unknown",
+    "body_type": "other",
+    "meeting_date": "2026-06-11",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 0,
+      "end_index_exclusive": 13,
+      "start_seconds": 2,
+      "last_segment_start_seconds": 59,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "f37494d9ff751cbda601b65df626540f64e57511bb560fa97c580ecc9c1f5130",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H072",
+    "source_id": "src-ebd29a379b312a67",
+    "meeting_key": "albany-county/rensselaerville/1DzdxN7BK9M",
+    "municipality": "albany-county/rensselaerville",
+    "body": "Other / unknown",
+    "body_type": "other",
+    "meeting_date": "2026-06-11",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 26,
+      "end_index_exclusive": 39,
+      "start_seconds": 95,
+      "last_segment_start_seconds": 196,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "c6f9c5e01df2bfb81b3b36d7d3b11b6c6c2f9afaae6f1bb559e50c08c110da59",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H081",
+    "source_id": "src-6abdb0e834a85932",
+    "meeting_key": "albany-county/colonie/-aDVOI8dqYY",
+    "municipality": "albany-county/colonie",
+    "body": "Other / unknown",
+    "body_type": "other",
+    "meeting_date": "2026-08-19",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 168,
+      "end_index_exclusive": 181,
+      "start_seconds": 455,
+      "last_segment_start_seconds": 509,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "fcc1c219ea5dbf8e1ab057be03f630295297d2b4304e7cccf7fe74e4f356b1d9",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H091",
+    "source_id": "src-e7d4876477c7b12d",
+    "meeting_key": "saratoga-county/malta/R9xO1RFxQWM",
+    "municipality": "saratoga-county/malta",
+    "body": "Other / unknown",
+    "body_type": "other",
+    "meeting_date": "2026-07-06",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 205,
+      "end_index_exclusive": 218,
+      "start_seconds": 1554,
+      "last_segment_start_seconds": 1599,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "2e364ab6ae19e77279ba83be12dbe6ca8d5e5bc9d127642bde43314aa1f2f7a3",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H092",
+    "source_id": "src-e7d4876477c7b12d",
+    "meeting_key": "saratoga-county/malta/R9xO1RFxQWM",
+    "municipality": "saratoga-county/malta",
+    "body": "Other / unknown",
+    "body_type": "other",
+    "meeting_date": "2026-07-06",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 142,
+      "end_index_exclusive": 155,
+      "start_seconds": 1310,
+      "last_segment_start_seconds": 1384,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "d2a4282c41bc649149b44876b2a49de6158f2de8ca8735b888050ae9f87ba2e2",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H101",
+    "source_id": "src-80a785f5fd68c9ef",
+    "meeting_key": "rensselaer-county/poestenkill/ZidXncSvp2M",
+    "municipality": "rensselaer-county/poestenkill",
+    "body": "Planning Board",
+    "body_type": "planning",
+    "meeting_date": "2026-06-17",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 6,
+      "end_index_exclusive": 19,
+      "start_seconds": 51,
+      "last_segment_start_seconds": 160,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "7a2bfacd66423ae2f472d2df8ce744bf64b0b7f05bf3005f790938f95a238bb7",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H102",
+    "source_id": "src-80a785f5fd68c9ef",
+    "meeting_key": "rensselaer-county/poestenkill/ZidXncSvp2M",
+    "municipality": "rensselaer-county/poestenkill",
+    "body": "Planning Board",
+    "body_type": "planning",
+    "meeting_date": "2026-06-17",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 73,
+      "end_index_exclusive": 86,
+      "start_seconds": 361,
+      "last_segment_start_seconds": 391,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "26a4efb7acc8be5cadf6266b0b18910f782947bdf80d309d670ad78b60ff0f2a",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H111",
+    "source_id": "src-954e37810d98e1e5",
+    "meeting_key": "albany-county/altamont/BDu24mg3vqw",
+    "municipality": "albany-county/altamont",
+    "body": "Zoning Board of Appeals",
+    "body_type": "zoning",
+    "meeting_date": "2026-06-25",
+    "selection_method": "first_procedural_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 216,
+      "end_index_exclusive": 229,
+      "start_seconds": 1084,
+      "last_segment_start_seconds": 1131,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "ff9c9aabbb98540afa06868e4ffc0175739a84a9340dc89e1be9273ab04681cb",
+    "audio_verified": false
+  },
+  {
+    "case_id": "H112",
+    "source_id": "src-954e37810d98e1e5",
+    "meeting_key": "albany-county/altamont/BDu24mg3vqw",
+    "municipality": "albany-county/altamont",
+    "body": "Zoning Board of Appeals",
+    "body_type": "zoning",
+    "meeting_date": "2026-06-25",
+    "selection_method": "first_nonoverlapping_risk_anchor",
+    "selector": {
+      "kind": "segment_range",
+      "start_index": 67,
+      "end_index_exclusive": 80,
+      "start_seconds": 360,
+      "last_segment_start_seconds": 396,
+      "indexing": "zero-based, end-exclusive; source order retained"
+    },
+    "selected_text_sha256": "fae971cc0cfce83e510c1fea2716bfffe7bb1656b6052995b670a32f21c95f84",
+    "audio_verified": false
+  }
+]

@@ -19,6 +19,9 @@ These are open work packages, not completed features. Use the IDs in issues and 
 | R13 | Medium: source adapters | Implement one existing producer/document-family adapter at a time | Source-pinned candidates, unknown-code behavior, bounded retries/cost, no duplicate collector |
 | R14 | Medium: questions and comparisons | Add answerability/dependency contracts and comparable cross-place cohorts | Answers cite dependencies and missing coverage; updates refresh affected answers; comparisons share definitions and periods |
 | R15 | Starter: documentation and examples | Improve glossary, accessibility, diagrams, multilingual and adversarial examples | A new reader can reproduce the example; no invented event or unsupported claim; links/checks pass |
+| R16 | High: controlled English and event extraction | Extend the [experimental profile](docs/controlled-english.md) with context-aware motion resolution, typed condition logic and faithful rendering | Resolve J021, J032 and J061 on a new source-separated sample; independent model/label study; no silent promotion of future intentions |
+
+R06 and R15 have a partial new contribution: the [60-case controlled-English study](evaluations/controlled-english-2026-10-10/REPORT.md). Single-assistant labels, remaining recognition failures and the unexecuted model comparison keep independent-evaluation and production-adoption work open.
 
 ## Good first tasks
 

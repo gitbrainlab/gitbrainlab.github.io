@@ -1,0 +1,430 @@
+{
+  "source_versions_verified": 38,
+  "cases_verified": 60,
+  "checks": [
+    {
+      "case_id": "T01",
+      "source_id": "src-d10fef9995ddd9ae",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "T02",
+      "source_id": "src-f68e52672cf0d6f4",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "T03",
+      "source_id": "src-7204d0ee424e9d3b",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "T04",
+      "source_id": "src-c4cf1257a86ed634",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "T05",
+      "source_id": "src-802e6f27b461fc08",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "T06",
+      "source_id": "src-c8c85cc4542b255b",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "T07",
+      "source_id": "src-0c0abdf361e29ad7",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "T08",
+      "source_id": "src-ae3887de3f385c7f",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "T09",
+      "source_id": "src-5a90a28f04643e2a",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "T10",
+      "source_id": "src-bc851df56ef3da7c",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "T11",
+      "source_id": "src-82c3ab0aa67c51cd",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "T12",
+      "source_id": "src-c2f513889f6b1718",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "D01",
+      "source_id": "src-6d30cad05fc5ff39",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "D02",
+      "source_id": "src-4b29aade11012f52",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "D03",
+      "source_id": "src-f230c18bb1243198",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "D04",
+      "source_id": "src-f230c18bb1243198",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "D05",
+      "source_id": "src-f230c18bb1243198",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "D06",
+      "source_id": "src-f230c18bb1243198",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "D07",
+      "source_id": "src-f230c18bb1243198",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "D08",
+      "source_id": "src-bc9d55dbdc50fa91",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "D09",
+      "source_id": "src-c6eb55ebc16ad01d",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "D10",
+      "source_id": "src-bc9d55dbdc50fa91",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "D11",
+      "source_id": "src-47a2d40200418f3a",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "D12",
+      "source_id": "src-8d883db48ff4d6c8",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H011",
+      "source_id": "src-9418b48e402e227a",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H012",
+      "source_id": "src-9418b48e402e227a",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H021",
+      "source_id": "src-5680fe884894abe8",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H031",
+      "source_id": "src-523387bb44ba52c2",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H032",
+      "source_id": "src-523387bb44ba52c2",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H041",
+      "source_id": "src-88002dfb2f1ec50d",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H042",
+      "source_id": "src-88002dfb2f1ec50d",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H051",
+      "source_id": "src-81755620e7f17a3a",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H052",
+      "source_id": "src-81755620e7f17a3a",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H061",
+      "source_id": "src-9e82d5fec7217ef5",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H062",
+      "source_id": "src-9e82d5fec7217ef5",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H071",
+      "source_id": "src-ebd29a379b312a67",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H072",
+      "source_id": "src-ebd29a379b312a67",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H081",
+      "source_id": "src-6abdb0e834a85932",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H091",
+      "source_id": "src-e7d4876477c7b12d",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H092",
+      "source_id": "src-e7d4876477c7b12d",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H101",
+      "source_id": "src-80a785f5fd68c9ef",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H102",
+      "source_id": "src-80a785f5fd68c9ef",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H111",
+      "source_id": "src-954e37810d98e1e5",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "H112",
+      "source_id": "src-954e37810d98e1e5",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J011",
+      "source_id": "src-0f43112f9f891ebc",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J012",
+      "source_id": "src-0f43112f9f891ebc",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J021",
+      "source_id": "src-58ee835b17827e6d",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J022",
+      "source_id": "src-58ee835b17827e6d",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J031",
+      "source_id": "src-fafbc65a736dcd42",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J032",
+      "source_id": "src-fafbc65a736dcd42",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J041",
+      "source_id": "src-ceee60d0cf87ef0a",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J042",
+      "source_id": "src-ceee60d0cf87ef0a",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J051",
+      "source_id": "src-a47a7ef82ecc2c57",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J052",
+      "source_id": "src-a47a7ef82ecc2c57",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J061",
+      "source_id": "src-7e4391d8c417d3fe",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J062",
+      "source_id": "src-7e4391d8c417d3fe",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J071",
+      "source_id": "src-a4cb140d5a555f74",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J072",
+      "source_id": "src-a4cb140d5a555f74",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J081",
+      "source_id": "src-34eb038097a3690d",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    },
+    {
+      "case_id": "J082",
+      "source_id": "src-34eb038097a3690d",
+      "source_bytes_verified": true,
+      "selected_text_verified": true,
+      "audio_verified": false
+    }
+  ],
+  "text_encoding": "UTF-8",
+  "pdf_adapter": "pypdf 6.10.0 extract_text; one-based page; zero-based end-exclusive Python Unicode offsets",
+  "transcript_adapter": "original segs order; development joins with space; reserved sets join with newline",
+  "truth_verified": false
+}

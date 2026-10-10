@@ -1,0 +1,976 @@
+[
+  {
+    "case_id": "J011",
+    "split": "validation2",
+    "title": "Two separate prior-minutes approvals followed by public questions",
+    "expected_action": "ambiguous",
+    "group": "supported_positive",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "Separate motions require distinct treatments; the noisy first date remains unresolved.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J011",
+      "actor": {
+        "government": "sullivan-county/thompson",
+        "body": "Town Board Meeting"
+      },
+      "action": "multiple_treatments",
+      "target": "Two separate prior-minutes approvals followed by public questions",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-0f43112f9f891ebc",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 54,
+            "end_index_exclusive": 67,
+            "start_seconds": 394,
+            "last_segment_start_seconds": 481,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "73ee1f66f9f3b24a703374a476fbec30e791933bc7307ed8023d26a4f730841c",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decisions",
+      "outcome": {
+        "two_minutes_motions": "carried_as_reported"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-10-06"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "treatment": 1,
+          "target_date": "September 15; ASR contains conflicting trailing numerals"
+        },
+        {
+          "treatment": 2,
+          "target_date": "September 29 special budget meeting"
+        }
+      ],
+      "unresolved": [
+        "Separate motions require distinct treatments; the noisy first date remains unresolved."
+      ],
+      "wording": "Two separate prior-minutes approvals followed by public questions"
+    }
+  },
+  {
+    "case_id": "J012",
+    "split": "validation2",
+    "title": "Correspondence and unresolved follow-up discussion",
+    "expected_action": null,
+    "group": "unresolved_source",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "No operative financial action; correspondence attribution and subject are noisy.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J012",
+      "actor": {
+        "government": "sullivan-county/thompson",
+        "body": "Town Board Meeting"
+      },
+      "action": "correspondence_report",
+      "target": "Correspondence and unresolved follow-up discussion",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-0f43112f9f891ebc",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 74,
+            "end_index_exclusive": 87,
+            "start_seconds": 522,
+            "last_segment_start_seconds": 572,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "ebecebf5bca996d322fea18f6b5adff3f6ad7f1e335290cf5ec3ef3174889fe3",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "discussion",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-10-06"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "No operative financial action; correspondence attribution and subject are noisy."
+      ],
+      "wording": "Correspondence and unresolved follow-up discussion"
+    }
+  },
+  {
+    "case_id": "J021",
+    "split": "validation2",
+    "title": "Prior minutes approved; a separate environmental letter is summarized",
+    "expected_action": "minutes_approval",
+    "group": "supported_positive",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "Keep letter allegations and possible penalties attributed; no independent legal finding.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J021",
+      "actor": {
+        "government": "orange-county/highlands",
+        "body": "Town Board Meeting"
+      },
+      "action": "approve_minutes",
+      "target": "Prior minutes approved; a separate environmental letter is summarized",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "reported_penalty_ceiling_usd": "37500",
+        "basis": "per violation per day; speaker describing letter"
+      },
+      "evidence": [
+        {
+          "source_id": "src-58ee835b17827e6d",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 97,
+            "end_index_exclusive": 110,
+            "start_seconds": 465,
+            "last_segment_start_seconds": 579,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "2d6d7c03741ecd57ec4b9243f992f1f593f82dc8ba8aff57ce07a077a3f73ffd",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decision",
+      "outcome": {
+        "minutes_motion": "carried_as_reported"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-05-11"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "separate_statement": "speaker reports DEC inspection concerns",
+          "verification": "letter_not_inspected_in_this_test"
+        }
+      ],
+      "unresolved": [
+        "Keep letter allegations and possible penalties attributed; no independent legal finding."
+      ],
+      "wording": "Prior minutes approved; a separate environmental letter is summarized"
+    }
+  },
+  {
+    "case_id": "J022",
+    "split": "validation2",
+    "title": "School district representative presents the upcoming budget",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "A school presentation at a town meeting is not a town budget adoption or a district vote.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J022",
+      "actor": {
+        "government": "highland_falls_fort_montgomery_csd; unassigned_id",
+        "body": "school_district_representative",
+        "host_government": "orange-county/highlands"
+      },
+      "action": "budget_presentation",
+      "target": "School district representative presents the upcoming budget",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-58ee835b17827e6d",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 0,
+            "end_index_exclusive": 13,
+            "start_seconds": 27,
+            "last_segment_start_seconds": 95,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "352d51e821f97f387868ce1d86570606a979348c5ba9c15771d661b9907ff3bf",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "presentation",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-05-11",
+        "budget_year": "2026-27"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "A school presentation at a town meeting is not a town budget adoption or a district vote."
+      ],
+      "wording": "School district representative presents the upcoming budget"
+    }
+  },
+  {
+    "case_id": "J031",
+    "split": "validation2",
+    "title": "Possible future application resolution and separate reported collections",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "An application resolution is tentative; reported receipts concern a separate clerk report.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J031",
+      "actor": {
+        "government": "ulster-county/rochester",
+        "body": "Town Board Workshop Meeting Part 2"
+      },
+      "action": "future_resolution_intention_and_report",
+      "target": "Possible future application resolution and separate reported collections",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "reported_collection_usd": "67147.24",
+        "collection_period": "September"
+      },
+      "evidence": [
+        {
+          "source_id": "src-fafbc65a736dcd42",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 226,
+            "end_index_exclusive": 239,
+            "start_seconds": 1587,
+            "last_segment_start_seconds": 1643,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "f6389fc163f8fa90459106bb0ca79ab6a36a8d8a6999238388ecdc1f9cc97384",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "intention",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-10-08",
+        "possible_resolution_date_as_spoken": "14th; full date not established"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "separate_matter": "tax_collector_report"
+        }
+      ],
+      "unresolved": [
+        "An application resolution is tentative; reported receipts concern a separate clerk report."
+      ],
+      "wording": "Possible future application resolution and separate reported collections"
+    }
+  },
+  {
+    "case_id": "J032",
+    "split": "validation2",
+    "title": "Budget discussion describes a future hearing schedule",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "The speaker explicitly says official scheduling will occur later; preserve that condition.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J032",
+      "actor": {
+        "government": "ulster-county/rochester",
+        "body": "Town Board Workshop Meeting Part 2"
+      },
+      "action": "future_hearing_intention",
+      "target": "Budget discussion describes a future hearing schedule",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [
+        {
+          "condition": "preliminary budget is set",
+          "status": "prerequisite_to_official_scheduling"
+        }
+      ],
+      "quantities": {
+        "proposed_pay_increase_percent_range": [
+          "3",
+          "4"
+        ]
+      },
+      "evidence": [
+        {
+          "source_id": "src-fafbc65a736dcd42",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 3,
+            "end_index_exclusive": 16,
+            "start_seconds": 17,
+            "last_segment_start_seconds": 113,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "3d8383fe5a75400d9c9ac023ab339c92157c6415c1770fbf9c752daf2e8f991e",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "intention",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-10-08",
+        "stated_preliminary_budget_deadline": "October 26",
+        "intended_hearing_date": "November 5"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "The speaker explicitly says official scheduling will occur later; preserve that condition."
+      ],
+      "wording": "Budget discussion describes a future hearing schedule"
+    }
+  },
+  {
+    "case_id": "J041",
+    "split": "validation2",
+    "title": "Constitution Week proclamation",
+    "expected_action": null,
+    "group": "outside_classifier_scope",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "A ceremonial recognition is outside the action-probe vocabulary.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J041",
+      "actor": {
+        "government": "monroe-county/irondequoit",
+        "body": "Town Board Meeting"
+      },
+      "action": "ceremonial_proclamation",
+      "target": "Constitution Week proclamation",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-ceee60d0cf87ef0a",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 70,
+            "end_index_exclusive": 83,
+            "start_seconds": 1185,
+            "last_segment_start_seconds": 1249,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "5dfdc779790c84d99dcb9392a89a349e399236d248bf510604ea74a0bfc83e0a",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_proclamation",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-09-30",
+        "recognition_period": "September 17-23, 2026"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "A ceremonial recognition is outside the action-probe vocabulary."
+      ],
+      "wording": "Constitution Week proclamation"
+    }
+  },
+  {
+    "case_id": "J042",
+    "split": "validation2",
+    "title": "Clerk describes school-tax deadlines and different payment recipients",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "Preserve full-payment and installment conditions; no independent verification of tax rules.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J042",
+      "actor": {
+        "government": "monroe-county/irondequoit",
+        "body": "Town Board Meeting"
+      },
+      "action": "payment_procedure_report",
+      "target": "Clerk describes school-tax deadlines and different payment recipients",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [
+        {
+          "condition": "installment option previously selected",
+          "status": "applies_to_county_destination"
+        }
+      ],
+      "quantities": {
+        "reported_interest_percent": "2",
+        "basis": "full payment October 2-31"
+      },
+      "evidence": [
+        {
+          "source_id": "src-ceee60d0cf87ef0a",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 33,
+            "end_index_exclusive": 46,
+            "start_seconds": 993,
+            "last_segment_start_seconds": 1039,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "fa9181306fb8b0ee75e723b1f526eab81fe3e5b66307831ea6031e507299b75d",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "policy_description",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-09-30",
+        "reported_no_interest_deadline": "October 1"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "payment": "second and third installments",
+          "recipient": "Monroe County; not town"
+        }
+      ],
+      "unresolved": [
+        "Preserve full-payment and installment conditions; no independent verification of tax rules."
+      ],
+      "wording": "Clerk describes school-tax deadlines and different payment recipients"
+    }
+  },
+  {
+    "case_id": "J051",
+    "split": "validation2",
+    "title": "Meeting-opening motion followed by permit review",
+    "expected_action": null,
+    "group": "outside_classifier_scope",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "Opening a meeting is outside the action-probe vocabulary; permit discussion is not approval.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J051",
+      "actor": {
+        "government": "orange-county/goshen",
+        "body": "Town Board Meeting. ."
+      },
+      "action": "open_meeting",
+      "target": "Meeting-opening motion followed by permit review",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-a47a7ef82ecc2c57",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 0,
+            "end_index_exclusive": 13,
+            "start_seconds": 0,
+            "last_segment_start_seconds": 578,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "6c0130183262109fafb0d3bb1babb43069f1bcb67e340f09b614bd77cf533abf",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decision",
+      "outcome": {
+        "opening_motion": "affirmative_responses"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-04-09"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "separate_matter": "permit_review"
+        }
+      ],
+      "unresolved": [
+        "Opening a meeting is outside the action-probe vocabulary; permit discussion is not approval."
+      ],
+      "wording": "Meeting-opening motion followed by permit review"
+    }
+  },
+  {
+    "case_id": "J052",
+    "split": "validation2",
+    "title": "Proposed capped annual increase and permit-volume expansion",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "Do not report negotiated text as executed agreement or proposed tonnage as authorized capacity.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J052",
+      "actor": {
+        "government": "orange-county/goshen",
+        "body": "Town Board Meeting. ."
+      },
+      "action": "proposal_discussion",
+      "target": "Proposed capped annual increase and permit-volume expansion",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "annual_increase_percent_ceiling": "3",
+        "existing_capacity_tons_per_day": 600,
+        "proposed_capacity_tons_per_day": 670
+      },
+      "evidence": [
+        {
+          "source_id": "src-a47a7ef82ecc2c57",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 13,
+            "end_index_exclusive": 26,
+            "start_seconds": 585,
+            "last_segment_start_seconds": 662,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "896983d0a81e5ebbd9e65de6d32c33a0a754f1255c544c9dbf4f1e8d9deffff1",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "proposal",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-04-09"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "agreement_status": "text_still_to_be_added_as_reported"
+        }
+      ],
+      "unresolved": [
+        "Do not report negotiated text as executed agreement or proposed tonnage as authorized capacity."
+      ],
+      "wording": "Proposed capped annual increase and permit-volume expansion"
+    }
+  },
+  {
+    "case_id": "J061",
+    "split": "validation2",
+    "title": "Corrected prior minutes, corrected prior abstracts, and new abstract approval",
+    "expected_action": "ambiguous",
+    "group": "supported_positive",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "Separate current approvals from corrections of earlier figures; state funding differs from federal funding.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J061",
+      "actor": {
+        "government": "dutchess-county/village-fishkill",
+        "body": "Village of Fishkill Trustees"
+      },
+      "action": "multiple_treatments_and_corrections",
+      "target": "Corrected prior minutes, corrected prior abstracts, and new abstract approval",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {
+        "corrected_prior_general_usd": "32857.58",
+        "corrected_prior_water_usd": "8142.47",
+        "corrected_prior_sewer_usd": "53271.95",
+        "current_water_usd": "17180.46",
+        "current_sewer_usd": "37014.73",
+        "current_general_usd": "265806.70",
+        "current_trust_agency_usd": "54"
+      },
+      "evidence": [
+        {
+          "source_id": "src-7e4391d8c417d3fe",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 11,
+            "end_index_exclusive": 24,
+            "start_seconds": 88,
+            "last_segment_start_seconds": 186,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "4de712b145739d4012c96e26e7bc2b96370a3dd80c38062d5af605cb7d156f64",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decisions",
+      "outcome": {
+        "minutes_motion": "affirmative_responses",
+        "current_abstract_motion": "affirmative_responses"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-06-22"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "treatment": 1,
+          "action": "accept_corrected_minutes"
+        },
+        {
+          "correction": "fire_grant_state_not_federal"
+        },
+        {
+          "correction": "prior_abstract_figures"
+        },
+        {
+          "treatment": 2,
+          "action": "accept_current_abstracts"
+        }
+      ],
+      "unresolved": [
+        "Separate current approvals from corrections of earlier figures; state funding differs from federal funding."
+      ],
+      "wording": "Corrected prior minutes, corrected prior abstracts, and new abstract approval"
+    }
+  },
+  {
+    "case_id": "J062",
+    "split": "validation2",
+    "title": "Discussion of a future contract amendment and an expiring waiver",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "Potential amendment and permission reported by a speaker do not prove a new executed contract.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J062",
+      "actor": {
+        "government": "dutchess-county/village-fishkill",
+        "body": "Village of Fishkill Trustees"
+      },
+      "action": "potential_contract_amendment",
+      "target": "Discussion of a future contract amendment and an expiring waiver",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [
+        {
+          "condition": "preceding work completed",
+          "status": "prerequisite_as_spoken"
+        },
+        {
+          "condition": "retiree waiver remains valid",
+          "status": "reported; expiration_date_unknown"
+        }
+      ],
+      "quantities": {
+        "current_contract_hours_per_day": 3
+      },
+      "evidence": [
+        {
+          "source_id": "src-7e4391d8c417d3fe",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 101,
+            "end_index_exclusive": 114,
+            "start_seconds": 683,
+            "last_segment_start_seconds": 790,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "147a02be732faa0b496a10cf6c1f2ec8029f0c22707e00f2a5e4e8e1433852d4",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "discussion",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-06-22"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "future_event": "waiver_expiry",
+          "response": "pursue_other_options"
+        }
+      ],
+      "unresolved": [
+        "Potential amendment and permission reported by a speaker do not prove a new executed contract."
+      ],
+      "wording": "Discussion of a future contract amendment and an expiring waiver"
+    }
+  },
+  {
+    "case_id": "J071",
+    "split": "validation2",
+    "title": "April minutes accepted before public comment",
+    "expected_action": "minutes_approval",
+    "group": "supported_positive",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "The subsequent public comment is a separate attributed statement.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J071",
+      "actor": {
+        "government": "greene-county/new-baltimore",
+        "body": "Town Board Meeting"
+      },
+      "action": "approve_minutes",
+      "target": "April minutes accepted before public comment",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-a4cb140d5a555f74",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 2,
+            "end_index_exclusive": 15,
+            "start_seconds": 36,
+            "last_segment_start_seconds": 130,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "72cdb3d2e4cd69d7e55bbf610aa6000f41c7e5dac9249c01078fbaac976ec56d",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "recorded_decision",
+      "outcome": {
+        "minutes_motion": "carried_as_reported"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-06-08",
+        "prior_minutes_date_as_spoken": "April 13"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "The subsequent public comment is a separate attributed statement."
+      ],
+      "wording": "April minutes accepted before public comment"
+    }
+  },
+  {
+    "case_id": "J072",
+    "split": "validation2",
+    "title": "Road-restoration obligation described under an existing contract",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "An obligation and reported damage are not proof of completed restoration.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J072",
+      "actor": {
+        "government": "greene-county/new-baltimore",
+        "body": "Town Board Meeting"
+      },
+      "action": "reported_contract_obligation",
+      "target": "Road-restoration obligation described under an existing contract",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [
+        {
+          "condition": "restore roads to prior condition",
+          "status": "performance_not_established"
+        }
+      ],
+      "quantities": {
+        "roads_described_destroyed": 1,
+        "other_roads_described_damaged": 2
+      },
+      "evidence": [
+        {
+          "source_id": "src-a4cb140d5a555f74",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 98,
+            "end_index_exclusive": 111,
+            "start_seconds": 696,
+            "last_segment_start_seconds": 769,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "82b810643f179f502cb577689e15bf015ad236b1e0d6a4b9aae89cd9ccf81bbd",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "policy_description",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-06-08"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "An obligation and reported damage are not proof of completed restoration."
+      ],
+      "wording": "Road-restoration obligation described under an existing contract"
+    }
+  },
+  {
+    "case_id": "J081",
+    "split": "validation2",
+    "title": "One motion covers two sets of prior minutes",
+    "expected_action": "minutes_approval",
+    "group": "supported_positive",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "One treatment can cover multiple documents; prior dates and final tally remain noisy.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J081",
+      "actor": {
+        "government": "ulster-county/ellenville",
+        "body": "'s Board Meeting"
+      },
+      "action": "approve_minutes",
+      "target": "One motion covers two sets of prior minutes",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [],
+      "quantities": {},
+      "evidence": [
+        {
+          "source_id": "src-34eb038097a3690d",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 36,
+            "end_index_exclusive": 49,
+            "start_seconds": 503,
+            "last_segment_start_seconds": 564,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "5c10b432455b6e28efdd84468cfec0eed02ea1e3cd339f216690d8d49d84c961",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "proposal_or_decision_unresolved",
+      "outcome": {
+        "vote_prompt": "all_in_favor; final_tally_unresolved"
+      },
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-06-08"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [
+        {
+          "single_motion_targets": "two sets of minutes; one date noisy and June 3 special meeting"
+        }
+      ],
+      "unresolved": [
+        "One treatment can cover multiple documents; prior dates and final tally remain noisy."
+      ],
+      "wording": "One motion covers two sets of prior minutes"
+    }
+  },
+  {
+    "case_id": "J082",
+    "split": "validation2",
+    "title": "Speaker proposes a temporary daycare lease",
+    "expected_action": "abstain",
+    "group": "negative_control",
+    "label_provenance": "single_assistant_after_draft_3_freeze_before_second_reserved_predictions",
+    "label_rationale": "Suggestion, estimates and licensing lead time do not establish a lease award.",
+    "independent_gold": false,
+    "ledger": {
+      "id": "J082",
+      "actor": {
+        "government": "ulster-county/ellenville",
+        "body": "'s Board Meeting"
+      },
+      "action": "public_proposal",
+      "target": "Speaker proposes a temporary daycare lease",
+      "basis": "source_reported",
+      "polarity": "affirmative",
+      "conditions": [
+        {
+          "condition": "board interest and subsequent process",
+          "status": "hypothetical"
+        }
+      ],
+      "quantities": {
+        "licensing_lead_time_months_range": [
+          3,
+          6
+        ],
+        "suggested_lease_years": 1
+      },
+      "evidence": [
+        {
+          "source_id": "src-34eb038097a3690d",
+          "selector": {
+            "kind": "segment_range",
+            "start_index": 66,
+            "end_index_exclusive": 79,
+            "start_seconds": 651,
+            "last_segment_start_seconds": 715,
+            "indexing": "zero-based, end-exclusive; source order retained"
+          },
+          "selected_text_sha256": "3eeffeb4cd8d7702fc4fdcef2b4cc4de9228b9deb2b140284cd5e4b0c227530b",
+          "representation": "public_asr_reader",
+          "audio_verified": false
+        }
+      ],
+      "modality": "request",
+      "outcome": {},
+      "attribution": "unresolved_transcript_speaker",
+      "time": {
+        "meeting_date_from_index": "2026-06-08"
+      },
+      "source_state": "derived_ASR; approval_status_not_established",
+      "coverage": "selected_excerpt_only",
+      "relations": [],
+      "unresolved": [
+        "Suggestion, estimates and licensing lead time do not establish a lease award."
+      ],
+      "wording": "Speaker proposes a temporary daycare lease"
+    }
+  }
+]

@@ -1,0 +1,192 @@
+[
+  {
+    "source_id": "src-d10fef9995ddd9ae",
+    "url": "https://meeting-insights.canalandcountry.workers.dev/api/transcript?k=orange-county/newburgh/KO88sP1C7ug",
+    "sha256": "d0ffcb6d472f01b8bf53fae50db15dca8cb85b73acff6e0c606c9544ae3c165c",
+    "kind": "asr_reader",
+    "split": "development",
+    "municipality": "orange-county/newburgh",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-f68e52672cf0d6f4",
+    "url": "https://meeting-insights.canalandcountry.workers.dev/api/transcript?k=dutchess-county/hyde-park/eriwmyOdAoc",
+    "sha256": "e6df112445105a420715439c9b9db734c05ed3b0046b148bf585242575ccba60",
+    "kind": "asr_reader",
+    "split": "development",
+    "municipality": "dutchess-county/hyde-park",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-7204d0ee424e9d3b",
+    "url": "https://meeting-insights.canalandcountry.workers.dev/api/transcript?k=sullivan-county/mamakating/uryukC8sRmc",
+    "sha256": "7407638edc2e167ae00ec56317b42e9f2da160e6d1865300998f1f33315350d8",
+    "kind": "asr_reader",
+    "split": "development",
+    "municipality": "sullivan-county/mamakating",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-c4cf1257a86ed634",
+    "url": "https://meeting-insights.canalandcountry.workers.dev/api/transcript?k=saratoga-county/clifton-park/o3TR1isEs5A",
+    "sha256": "f4c9bfbacc622bf7cb90481566989758d4f9d965534e99dd5e979864445960cf",
+    "kind": "asr_reader",
+    "split": "development",
+    "municipality": "saratoga-county/clifton-park",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-802e6f27b461fc08",
+    "url": "https://meeting-insights.canalandcountry.workers.dev/api/transcript?k=monroe-county/greece/bfeabbx0ydQ",
+    "sha256": "51b58c180bd3c99b9c68d143cb6fdae68170f9bc864bb09be1ad3b8691ea669b",
+    "kind": "asr_reader",
+    "split": "development",
+    "municipality": "monroe-county/greece",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-c8c85cc4542b255b",
+    "url": "https://meeting-insights.canalandcountry.workers.dev/api/transcript?k=sullivan-county/sullivan-county-legislature/granicus-2263",
+    "sha256": "f98d4ec3784196e7e5701f6c53bd3a1f0233ca11d7484379d6647b045c2d8594",
+    "kind": "asr_reader",
+    "split": "development",
+    "municipality": "sullivan-county/sullivan-county-legislature",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-0c0abdf361e29ad7",
+    "url": "https://meeting-insights.canalandcountry.workers.dev/api/transcript?k=putnam-county/putnam-county-legislature/H-PyH9i0xkw",
+    "sha256": "260e09e528f77f21e9552819b674b07f8b74b7bc4a5968f0866074990f9dee19",
+    "kind": "asr_reader",
+    "split": "development",
+    "municipality": "putnam-county/putnam-county-legislature",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-ae3887de3f385c7f",
+    "url": "https://meeting-insights.canalandcountry.workers.dev/api/transcript?k=schenectady-county/niskayuna/sqGXpe2gx9k",
+    "sha256": "da7d79fb2b317c6e1ca7d444c9f924116ad5fd4cc8ce42145cf3caf2d0d70e42",
+    "kind": "asr_reader",
+    "split": "development",
+    "municipality": "schenectady-county/niskayuna",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-5a90a28f04643e2a",
+    "url": "https://meeting-insights.canalandcountry.workers.dev/api/transcript?k=schenectady-county/niskayuna/xGaQdhvHIgs",
+    "sha256": "d5d088c985d4decad9fe69d34472bdcfd127881ad983b42aadc66dc4a98a5f5f",
+    "kind": "asr_reader",
+    "split": "development",
+    "municipality": "schenectady-county/niskayuna",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-bc851df56ef3da7c",
+    "url": "https://meeting-insights.canalandcountry.workers.dev/api/transcript?k=monroe-county/brighton/1YPQsfNxT98",
+    "sha256": "8e1eaf66b3a1840f72c1d7be6c819943fb970b8439e508d85e5bd07154b091f6",
+    "kind": "asr_reader",
+    "split": "development",
+    "municipality": "monroe-county/brighton",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-82c3ab0aa67c51cd",
+    "url": "https://meeting-insights.canalandcountry.workers.dev/api/transcript?k=schenectady-county/niskayuna-csd/S6iKBKXkwLQ",
+    "sha256": "10c8d9ab9df788130350f42fff6124e15d47ee3ed68e10f74240410a9621323e",
+    "kind": "asr_reader",
+    "split": "development",
+    "municipality": "schenectady-county/niskayuna-csd",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-c2f513889f6b1718",
+    "url": "https://meeting-insights.canalandcountry.workers.dev/api/transcript?k=ulster-county/ellenville-csd/xzsWhB6TogU",
+    "sha256": "3ab85707e1400cc8d351f5c036dba5fc9fa3d003907b86e37a220c00f4bf7b49",
+    "kind": "asr_reader",
+    "split": "development",
+    "municipality": "ulster-county/ellenville-csd",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-6d30cad05fc5ff39",
+    "url": "https://www.troyny.gov/AgendaCenter/ViewFile/Minutes/_10012026-1884",
+    "sha256": "45e92812277c630b98f53b2f27703f64d54a125aa7968d478b5d7d88893c3e01",
+    "kind": "official_pdf",
+    "split": "development",
+    "municipality": "rensselaer-county/troy",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-4b29aade11012f52",
+    "url": "https://www.niskayuna.gov/Finance%20Minutes%208-11-26.pdf?t=202609141506230",
+    "sha256": "cf98afcea0e30ee9fe4772de0b204ae1f1a2e2f36587556ef9585f0710537bf2",
+    "kind": "official_pdf",
+    "split": "development",
+    "municipality": "schenectady-county/niskayuna",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-f230c18bb1243198",
+    "url": "https://www.ballstonspa.gov/AgendaCenter/ViewFile/Agenda/_10132026-458",
+    "sha256": "1abf300dc092fd03a256238550d95deeb13a18793943f19ec46e4441d4b4c97d",
+    "kind": "official_pdf",
+    "split": "development",
+    "municipality": "saratoga-county/ballston-spa",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-bc9d55dbdc50fa91",
+    "url": "https://www.niskayuna.gov/08112026specialmeeting.pdf?t=202608271530180",
+    "sha256": "29514146ca386c8e5dc7dbd00edaed50bb82c4e6e772df68bfbec985db3d406e",
+    "kind": "official_pdf",
+    "split": "development",
+    "municipality": "schenectady-county/niskayuna",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-c6eb55ebc16ad01d",
+    "url": "https://www.cityofnewburgh-ny.gov/AgendaCenter/ViewFile/Minutes/_08112026-1908",
+    "sha256": "a5cd2606044b676fcac46575270e4b14ad12b7dd70fecb65071a07b4b3e03051",
+    "kind": "official_pdf",
+    "split": "development",
+    "municipality": "orange-county/newburgh",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-47a2d40200418f3a",
+    "url": "https://www.niskayuna.gov/09152026Specialmeeting.pdf?t=202609231041200",
+    "sha256": "ce91b647d98f6316fb1a285cb4098783718a879f4cdc4df9c97f3c678a71e274",
+    "kind": "official_pdf",
+    "split": "development",
+    "municipality": "schenectady-county/niskayuna",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  },
+  {
+    "source_id": "src-8d883db48ff4d6c8",
+    "url": "https://www.niskayuna.gov/7-9-2026%20Highway,%20Parks%20and%20Recreation%20Committee%20Meeting%20Minutes.pdf?t=202608100819560",
+    "sha256": "2e0096296031093c320607b06013935b0e20a23aec5b66139b947aa7c5961cf8",
+    "kind": "official_pdf",
+    "split": "development",
+    "municipality": "schenectady-county/niskayuna",
+    "snapshot_date": "2026-10-10",
+    "publication_basis": "Public source locator and newly authored factual annotations; source archive excluded."
+  }
+]

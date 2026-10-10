@@ -1,0 +1,21 @@
+{
+  "registry_id":"civicspec-controlled-english-terms",
+  "version":"0.1-draft.3",
+  "namespace_status":"Local proposed terminology for this optional profile; not accepted canonical ontology IRIs.",
+  "maintenance":"Propose changes with source cases, counterexamples, compatibility and impact queries. A source synonym is an observation, not automatic equivalence.",
+  "terms":[
+    {"id":"cce:motion","preferred":"motion","definition":"A formal proposal offered for a body's consideration within a specific procedural context.","basis":"CS-04","not_equivalent_to":["discussion","intention","passed decision"],"cases":["T02","H111"]},
+    {"id":"cce:treatment","preferred":"treatment","definition":"A distinct procedural handling of a matter, such as adding it to an agenda, amending it, or deciding it.","basis":"CS-04","not_equivalent_to":["matter","paragraph","action keyword"],"cases":["D01","H051","J061"]},
+    {"id":"cce:authorization","preferred":"authorization","definition":"Permission to undertake a specified act within its stated authority, scope and conditions.","basis":"CS-05","not_equivalent_to":["execution","payment","completion"],"cases":["D03","D05","H072"]},
+    {"id":"cce:intention","preferred":"intention","definition":"A stated future plan without sufficient evidence of an operative motion or completed act.","basis":"CS-05 CS-08","not_equivalent_to":["authorization","decision","execution"],"cases":["T01","T07","J032"]},
+    {"id":"cce:execution","preferred":"execution","definition":"Performance of a specifically identified authorized act; the kind of execution must be stated.","basis":"CS-05","not_equivalent_to":["authorization","physical completion"],"cases":["T04","D03"]},
+    {"id":"cce:receipt","preferred":"receipt of funds","definition":"An incoming financial flow, with source, recipient, date, amount role and evidentiary basis.","basis":"CS-05 CS-10","not_equivalent_to":["grant application","forecast","gross billing"],"cases":["D06","H092"]},
+    {"id":"cce:payment","preferred":"payment","definition":"An outgoing financial flow, distinguished from its authorization, invoice and budget allocation.","basis":"CS-05 CS-10","not_equivalent_to":["purchase authorization","accepted abstract","contract award"],"cases":["D05","H072","J061"]},
+    {"id":"cce:source-reported","preferred":"source-reported","definition":"Attributed to the identified source without an independent verification claim.","basis":"CS-06 CS-13","not_equivalent_to":["independently verified","reviewed finding"],"cases":["D06","D12","J021"]},
+    {"id":"cce:condition","preferred":"condition","definition":"A claim-scoped prerequisite, exception or qualification whose logical connection and resolution remain explicit.","basis":"CS-09","not_equivalent_to":["satisfied prerequisite","independent event"],"cases":["D03","D04","J032"]},
+    {"id":"cce:unknown","preferred":"unknown","definition":"The available evidence does not establish the relevant value or state.","basis":"CS-07","not_equivalent_to":["zero","false","not found","not applicable"],"cases":["T12","H111"]},
+    {"id":"cce:not-found","preferred":"not found within checked coverage","definition":"A search observation limited to the declared venues, representations, time and retrieval attempts.","basis":"CS-07","not_equivalent_to":["does not exist","not published anywhere"],"cases":[]},
+    {"id":"cce:public-body","preferred":"public body","definition":"The specific body acting in the relevant capacity and interval; it is distinct from geography and host venue.","basis":"CS-01","not_equivalent_to":["municipality name","school district with same name","portal label"],"cases":["T11","H101","J022"]},
+    {"id":"cce:correction","preferred":"correction","definition":"A new interpretation or source version that explicitly relates to the earlier statement being corrected.","basis":"CS-14","not_equivalent_to":["silent overwrite","wording-only edit"],"cases":["J061"]}
+  ]
+}
