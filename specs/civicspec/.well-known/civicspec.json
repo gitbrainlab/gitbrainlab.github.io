@@ -1,13 +1,19 @@
 {
-  "registry_id": "urn:civicspec:registry:capitaldistrict",
+  "registry_id": "urn:civicspec:registry:gitbrainlab",
   "repository": "https://github.com/gitbrainlab/gitbrainlab.github.io",
   "transport": "civicspec-github-discovery-v1",
-  "discovery_revision": 1,
-  "trust_policy_ref": "GOVERNANCE.md",
+  "discovery_revision": 2,
+  "trust_policy_ref": "https://raw.githubusercontent.com/gitbrainlab/gitbrainlab.github.io/21d9122925b5cc36cecf53ce5ce367a1ffec0459/specs/civicspec/GOVERNANCE.md",
   "channels": {
-    "candidate": null,
+    "candidate": {
+      "release_id": "0.1.0-rc.1",
+      "manifest_url": "https://raw.githubusercontent.com/gitbrainlab/gitbrainlab.github.io/e5dc5fbac19939f17537ad35154be1bff5ef6af7/specs/civicspec/releases/0.1.0-rc.1/manifest.json",
+      "manifest_sha256": "b428129d9028d0d995236107bbc8071fa06ac0d9ac12a94e931122c74910f053",
+      "published_at": "2026-10-10T15:32:50.062051Z",
+      "status": "candidate"
+    },
     "stable": null
   },
-  "note": "Candidate pointer is populated only after the pinned manifest and all components have been verified. No stable release is advertised.",
+  "note": "Experimental specification and reference toolkit. Candidate use requires explicit opt-in. No stable production release or fleet adoption is implied.",
   "component_base_path": "specs/civicspec"
 }
