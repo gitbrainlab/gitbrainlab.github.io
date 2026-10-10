@@ -1,0 +1,636 @@
+{
+  "release_id": "0.1.0-rc.2",
+  "status": "candidate",
+  "scope": "experimental_specification_and_reference_toolkit",
+  "contract_version": "0.1.0-rc.2",
+  "ontology_profile": {
+    "id": "layered_v5_replay",
+    "baseline_date": "2026-09-07",
+    "inventory_path": "research/baseline-manifest.json",
+    "inventory_sha256": "ea00b08a30bc590948b01c27a6bb3456bb389162fae098b5c25217f537482f62"
+  },
+  "repository": "https://github.com/gitbrainlab/gitbrainlab.github.io",
+  "component_base_path": "specs/civicspec",
+  "source_revision": "e61e1af04876060e81804eb56b4038d8e702ce74",
+  "built_at": "2026-10-10T16:23:01.234266Z",
+  "compatibility": {
+    "production_contract": false,
+    "supported_consumer_contracts": [
+      "civicspec-github-discovery-v1"
+    ],
+    "requires_explicit_candidate_opt_in": true,
+    "breaking_changes": [],
+    "note": "Adds optional Controlled English draft.3 and reproducible evaluation. Original fixture schema and research ontology retain versions. No production extractor, model-prompt benefit or bot adoption claimed."
+  },
+  "components": [
+    {
+      "path": ".gitattributes",
+      "media_type": "text/plain",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+      "media_type": "text/markdown",
+      "bytes": 626,
+      "sha256": "351f17e72a93c474f05c6550e6e52b7d6b145fa84caec0e2b4364f69eae6b0eb"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/semantic-proposal.md",
+      "media_type": "text/markdown",
+      "bytes": 975,
+      "sha256": "adfda1d8415dc09b03340f388c6f860f94d43875f5f17e9086184dca1f203aaf"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "media_type": "text/markdown",
+      "bytes": 619,
+      "sha256": "042111c41b5cccdb50e784bffa0d5ed9cc9c7c7bb4defae55c3d7d377d7b301b"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "media_type": "application/yaml",
+      "bytes": 1153,
+      "sha256": "8e38864d6b6075e347ac35b1bb9f5e97e14f09ef2f3ba50cf6077eb138cd8c1e"
+    },
+    {
+      "path": ".gitignore",
+      "media_type": "text/plain",
+      "bytes": 36,
+      "sha256": "f8d6fc5b1fc7ae047e42c6920bfdb6e3773adda4177c12e927be06e9f4d01d5a"
+    },
+    {
+      "path": "AGENTS.md",
+      "media_type": "text/markdown",
+      "bytes": 2745,
+      "sha256": "e0444c27bc1bb26e196e24ab34522461f9ff02c1d895c5a875d11dea66a93a9e"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "media_type": "text/markdown",
+      "bytes": 1916,
+      "sha256": "ebb7ea77e22cac0438714c40fcb0c153e602934719a70291e79bdf8428d501a4"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "media_type": "text/markdown",
+      "bytes": 3431,
+      "sha256": "0e59d617d1c9aacf86a44e2a2f62488624de1f3c2595048bd6219f458f87d214"
+    },
+    {
+      "path": "GOVERNANCE.md",
+      "media_type": "text/markdown",
+      "bytes": 2433,
+      "sha256": "c711929acd0c4ed6f569124597f8ec9d52ddf36cbdcd4d1525bd38af07996fd7"
+    },
+    {
+      "path": "LICENSE_STATUS.md",
+      "media_type": "text/markdown",
+      "bytes": 903,
+      "sha256": "389538bdd37b2a6ca00cd95e6f7e9a424287797409aff5e932b4beff243a7a3a"
+    },
+    {
+      "path": "README.md",
+      "media_type": "text/markdown",
+      "bytes": 6339,
+      "sha256": "6b91050fdf688be0d5db15de7986ea1af2a7fac62ccd204703d339d3e63d2a61"
+    },
+    {
+      "path": "ROADMAP.md",
+      "media_type": "text/markdown",
+      "bytes": 5701,
+      "sha256": "b27b5b2495daca3fef3f1fd11a2be1387a147b88fdda6d33b7a8ea042147b35c"
+    },
+    {
+      "path": "bootstrap/controlled-english.md",
+      "media_type": "text/markdown",
+      "bytes": 2916,
+      "sha256": "3b6b56b6550e4970f91ce8187cd1d4cc540573cb4957d019a203bcafe6077cd9"
+    },
+    {
+      "path": "bootstrap/core-instructions.md",
+      "media_type": "text/markdown",
+      "bytes": 2756,
+      "sha256": "0d1f55c0adaa987876ab6160b3389f2ab1fb67031e5e96475a862cc401055818"
+    },
+    {
+      "path": "contracts/README.md",
+      "media_type": "text/markdown",
+      "bytes": 1260,
+      "sha256": "7f58e34c1bedf7c77baf1318742ab476107edfe5ba2417a2af6606856266474d"
+    },
+    {
+      "path": "contracts/change-proposal.example.json",
+      "media_type": "application/json",
+      "bytes": 1113,
+      "sha256": "4e60e7ce471d17b4bb850f14fa67a876d087442aa0e73a08f2cdcb52eaa55d6a"
+    },
+    {
+      "path": "contracts/discovery.example.json",
+      "media_type": "application/json",
+      "bytes": 765,
+      "sha256": "cc6a19d0246938c23a3baf4996d34d74dec4902854113ed852debcee17affb9a"
+    },
+    {
+      "path": "contracts/lesson.example.json",
+      "media_type": "application/json",
+      "bytes": 1414,
+      "sha256": "781b1d868454ecac010a027f5aaa328051dddf44911fee11d5776044405970bd"
+    },
+    {
+      "path": "contracts/release-manifest.example.json",
+      "media_type": "application/json",
+      "bytes": 996,
+      "sha256": "099d759a6db85517e52dcde54704d12dbe6c8275bfad60a546708ac24e000644"
+    },
+    {
+      "path": "contracts/run-receipt.example.json",
+      "media_type": "application/json",
+      "bytes": 983,
+      "sha256": "a1954419d9307d7d48a4fd3bfb1894e1ebef54a247861af94f79d5a07ab07f2f"
+    },
+    {
+      "path": "docs/README.md",
+      "media_type": "text/markdown",
+      "bytes": 1436,
+      "sha256": "734f5d90a0d03a89219a386ce030108d681576e9182629d6168f2462c5e2a5d3"
+    },
+    {
+      "path": "docs/agents.md",
+      "media_type": "text/markdown",
+      "bytes": 5088,
+      "sha256": "795c04219cb1112b0c3bb049145023e7093e6a63eb887440edbfc9e248713682"
+    },
+    {
+      "path": "docs/controlled-english-integration.md",
+      "media_type": "text/markdown",
+      "bytes": 10307,
+      "sha256": "b6cd0ec8e5a599099a5f646fc13b8aefcd2cf35368aaecd0b5b8dbd7ea298095"
+    },
+    {
+      "path": "docs/controlled-english.md",
+      "media_type": "text/markdown",
+      "bytes": 12184,
+      "sha256": "7d9d41a204f336ec7bcba2496b602cb61a8fddd371900c92ae2980ea8a6c7af8"
+    },
+    {
+      "path": "docs/integration.md",
+      "media_type": "text/markdown",
+      "bytes": 3525,
+      "sha256": "9e240f5b494625ddfab21b9ed86710ff8838997acab90a82993aa59a1fcfc077"
+    },
+    {
+      "path": "docs/model.md",
+      "media_type": "text/markdown",
+      "bytes": 4851,
+      "sha256": "74fe5d4b1097a74f4f2a445bbe84f44698d22d91d31ba60fe474a01b647f7301"
+    },
+    {
+      "path": "docs/profiles.md",
+      "media_type": "text/markdown",
+      "bytes": 3066,
+      "sha256": "42d80d7f5d781918a7cd93c3a695a9024185e181eead32576a23478c1a527443"
+    },
+    {
+      "path": "docs/publication.md",
+      "media_type": "text/markdown",
+      "bytes": 6052,
+      "sha256": "de325efd2ead4451e753d810db75ae940d922a8cfd4d7ad87a354a7d0c47f0eb"
+    },
+    {
+      "path": "docs/specification.md",
+      "media_type": "text/markdown",
+      "bytes": 44466,
+      "sha256": "4be835fa52a540538fdecec30d68d2b3902c9c7d8c3ce379fdcf7afd7a60affb"
+    },
+    {
+      "path": "docs/tutorial.md",
+      "media_type": "text/markdown",
+      "bytes": 4880,
+      "sha256": "06b7cc90e495a1c86942fca18c4eaa3f3d299493369cf46270c4e1b7dd1a76e6"
+    },
+    {
+      "path": "docs/validation.md",
+      "media_type": "text/markdown",
+      "bytes": 4936,
+      "sha256": "7e5aa9d06df099cf835e92dab91d8183d666bfdb973279e7e715d7c413fa8887"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/REPORT.md",
+      "media_type": "text/markdown",
+      "bytes": 11861,
+      "sha256": "30451e0a07b12fb2958164b3e5fead2f68dff2e6c1f049d9285e8f6043dc237b"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/development-cases.json",
+      "media_type": "application/json",
+      "bytes": 43979,
+      "sha256": "d236daa50dc127936b5745eae9271adc939a08fa21dee60d7247daafb24b14d3"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/development-round-2-actions.json",
+      "media_type": "application/json",
+      "bytes": 3731,
+      "sha256": "1071745f0f095e67a90d5be874aeb83d727b63532a61e04798d7fb6f7d08f8ad"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/development-sources.json",
+      "media_type": "application/json",
+      "bytes": 9531,
+      "sha256": "345d915dac93f092f2b44b9cfee600dd23a20cc97c418278b2e77b114b020f14"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/freeze-reserved-labels.json",
+      "media_type": "application/json",
+      "bytes": 304,
+      "sha256": "bde3cec5955f8ea700bb9014d1ad79cee33759a272d47906f60f713366170f65"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/freeze-v1.json",
+      "media_type": "application/json",
+      "bytes": 752,
+      "sha256": "fe1b2aa4b3feb703eceb2f0777ff0b708de356c8662613e80f5720d2fd266b47"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/freeze-v2.json",
+      "media_type": "application/json",
+      "bytes": 856,
+      "sha256": "2fe6603d5164d8d1cb92930059edf0b2b14a7f9a9355d7333262ea9c94c0f8e4"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/freeze-v3.json",
+      "media_type": "application/json",
+      "bytes": 955,
+      "sha256": "c833d5b7fbdbb8aa57820ee75118e0433d79c957096fcb9819629c99a6ae6309"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/freeze-validation2-labels.json",
+      "media_type": "application/json",
+      "bytes": 300,
+      "sha256": "f0c6109e7c136a2c8fc0a8fbfdba07545c0590a2c46b543b93b37c8c5a2fa7e7"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/model-study.json",
+      "media_type": "application/json",
+      "bytes": 2366,
+      "sha256": "e739260779358264305226cf8599fa5937c54f06fdb0d835e091fd0be4296a7a"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/protocol-round-3.json",
+      "media_type": "application/json",
+      "bytes": 1837,
+      "sha256": "68580fb9afbe217eb3ed1ad82d7308cb3cad857e9c5a86650242ec199096a39a"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/protocol.json",
+      "media_type": "application/json",
+      "bytes": 3757,
+      "sha256": "97bbf779fdabb09e42234ebcc558091f3b4970a1d8b83433d28035313060d086"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/reserved-cases.json",
+      "media_type": "application/json",
+      "bytes": 43600,
+      "sha256": "4c3cf3da8a093ffc6646ed1bb892c5c409e83862e2d2c895b7736d7f704dcef6"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/reserved-selection.json",
+      "media_type": "application/json",
+      "bytes": 14181,
+      "sha256": "5fccd3940c9a3a4788c7faebf33ee9d9880984bcb90ed09329a49ac1acaa3650"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/reserved-sources.json",
+      "media_type": "application/json",
+      "bytes": 8734,
+      "sha256": "dd589cc81d0c4421d9a011b22d971392f7f858a4c9f8fc15f77db73efc88be67"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/results-final.json",
+      "media_type": "application/json",
+      "bytes": 662922,
+      "sha256": "c586373cf1aac2008bb2ad11b1599ab8edd4a19e96fd5d82481bf4559d06eec7"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/results.json",
+      "media_type": "application/json",
+      "bytes": 319540,
+      "sha256": "0041497371ff250362da7f6a913d64f87f6541785a205edda770733bc43ed732"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/round-1.json",
+      "media_type": "application/json",
+      "bytes": 59041,
+      "sha256": "3b1f93dbb8954e7a99e0d05e9b6faa0c8de48fe13d489ddb2a4af29fda32f124"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/source-verification.json",
+      "media_type": "application/json",
+      "bytes": 11491,
+      "sha256": "b3e8ea5e276fe718907b72f18e60f2eabbf73bb05746b94239cb28767653a3b8"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/typed-guard-qualification.json",
+      "media_type": "application/json",
+      "bytes": 673,
+      "sha256": "cc43d19a81c5912493c8ba87cd92176e7323e1f53ee71b647e9161c94234a8c8"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/validation2-cases.json",
+      "media_type": "application/json",
+      "bytes": 35331,
+      "sha256": "3730549f92f3e1c5777190a80d55249b10d72e5244c3a821e9ef7ab62b82c09f"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/validation2-selection.json",
+      "media_type": "application/json",
+      "bytes": 11433,
+      "sha256": "c6805c73eef2aeb53d3f23f80a21ac854eeb7d823aebcf60187a407206cdb449"
+    },
+    {
+      "path": "evaluations/controlled-english-2026-10-10/validation2-sources.json",
+      "media_type": "application/json",
+      "bytes": 6433,
+      "sha256": "3966d580576a2a76954cee63052bbff2e8a8994f66c371e49d0abf6b43bd40d2"
+    },
+    {
+      "path": "examples/README.md",
+      "media_type": "text/markdown",
+      "bytes": 1191,
+      "sha256": "3be0b3fb3b90b68922579595ce836719fe4af5f99538e432f3b0175db0c95f4d"
+    },
+    {
+      "path": "examples/assertions.example.json",
+      "media_type": "application/json",
+      "bytes": 11550,
+      "sha256": "0c65af03bde90520beb823d5d9f3d88bd9d662e8337cab8b75bed7d52801a4b5"
+    },
+    {
+      "path": "examples/controlled-english/README.md",
+      "media_type": "text/markdown",
+      "bytes": 2143,
+      "sha256": "ff1b4a42514dc36c266b558354dec24816bdb9b953078d5ecfba28248696cc31"
+    },
+    {
+      "path": "examples/synthetic-source.txt",
+      "media_type": "text/plain",
+      "bytes": 398,
+      "sha256": "077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8"
+    },
+    {
+      "path": "migrations/0.1.0-rc.2.md",
+      "media_type": "text/markdown",
+      "bytes": 2095,
+      "sha256": "6a4d8cc46d2a3127237a959b473055d11fccc0aef6168393555a20e6fee47bd8"
+    },
+    {
+      "path": "profiles/controlled-english/requirements.json",
+      "media_type": "application/json",
+      "bytes": 4640,
+      "sha256": "06d7a6b357112b3743a2c2bf8879519ee94cb05cc8cd128037a6d313759daa78"
+    },
+    {
+      "path": "profiles/controlled-english/terms.json",
+      "media_type": "application/json",
+      "bytes": 3962,
+      "sha256": "c1112f05c0c2b307c82ff9d9eb0b05f6a3339e7851915849d96c54f06602d212"
+    },
+    {
+      "path": "profiles/controlled-english/v1.json",
+      "media_type": "application/json",
+      "bytes": 1607,
+      "sha256": "59bc36fff32a343c2af75acfd283b3b455b8c2e9fb7dcb624e7f7b6d5a70c65c"
+    },
+    {
+      "path": "profiles/controlled-english/v2.json",
+      "media_type": "application/json",
+      "bytes": 2778,
+      "sha256": "82823f500371ac27b9198894aa6dcae7a22b7fac5e20a95a70a387db8f119a68"
+    },
+    {
+      "path": "profiles/controlled-english/v3.json",
+      "media_type": "application/json",
+      "bytes": 3692,
+      "sha256": "5c276e5e50fe0f4078369e007fa5c86a4538aafdd5775669f529fd5f69e51d37"
+    },
+    {
+      "path": "publication-files.json",
+      "media_type": "application/json",
+      "bytes": 4739,
+      "sha256": "805b1c10eddf8454101952c23b151a96f9b6b3761ec41cbde727af10d19c434e"
+    },
+    {
+      "path": "releases/README.md",
+      "media_type": "text/markdown",
+      "bytes": 761,
+      "sha256": "de9eeef62adf2a92742981be0fe15ba90447d1b36350fd9da3f264a410228e39"
+    },
+    {
+      "path": "requirements-corpus.txt",
+      "media_type": "text/plain",
+      "bytes": 90,
+      "sha256": "12ad0a7a5ee1d9989e58d3754f29c7b6031583f960ddb687ca3f4ab356e9d40e"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "media_type": "text/plain",
+      "bytes": 133,
+      "sha256": "c8b410ce81bc57c451aa72f475b1d039a66c009c217155bc83e616e965fab77e"
+    },
+    {
+      "path": "research/2026-09-07/mappings/controlled-vocab-v4.json",
+      "media_type": "application/json",
+      "bytes": 1665,
+      "sha256": "4aeb1c17880e5c8519439e4e0ddd8eca17730967494b8b7157656450ce541516"
+    },
+    {
+      "path": "research/2026-09-07/mappings/controlled-vocab.json",
+      "media_type": "application/json",
+      "bytes": 1271,
+      "sha256": "4f730e9cd4160ee2899e4a9f9b987ee7b1e661c48ccae1e692be7a522b65ac07"
+    },
+    {
+      "path": "research/2026-09-07/mappings/profiles-v5.json",
+      "media_type": "application/json",
+      "bytes": 132433,
+      "sha256": "8162dc4cfd1b62e735907c443f003c17953c9f968ab95dfbd2302c2d64264137"
+    },
+    {
+      "path": "research/2026-09-07/ontology/constraints.md",
+      "media_type": "text/markdown",
+      "bytes": 1683,
+      "sha256": "708d9fd9fa784515f5ff76222bd67e7d161282f27a7063676bcfe0dc6d713eb0"
+    },
+    {
+      "path": "research/2026-09-07/ontology/layer-graph.ttl",
+      "media_type": "text/turtle",
+      "bytes": 9420,
+      "sha256": "837fcdc79bd93b901fc74ccc23b159db09e570a3a52ce89b674b844372425e94"
+    },
+    {
+      "path": "research/2026-09-07/ontology/layers.json",
+      "media_type": "application/json",
+      "bytes": 5175,
+      "sha256": "d935349559f34a966918da312feea0a2a895192d48c62b53fae4589889e343a3"
+    },
+    {
+      "path": "research/2026-09-07/ontology/question-definitions.json",
+      "media_type": "application/json",
+      "bytes": 4714,
+      "sha256": "d565eb67e94c7723c150bfc063af39de22168c1855d52b71fe2dbcb98fc868d7"
+    },
+    {
+      "path": "research/2026-09-07/ontology/shapes.ttl",
+      "media_type": "text/turtle",
+      "bytes": 1738,
+      "sha256": "dc1a0bbc6a83110ab7d9a41bfcd6f6ffdf2e4d97fff0736f94e0b08e9a4a81fa"
+    },
+    {
+      "path": "research/2026-09-07/profiles/onboarding-template.yaml",
+      "media_type": "application/yaml",
+      "bytes": 1436,
+      "sha256": "8916b3d094c9007937e3b2d4c8f0385093d6a98ea4f654c2b5d33fe0112cc596"
+    },
+    {
+      "path": "research/2026-09-07/scripts/action_classifier.py",
+      "media_type": "text/x-python",
+      "bytes": 3612,
+      "sha256": "f8de8d2299755a25ad6eb97d915b23c9a04f023422bd6d90346d53d59c5ebc9f"
+    },
+    {
+      "path": "research/2026-09-07/scripts/action_classifier_v2.py",
+      "media_type": "text/x-python",
+      "bytes": 1678,
+      "sha256": "a2d8b60821bce7f08ca6116d60c4e1efee21760c6f932ed2b7b35fa8716060c5"
+    },
+    {
+      "path": "research/2026-09-07/sources/standards.json",
+      "media_type": "application/json",
+      "bytes": 3711,
+      "sha256": "60c22b46bff1df96ced06df27212333e1e24ed41496fa9bbfab690059dcca3fb"
+    },
+    {
+      "path": "research/README.md",
+      "media_type": "text/markdown",
+      "bytes": 2616,
+      "sha256": "895dfb3cd8ae7888a13802f7700b2804211351ff0d7419fa4c77d154c630eadd"
+    },
+    {
+      "path": "research/baseline-manifest.json",
+      "media_type": "application/json",
+      "bytes": 2349,
+      "sha256": "ea00b08a30bc590948b01c27a6bb3456bb389162fae098b5c25217f537482f62"
+    },
+    {
+      "path": "schemas/README.md",
+      "media_type": "text/markdown",
+      "bytes": 954,
+      "sha256": "2948b747d093524956b20dc125a4b7d1ece24af995f3115f43d3cff3f3accc6f"
+    },
+    {
+      "path": "schemas/assertion-fixture.schema.json",
+      "media_type": "application/json",
+      "bytes": 11645,
+      "sha256": "750cc80231c63f313d222e80563a2a4c2321a9231a1a5ea117b9d8de62e6e354"
+    },
+    {
+      "path": "schemas/controlled-english-ledger.schema.json",
+      "media_type": "application/json",
+      "bytes": 1981,
+      "sha256": "647cfa463d63bc10cd045e2c8a3360cb4be1f461692827a0e87ff696dba52fa0"
+    },
+    {
+      "path": "scripts/build_release.py",
+      "media_type": "text/x-python",
+      "bytes": 3393,
+      "sha256": "276bffaf905af23690b4c371844fa62cfde1e0027077fe5ff801c418ccff96f6"
+    },
+    {
+      "path": "scripts/cce_backtest.py",
+      "media_type": "text/x-python",
+      "bytes": 4932,
+      "sha256": "24e8e6c4c6e53d1c3cbecc99f0b1e6577e2c7419d06f3cc681d9240bcd7c677e"
+    },
+    {
+      "path": "scripts/cce_fetch.py",
+      "media_type": "text/x-python",
+      "bytes": 4758,
+      "sha256": "607b34d650b92472717d384d9d6918b1bfec38300a6deafc88c2aa290409baeb"
+    },
+    {
+      "path": "scripts/cce_lint.py",
+      "media_type": "text/x-python",
+      "bytes": 1333,
+      "sha256": "b9863801f2d5888bdab0b07a274d315a013b1a3b3594f66f87e980106b325615"
+    },
+    {
+      "path": "scripts/cce_typed_guard.py",
+      "media_type": "text/x-python",
+      "bytes": 889,
+      "sha256": "71ad2cb8f6b16470be295b26537eac38c4a5a233fa4a0e5d3234da7ff148e02d"
+    },
+    {
+      "path": "scripts/controlled_english_guard.py",
+      "media_type": "text/x-python",
+      "bytes": 1154,
+      "sha256": "be46589bfa7072685c3a407ebfc4c6d6bc031010890a53144f77df781a0bf9d3"
+    },
+    {
+      "path": "scripts/controlled_english_v1.py",
+      "media_type": "text/x-python",
+      "bytes": 953,
+      "sha256": "5d3f0d0e80407e71ff324ce574b6604d6e146875fa36c475b20916ea8f9cd6f0"
+    },
+    {
+      "path": "scripts/controlled_english_v2.py",
+      "media_type": "text/x-python",
+      "bytes": 1186,
+      "sha256": "ddeffa96dbbe90d672328917a1d0256064eccf49eb07bd9e77399fb4094db6e1"
+    },
+    {
+      "path": "scripts/controlled_english_v3.py",
+      "media_type": "text/x-python",
+      "bytes": 928,
+      "sha256": "7ee7c8effc4270ab9acecc1d9d822e408bf7387b415af7d194ad0b3447ceb6a6"
+    },
+    {
+      "path": "scripts/validate.py",
+      "media_type": "text/x-python",
+      "bytes": 6466,
+      "sha256": "24b6df0ffcc71218c9605dc91aca921090ab7fbe223ab38feff56c95c42e0f97"
+    },
+    {
+      "path": "scripts/verify_published.py",
+      "media_type": "text/x-python",
+      "bytes": 1166,
+      "sha256": "864fd4eee40dbe5622a0ef4f0292783cb781dd607bbfd6007ada11d151222223"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "media_type": "text/x-python",
+      "bytes": 5815,
+      "sha256": "4c4993e651b813c46b7c83314dc8dbe24fbc0f1ab64bdc414314f19a7c96e1c3"
+    },
+    {
+      "path": "tests/test_controlled_english.py",
+      "media_type": "text/x-python",
+      "bytes": 4776,
+      "sha256": "77934d0980c82629c573a4080edd1ea876074df7e9bf700b900e770644a2a7cd"
+    },
+    {
+      "path": "tests/test_reference_contract.py",
+      "media_type": "text/x-python",
+      "bytes": 7785,
+      "sha256": "e9a5bf79bf315cd9435935f32e631be37600538b4cc0cf30f1416e74e76ef3c5"
+    }
+  ],
+  "evaluation_refs": [
+    "docs/validation.md",
+    "evaluations/controlled-english-2026-10-10/REPORT.md"
+  ],
+  "migration_refs": [
+    "migrations/0.1.0-rc.2.md"
+  ],
+  "previous_release": "0.1.0-rc.1",
+  "license_status": "No project license selected; see LICENSE_STATUS.md."
+}
