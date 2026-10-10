@@ -2,18 +2,18 @@
   "registry_id": "urn:civicspec:registry:gitbrainlab",
   "repository": "https://github.com/gitbrainlab/gitbrainlab.github.io",
   "transport": "civicspec-github-discovery-v1",
-  "discovery_revision": 2,
+  "discovery_revision": 3,
   "trust_policy_ref": "https://raw.githubusercontent.com/gitbrainlab/gitbrainlab.github.io/21d9122925b5cc36cecf53ce5ce367a1ffec0459/specs/civicspec/GOVERNANCE.md",
   "channels": {
     "candidate": {
-      "release_id": "0.1.0-rc.1",
-      "manifest_url": "https://raw.githubusercontent.com/gitbrainlab/gitbrainlab.github.io/e5dc5fbac19939f17537ad35154be1bff5ef6af7/specs/civicspec/releases/0.1.0-rc.1/manifest.json",
-      "manifest_sha256": "b428129d9028d0d995236107bbc8071fa06ac0d9ac12a94e931122c74910f053",
-      "published_at": "2026-10-10T15:32:50.062051Z",
+      "release_id": "0.1.0-rc.2",
+      "manifest_url": "https://raw.githubusercontent.com/gitbrainlab/gitbrainlab.github.io/9a138099ddd364ae7ae07c7d61d3b28224925688/specs/civicspec/releases/0.1.0-rc.2/manifest.json",
+      "manifest_sha256": "831ff3cd3f72797d9ee1150eb9ba800378ae232ebf1d48290a98102bc1c8bc47",
+      "published_at": "2026-10-10T16:25:23.571237Z",
       "status": "candidate"
     },
     "stable": null
   },
-  "note": "Experimental specification and reference toolkit. Candidate use requires explicit opt-in. No stable production release or fleet adoption is implied.",
+  "note": "Experimental specification and Controlled English reference toolkit. Explicit candidate/profile opt-in required. Remaining extraction failures block automatic civic-fact publication; no stable release or fleet adoption implied.",
   "component_base_path": "specs/civicspec"
 }
