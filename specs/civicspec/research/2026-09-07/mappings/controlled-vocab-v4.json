@@ -1,0 +1,61 @@
+{
+  "action.kind": [
+    "adopt_budget",
+    "ambiguous_tabling_sequence",
+    "amend_hearing_schedule",
+    "amend_prior_bond_resolution",
+    "amend_project_cost_authorization",
+    "appoint_employee",
+    "appoint_employee_conditionally",
+    "approve_minutes",
+    "approve_transfer",
+    "authorize_borrowing",
+    "authorize_contract_execution",
+    "authorize_execution_of_cba",
+    "authorize_external_request",
+    "authorize_grant_application",
+    "authorize_grant_spending",
+    "authorize_purchase_and_payment",
+    "authorize_reserve_expenditure",
+    "authorize_solicitation",
+    "award_contract",
+    "clarify_appointment_term",
+    "enter_and_exit_executive_session",
+    "purchase_recommendation",
+    "reject_all_bids",
+    "report_delivery_delay",
+    "report_no_responses",
+    "reschedule_meeting",
+    "table_matter",
+    "waive_minutes_reading"
+  ],
+  "money.role": [
+    "authorized_budget_transfer",
+    "authorized_principal_ceiling",
+    "authorized_serial_bond_amount",
+    "authorized_spending_ceiling",
+    "authorized_spending_of_reported_award",
+    "base_bid_awarded",
+    "maximum_project_cost_not_new_bond_principal",
+    "maximum_proposed_bond_amount_at_hearing",
+    "not_to_exceed_contract_authorization",
+    "quoted_base_package_price",
+    "quoted_price_for_recommended_model",
+    "reported_abstract_amounts"
+  ],
+  "vote.result": [
+    "adopted_as_reported",
+    "passed_as_reported",
+    "tabled_as_reported"
+  ],
+  "project.stage": [
+    "ordered_as_reported",
+    "planning"
+  ],
+  "regulatory.action": [
+    "determination_of_non_significance_as_reported"
+  ],
+  "meeting.phase_type": [
+    "executive_session"
+  ]
+}

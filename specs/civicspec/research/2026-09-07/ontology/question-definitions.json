@@ -1,0 +1,199 @@
+[
+  {
+    "id": "CQ01",
+    "question": "What borrowing was authorized, rather than issued?",
+    "case_id": "D06",
+    "required_fields": [
+      "debt.instrument_type",
+      "money.role",
+      "action.kind",
+      "money.amount"
+    ]
+  },
+  {
+    "id": "CQ02",
+    "question": "What obligation and backstop accompany the water borrowing authorization?",
+    "case_id": "D19",
+    "required_fields": [
+      "condition.text",
+      "obligation.actor",
+      "obligation.action",
+      "debt.security"
+    ]
+  },
+  {
+    "id": "CQ03",
+    "question": "Which CBA unit was authorized, and is execution known?",
+    "case_id": "D08",
+    "required_fields": [
+      "action.kind",
+      "labor.bargaining_unit",
+      "party.employer",
+      "party.employee_organization"
+    ]
+  },
+  {
+    "id": "CQ04",
+    "question": "Which motions occurred, and in what order?",
+    "case_id": "D21",
+    "required_fields": [
+      "motion.sequence"
+    ]
+  },
+  {
+    "id": "CQ05",
+    "question": "Was the agreement approved or tabled?",
+    "case_id": "V01",
+    "required_fields": [
+      "procedure.proposed_effect",
+      "motion.sequence",
+      "procedure.ambiguity",
+      "action.kind"
+    ]
+  },
+  {
+    "id": "CQ06",
+    "question": "Does the salary figure exist here or only in a referenced agreement?",
+    "case_id": "V03",
+    "required_fields": [
+      "labor.agreement_period",
+      "labor.salary_reference"
+    ]
+  },
+  {
+    "id": "CQ07",
+    "question": "Is the grant awarded, disbursed, or merely applied for?",
+    "case_id": "H10",
+    "required_fields": [
+      "grant.disbursement_stage",
+      "money.budget_amendment",
+      "money.amount",
+      "grant.amount_awarded_reported"
+    ]
+  },
+  {
+    "id": "CQ08",
+    "question": "Is an outside-district service connection an annexation?",
+    "case_id": "H11",
+    "required_fields": [
+      "jurisdiction.service_relation",
+      "action.kind",
+      "parcel.local_identifier",
+      "body.acting_capacity"
+    ]
+  },
+  {
+    "id": "CQ09",
+    "question": "What does the quoted price exclude and what approval is conditional?",
+    "case_id": "H13",
+    "required_fields": [
+      "procurement.price_adjustment_clause",
+      "money.exclusions",
+      "money.amount",
+      "condition.text"
+    ]
+  },
+  {
+    "id": "CQ10",
+    "question": "Can this conflicting meeting date safely become the canonical key?",
+    "case_id": "V07",
+    "required_fields": [
+      "identity.resolution_status",
+      "time.date_assertions"
+    ]
+  },
+  {
+    "id": "CQ11",
+    "question": "Did a printed adoption clause actually pass?",
+    "case_id": "H09",
+    "required_fields": [
+      "vote.result",
+      "procedure.proposed_effect",
+      "action.kind"
+    ]
+  },
+  {
+    "id": "CQ12",
+    "question": "Do the printed budget-account codes agree?",
+    "case_id": "H07",
+    "required_fields": [
+      "money.from_account",
+      "money.to_account_assertions"
+    ]
+  },
+  {
+    "id": "CQ13",
+    "question": "Do source component amounts reconcile with the reported total?",
+    "case_id": "D03",
+    "required_fields": [
+      "money.components",
+      "money.reported_total"
+    ]
+  },
+  {
+    "id": "CQ14",
+    "question": "Can an OCR ambiguity justify asserting no executive-session action?",
+    "case_id": "H17",
+    "required_fields": [
+      "statement.content",
+      "extraction.suspect_text"
+    ]
+  },
+  {
+    "id": "CQ15",
+    "question": "Was the speed limit requested, approved, or installed?",
+    "case_id": "C12",
+    "required_fields": [
+      "regulatory.approval_status",
+      "jurisdiction.request_route",
+      "project.current_dependency"
+    ]
+  },
+  {
+    "id": "CQ16",
+    "question": "Which conditions separate district authorization from operation?",
+    "case_id": "C10",
+    "required_fields": [
+      "condition.text",
+      "obligation.action",
+      "legal.citation"
+    ]
+  },
+  {
+    "id": "CQ17",
+    "question": "Is the observed comment duration a per-speaker policy?",
+    "case_id": "D15",
+    "required_fields": [
+      "participation.slot_label",
+      "time.open",
+      "time.close"
+    ]
+  },
+  {
+    "id": "CQ18",
+    "question": "Is a report being approved or audited?",
+    "case_id": "C03",
+    "required_fields": [
+      "finance.report_period",
+      "action.kind"
+    ]
+  },
+  {
+    "id": "CQ19",
+    "question": "Is a ceiling being funded by cash, reserves, or anticipated aid?",
+    "case_id": "H16",
+    "required_fields": [
+      "money.source_timing",
+      "money.budget_legs"
+    ]
+  },
+  {
+    "id": "CQ20",
+    "question": "Does one document contain multiple meeting sessions?",
+    "case_id": "H01",
+    "required_fields": [
+      "meeting.session_sequence",
+      "attendance.arrival"
+    ]
+  }
+]

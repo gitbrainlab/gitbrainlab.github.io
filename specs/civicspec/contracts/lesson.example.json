@@ -1,0 +1,38 @@
+{
+  "example_only": true,
+  "lesson_id": "urn:example:lesson:amended-application",
+  "deduplication_key": "action-target/amended-grant-application/source-family-example",
+  "kind": "semantic_extraction",
+  "scope": {
+    "jurisdiction": "example",
+    "public_body": null,
+    "source_family": "spoken motion"
+  },
+  "source_refs": [
+    "urn:example:unprovided-source"
+  ],
+  "case_refs": [],
+  "expected_behavior": {
+    "status": "proposed_requires_evidence_and_review",
+    "interpretation": "Application approved as amended; retain separate amendment event where supported"
+  },
+  "observed_behavior": "Only amendment classified",
+  "hypothesis": "Classifier uses amendment keyword before identifying underlying target",
+  "proposed_change": "Preserve operator, target, outcome and sequence; add a scoped extraction rule",
+  "counterexamples": [
+    "A motion that amends text but does not vote on the underlying application"
+  ],
+  "affected_components": [
+    "action interpretation adapter",
+    "action vocabulary"
+  ],
+  "impact_query": {
+    "concept": "grant_application",
+    "extractor_version": "affected version to identify"
+  },
+  "created_by": "urn:example:curator",
+  "created_at": null,
+  "review_status": "observed",
+  "decision_history": [],
+  "note": "This intentionally contains no real evidence. It is a record template, not an approved lesson or a claim that an incident was observed."
+}

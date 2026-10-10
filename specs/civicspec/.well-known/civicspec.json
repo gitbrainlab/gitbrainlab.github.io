@@ -1,0 +1,13 @@
+{
+  "registry_id": "urn:civicspec:registry:capitaldistrict",
+  "repository": "https://github.com/gitbrainlab/gitbrainlab.github.io",
+  "transport": "civicspec-github-discovery-v1",
+  "discovery_revision": 1,
+  "trust_policy_ref": "GOVERNANCE.md",
+  "channels": {
+    "candidate": null,
+    "stable": null
+  },
+  "note": "Candidate pointer is populated only after the pinned manifest and all components have been verified. No stable release is advertised.",
+  "component_base_path": "specs/civicspec"
+}

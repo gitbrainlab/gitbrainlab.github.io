@@ -1,0 +1,30 @@
+{
+  "example_only": true,
+  "status": "draft",
+  "release_id": "civicspec-adoption-0.1.0-rc.1",
+  "contract_version": "0.1.0-rc.1",
+  "ontology_profile": {
+    "id": "layered_v5_replay",
+    "baseline_date": "2026-09-07",
+    "baseline_sha256": null
+  },
+  "source_revision": null,
+  "built_at": null,
+  "compatibility": {
+    "supported_consumer_contracts": [],
+    "breaking_changes": [],
+    "requires_review": true
+  },
+  "components": [],
+  "component_entry_contract": {
+    "path": "release-relative allowlisted path",
+    "media_type": "IANA media type",
+    "bytes": "integer actual byte size",
+    "sha256": "SHA256 of exact published bytes"
+  },
+  "evaluation_refs": [],
+  "migration_refs": [],
+  "previous_release": null,
+  "license_status": "Owner policy must be recorded; no new license is granted by this example.",
+  "note": "The release manifest does not hash itself. Put its actual digest in the trusted channel entry. Publish and verify components before updating a channel."
+}

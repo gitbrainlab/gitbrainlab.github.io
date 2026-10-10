@@ -1,0 +1,69 @@
+{
+  "baseline_id": "civicspec-research-2026-09-07",
+  "profile": "layered_v5_replay",
+  "scope": "Selected original research definition/mapping/classifier files; not the complete case dataset or a newly executed backtest.",
+  "source_artifact": "CivicSpec-Ontology-Backtest-2026-09-07.zip",
+  "source_artifact_sha256": "ed5f52b399a87f7ddab16b9d828ddc6d9978c18983a0e29f4dd22c7b3c190500",
+  "files": [
+    {
+      "path": "ontology/constraints.md",
+      "bytes": 1683,
+      "sha256": "708d9fd9fa784515f5ff76222bd67e7d161282f27a7063676bcfe0dc6d713eb0"
+    },
+    {
+      "path": "ontology/layers.json",
+      "bytes": 5175,
+      "sha256": "d935349559f34a966918da312feea0a2a895192d48c62b53fae4589889e343a3"
+    },
+    {
+      "path": "ontology/question-definitions.json",
+      "bytes": 4714,
+      "sha256": "d565eb67e94c7723c150bfc063af39de22168c1855d52b71fe2dbcb98fc868d7"
+    },
+    {
+      "path": "ontology/shapes.ttl",
+      "bytes": 1738,
+      "sha256": "dc1a0bbc6a83110ab7d9a41bfcd6f6ffdf2e4d97fff0736f94e0b08e9a4a81fa"
+    },
+    {
+      "path": "ontology/layer-graph.ttl",
+      "bytes": 9420,
+      "sha256": "837fcdc79bd93b901fc74ccc23b159db09e570a3a52ce89b674b844372425e94"
+    },
+    {
+      "path": "mappings/profiles-v5.json",
+      "bytes": 132433,
+      "sha256": "8162dc4cfd1b62e735907c443f003c17953c9f968ab95dfbd2302c2d64264137"
+    },
+    {
+      "path": "mappings/controlled-vocab.json",
+      "bytes": 1271,
+      "sha256": "4f730e9cd4160ee2899e4a9f9b987ee7b1e661c48ccae1e692be7a522b65ac07"
+    },
+    {
+      "path": "mappings/controlled-vocab-v4.json",
+      "bytes": 1665,
+      "sha256": "4aeb1c17880e5c8519439e4e0ddd8eca17730967494b8b7157656450ce541516"
+    },
+    {
+      "path": "scripts/action_classifier.py",
+      "bytes": 3612,
+      "sha256": "f8de8d2299755a25ad6eb97d915b23c9a04f023422bd6d90346d53d59c5ebc9f"
+    },
+    {
+      "path": "scripts/action_classifier_v2.py",
+      "bytes": 1678,
+      "sha256": "a2d8b60821bce7f08ca6116d60c4e1efee21760c6f932ed2b7b35fa8716060c5"
+    },
+    {
+      "path": "profiles/onboarding-template.yaml",
+      "bytes": 1436,
+      "sha256": "8916b3d094c9007937e3b2d4c8f0385093d6a98ea4f654c2b5d33fe0112cc596"
+    },
+    {
+      "path": "sources/standards.json",
+      "bytes": 3711,
+      "sha256": "60c22b46bff1df96ced06df27212333e1e24ed41496fa9bbfab690059dcca3fb"
+    }
+  ]
+}

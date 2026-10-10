@@ -1,0 +1,40 @@
+{
+  "example_only": true,
+  "run_id": "urn:example:run:1",
+  "role": "extractor",
+  "status": "example_only",
+  "started_at": null,
+  "finished_at": null,
+  "corpus_snapshot": null,
+  "release_id": null,
+  "release_digest": null,
+  "profiles": [],
+  "adapter_version": null,
+  "model_id": null,
+  "prompt_version": null,
+  "model_configuration": null,
+  "input_source_refs": [],
+  "outputs": [],
+  "validation": {
+    "syntax": "not_run",
+    "references": "not_run",
+    "selectors": "not_run",
+    "semantics": "not_run",
+    "publication_policy": "not_run"
+  },
+  "counts": {
+    "candidate_assertions": 0,
+    "promoted_assertions": 0,
+    "abstentions": 0,
+    "unresolved_identities": 0
+  },
+  "lessons": [],
+  "cost": {
+    "currency": null,
+    "amount": null,
+    "basis": "unknown"
+  },
+  "retry_of": null,
+  "adoption_receipt": null,
+  "note": "Use actual versions, timestamps, costs and results. Null means unknown or not yet set, never zero cost or a successful run."
+}

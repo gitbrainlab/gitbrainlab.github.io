@@ -1,0 +1,322 @@
+{
+  "example_only": true,
+  "schema_status": "illustrative_wire_contract_not_production_schema",
+  "assertions": [
+    {
+      "assertion_id": "urn:example:assertion:1",
+      "subject_ref": "urn:example:vote:1",
+      "predicate_id": "vote.yes_count",
+      "value": {
+        "kind": "count",
+        "value": 6,
+        "unit": "votes",
+        "basis": "recorded affirmative count",
+        "reported_or_computed": "reported"
+      },
+      "context_refs": {
+        "meeting": "urn:example:meeting:1",
+        "matter": "urn:example:matter:46",
+        "treatment": "urn:example:treatment:agenda-inclusion",
+        "vote": "urn:example:vote:1"
+      },
+      "meaning": {
+        "basis": "source_reported",
+        "attribution": "urn:example:synthetic-minutes",
+        "polarity": "affirmative",
+        "modality": "reported",
+        "conditions": []
+      },
+      "time": {
+        "event_time_assertions": [],
+        "effective_interval": null,
+        "observed_at": null,
+        "recorded_at": null
+      },
+      "evidence": [
+        {
+          "source_version_id": "urn:example:source:077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "source_sha256": "077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "representation_id": "urn:example:text:077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "representation_sha256": "077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "media_type": "text/plain; charset=utf-8",
+          "source_location": "synthetic-source.txt",
+          "selector": {
+            "kind": "text_range",
+            "indexing": "Unicode code points, zero-based, end-exclusive",
+            "start": 85,
+            "end": 165,
+            "quote": "The motion to add Ordinance 46 to the agenda passed with six ayes and zero noes."
+          },
+          "selector_check": "matches_in_fixture"
+        }
+      ],
+      "interpretation": {
+        "mapping_profile": "layered_v5_replay",
+        "extension_status": "not_applicable",
+        "extractor": "synthetic-example-construction",
+        "model": null,
+        "prompt_version": null,
+        "run_id": "urn:example:run:1",
+        "release_id": null,
+        "release_digest": null
+      },
+      "review": {
+        "status": "candidate",
+        "review_events": [],
+        "unresolved_issues": [
+          "Synthetic example only; no operational release or observed event"
+        ]
+      },
+      "lineage": {
+        "supports": [],
+        "contradicts": [],
+        "supersedes": [],
+        "derived_from": [
+          "urn:example:source:077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8"
+        ]
+      },
+      "publication": {
+        "access_class": "public_synthetic_example",
+        "eligible_for_civic_fact_view": false
+      }
+    },
+    {
+      "assertion_id": "urn:example:assertion:2",
+      "subject_ref": "urn:example:vote:2",
+      "predicate_id": "vote.yes_count",
+      "value": {
+        "kind": "count",
+        "value": 4,
+        "unit": "votes",
+        "basis": "recorded affirmative count",
+        "reported_or_computed": "reported"
+      },
+      "context_refs": {
+        "meeting": "urn:example:meeting:1",
+        "matter": "urn:example:matter:46",
+        "treatment": "urn:example:treatment:ordinance-passage",
+        "vote": "urn:example:vote:2"
+      },
+      "meaning": {
+        "basis": "source_reported",
+        "attribution": "urn:example:synthetic-minutes",
+        "polarity": "affirmative",
+        "modality": "reported",
+        "conditions": []
+      },
+      "time": {
+        "event_time_assertions": [],
+        "effective_interval": null,
+        "observed_at": null,
+        "recorded_at": null
+      },
+      "evidence": [
+        {
+          "source_version_id": "urn:example:source:077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "source_sha256": "077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "representation_id": "urn:example:text:077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "representation_sha256": "077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "media_type": "text/plain; charset=utf-8",
+          "source_location": "synthetic-source.txt",
+          "selector": {
+            "kind": "text_range",
+            "indexing": "Unicode code points, zero-based, end-exclusive",
+            "start": 166,
+            "end": 245,
+            "quote": "Ordinance 46 passed with four ayes, zero noes, two abstentions and one absence."
+          },
+          "selector_check": "matches_in_fixture"
+        }
+      ],
+      "interpretation": {
+        "mapping_profile": "layered_v5_replay",
+        "extension_status": "not_applicable",
+        "extractor": "synthetic-example-construction",
+        "model": null,
+        "prompt_version": null,
+        "run_id": "urn:example:run:1",
+        "release_id": null,
+        "release_digest": null
+      },
+      "review": {
+        "status": "candidate",
+        "review_events": [],
+        "unresolved_issues": [
+          "Synthetic example only; no operational release or observed event"
+        ]
+      },
+      "lineage": {
+        "supports": [],
+        "contradicts": [],
+        "supersedes": [],
+        "derived_from": [
+          "urn:example:source:077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8"
+        ]
+      },
+      "publication": {
+        "access_class": "public_synthetic_example",
+        "eligible_for_civic_fact_view": false
+      }
+    },
+    {
+      "assertion_id": "urn:example:assertion:3",
+      "subject_ref": "urn:example:matter:engineering-addendum",
+      "predicate_id": "ext:contract.addendum_approval",
+      "value": {
+        "kind": "code",
+        "value": "approved_conditionally",
+        "vocabulary": "urn:example:contract-outcome",
+        "vocabulary_version": "draft"
+      },
+      "context_refs": {
+        "meeting": "urn:example:meeting:1",
+        "matter": "urn:example:matter:engineering-addendum"
+      },
+      "meaning": {
+        "basis": "source_reported",
+        "attribution": "urn:example:synthetic-minutes",
+        "polarity": "affirmative",
+        "modality": "reported",
+        "conditions": [
+          "receipt of grant",
+          "decision to proceed with project"
+        ]
+      },
+      "time": {
+        "event_time_assertions": [],
+        "effective_interval": null,
+        "observed_at": null,
+        "recorded_at": null
+      },
+      "evidence": [
+        {
+          "source_version_id": "urn:example:source:077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "source_sha256": "077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "representation_id": "urn:example:text:077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "representation_sha256": "077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "media_type": "text/plain; charset=utf-8",
+          "source_location": "synthetic-source.txt",
+          "selector": {
+            "kind": "text_range",
+            "indexing": "Unicode code points, zero-based, end-exclusive",
+            "start": 246,
+            "end": 352,
+            "quote": "The engineering addendum was approved, conditional on receiving the grant and proceeding with the project."
+          },
+          "selector_check": "matches_in_fixture"
+        }
+      ],
+      "interpretation": {
+        "mapping_profile": "layered_v5_replay",
+        "extension_status": "proposed",
+        "extractor": "synthetic-example-construction",
+        "model": null,
+        "prompt_version": null,
+        "run_id": "urn:example:run:1",
+        "release_id": null,
+        "release_digest": null
+      },
+      "review": {
+        "status": "candidate",
+        "review_events": [],
+        "unresolved_issues": [
+          "Synthetic example only; no operational release or observed event"
+        ]
+      },
+      "lineage": {
+        "supports": [],
+        "contradicts": [],
+        "supersedes": [],
+        "derived_from": [
+          "urn:example:source:077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8"
+        ]
+      },
+      "publication": {
+        "access_class": "public_synthetic_example",
+        "eligible_for_civic_fact_view": false
+      }
+    },
+    {
+      "assertion_id": "urn:example:assertion:4",
+      "subject_ref": "urn:example:statement:4",
+      "predicate_id": "ext:statement.polarity",
+      "value": {
+        "kind": "code",
+        "value": "negated",
+        "vocabulary": "urn:example:statement-polarity",
+        "vocabulary_version": "draft"
+      },
+      "context_refs": {
+        "meeting": "urn:example:meeting:1",
+        "statement": "urn:example:statement:4",
+        "topic": "data-centers"
+      },
+      "meaning": {
+        "basis": "source_reported",
+        "attribution": "urn:example:synthetic-minutes",
+        "polarity": "negative",
+        "modality": "reported",
+        "conditions": []
+      },
+      "time": {
+        "event_time_assertions": [],
+        "effective_interval": null,
+        "observed_at": null,
+        "recorded_at": null
+      },
+      "evidence": [
+        {
+          "source_version_id": "urn:example:source:077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "source_sha256": "077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "representation_id": "urn:example:text:077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "representation_sha256": "077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8",
+          "media_type": "text/plain; charset=utf-8",
+          "source_location": "synthetic-source.txt",
+          "selector": {
+            "kind": "text_range",
+            "indexing": "Unicode code points, zero-based, end-exclusive",
+            "start": 353,
+            "end": 397,
+            "quote": "The speaker said: This is not a data center."
+          },
+          "selector_check": "matches_in_fixture"
+        }
+      ],
+      "interpretation": {
+        "mapping_profile": "layered_v5_replay",
+        "extension_status": "proposed",
+        "extractor": "synthetic-example-construction",
+        "model": null,
+        "prompt_version": null,
+        "run_id": "urn:example:run:1",
+        "release_id": null,
+        "release_digest": null
+      },
+      "review": {
+        "status": "candidate",
+        "review_events": [],
+        "unresolved_issues": [
+          "Synthetic example only; no operational release or observed event"
+        ]
+      },
+      "lineage": {
+        "supports": [],
+        "contradicts": [],
+        "supersedes": [],
+        "derived_from": [
+          "urn:example:source:077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8"
+        ]
+      },
+      "publication": {
+        "access_class": "public_synthetic_example",
+        "eligible_for_civic_fact_view": false
+      }
+    }
+  ],
+  "expected_behavior": [
+    "Two vote identities share one matter but decide different treatments.",
+    "Conditional approval supplies no evidence of grant receipt or contract execution.",
+    "Negated topic does not establish a proposed data-center project."
+  ],
+  "note": "Unknown timestamps and release references are intentionally null. Production acceptance requires required operational metadata; these fixtures do not qualify."
+}

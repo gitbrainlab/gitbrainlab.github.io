@@ -1,0 +1,210 @@
+@prefix cs: <https://example.invalid/civicspec/v0.5/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix layer: <urn:civicspec:layer:> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+layer:authority a cs:OntologyModule ;
+    rdfs:label "Legal applicability overlay" ;
+    rdfs:comment "Bind a rule version to a jurisdiction, actor capacity, action type, effective period, conditions and exceptions. Do not apply current law retrospectively without checking." ;
+    cs:adoptsPatternFrom <urn:civicspec:standard:csl204a>,
+        <urn:civicspec:standard:g42>,
+        <urn:civicspec:standard:pbo106> ;
+    cs:containsConcept cs:ApplicabilityAssertion,
+        cs:DeadlineRule,
+        cs:DutyScope,
+        cs:Exception,
+        cs:LegalProvisionVersion,
+        cs:Trigger ;
+    cs:dependsOn layer:domain,
+        layer:evidence,
+        layer:procedure,
+        layer:registry ;
+    cs:exampleCaseLabel "C10",
+        "D12",
+        "D19" ;
+    cs:layer 7 ;
+    cs:status "Design overlay; no end-to-end legal conformance backtest" .
+
+layer:question a cs:OntologyModule ;
+    rdfs:label "Questions, answers and crosswalks" ;
+    rdfs:comment "Answers must state evidence, dates and unresolved facts. Mapping acceptance does not prove an answer is true." ;
+    cs:adoptsPatternFrom <urn:civicspec:standard:shacl> ;
+    cs:containsConcept cs:Mapping,
+        cs:Question ;
+    cs:dependsOn layer:assertion,
+        layer:domain,
+        layer:procedure ;
+    cs:exampleCaseLabel "C12",
+        "D06",
+        "D19",
+        "H09" ;
+    cs:layer 6 ;
+    cs:status "20 graph-backed competency question checks" .
+
+layer:assertion a cs:OntologyModule ;
+    rdfs:label "Claims, uncertainty and review" ;
+    rdfs:comment "The source says X; an extractor interpreted Y; a reviewer checked Z. Keep these separate and preserve contradictory observations." ;
+    cs:adoptsPatternFrom <urn:civicspec:standard:annotation>,
+        <urn:civicspec:standard:prov> ;
+    cs:containsConcept cs:Assertion,
+        cs:AttributedStatement,
+        cs:UnresolvedIssue ;
+    cs:dependsOn layer:document,
+        layer:domain,
+        layer:evidence,
+        layer:procedure,
+        layer:registry ;
+    cs:exampleCaseLabel "D03",
+        "H07",
+        "H17",
+        "V07" ;
+    cs:layer 5 ;
+    cs:status "551 source-anchored assertions plus unknown boundaries" .
+
+<urn:civicspec:standard:akoma> rdfs:label "Akoma Ntoso / LegalDocML" ;
+    dcterms:source <https://docs.oasis-open.org/legaldocml/akn-core/v1.0/akn-core-v1.0-part1-vocabulary.html> ;
+    rdfs:comment "Legal-document structure, metadata, references and versions; complete XML exporter not tested." .
+
+<urn:civicspec:standard:besluit> rdfs:label "OSLO Besluit" ;
+    dcterms:source <https://data.vlaanderen.be/ns/besluit/> ;
+    rdfs:comment "Meeting, agenda item, treatment, vote, decision and condition patterns; no import of Flemish legal applicability." .
+
+<urn:civicspec:standard:csl204a> rdfs:label "NYS Civil Service Law §204-a" ;
+    dcterms:source <https://www.nysenate.gov/legislation/laws/CVS/204-A> ;
+    rdfs:comment "Authority reference for agreements requiring legislative action; executed agreement still needed." .
+
+<urn:civicspec:standard:g42> rdfs:label "MSRB Rule G-42" ;
+    dcterms:source <https://www.msrb.org/Rules-and-Interpretations/MSRB-Rules/General/Rule-G-42> ;
+    rdfs:comment "Role/client-specific municipal-advisor duties; not all financial participants have identical duties." .
+
+<urn:civicspec:standard:legistar> rdfs:label "Legistar API" ;
+    dcterms:source <https://webapi.legistar.com/Help> ;
+    rdfs:comment "Operational interchange model for events, event items, matters and votes; not a vendor integration in this run." .
+
+<urn:civicspec:standard:ocds> rdfs:label "Open Contracting Data Standard" ;
+    dcterms:source <https://standard.open-contracting.org/latest/en/schema/reference/> ;
+    rdfs:comment "Distinct planning, tender, award, contract and implementation stages." .
+
+<urn:civicspec:standard:org> rdfs:label "W3C ORG" ;
+    dcterms:source <https://www.w3.org/TR/vocab-org/> ;
+    rdfs:comment "Organization/post/membership patterns; vendor or lessee is not automatically an organizational member." .
+
+<urn:civicspec:standard:pbo106> rdfs:label "NYS Public Officers Law §106" ;
+    dcterms:source <https://www.nysenate.gov/legislation/laws/PBO/106> ;
+    rdfs:comment "Authority reference for minutes and matters voted on; not a complete OML applicability test." .
+
+<urn:civicspec:standard:qb> rdfs:label "RDF Data Cube" ;
+    dcterms:source <https://www.w3.org/TR/vocab-data-cube/> ;
+    rdfs:comment "Financial research observations with explicit dimensions; not a GASB accounting taxonomy." .
+
+<urn:civicspec:standard:shacl> rdfs:label "SHACL" ;
+    dcterms:source <https://www.w3.org/TR/shacl/> ;
+    rdfs:comment "Proposed structural validation; shapes were parsed, but no SHACL engine was run." .
+
+<urn:civicspec:standard:time> rdfs:label "OWL-Time" ;
+    dcterms:source <https://www.w3.org/TR/owl-time/> ;
+    rdfs:comment "Reference for temporal modeling; observed, effective, publication and verification times remain separate." .
+
+layer:document a cs:OntologyModule ;
+    rdfs:label "Document structure and versions" ;
+    rdfs:comment "Retain text lines and page markers with offsets. A document is not a meeting, and a draft resolution is not an adopted act." ;
+    cs:adoptsPatternFrom <urn:civicspec:standard:akoma>,
+        <urn:civicspec:standard:annotation> ;
+    cs:containsConcept cs:DocumentIR,
+        cs:DocumentVersion,
+        cs:RecordCorrection ;
+    cs:dependsOn layer:evidence ;
+    cs:exampleCaseLabel "C11",
+        "H01",
+        "H09" ;
+    cs:layer 1 ;
+    cs:status "Exact retained-text IR implemented; full PDF layout not reconstructed" .
+
+<urn:civicspec:standard:popolo> rdfs:label "Popolo" ;
+    dcterms:source <https://www.popoloproject.com/specs/> ;
+    rdfs:comment "People, organizations, posts, memberships, motions, vote events, votes and counts." .
+
+<urn:civicspec:standard:prov> rdfs:label "PROV-O" ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:comment "Entities, activities, agents and derivation for source and interpretation lineage." .
+
+layer:domain a cs:OntologyModule ;
+    rdfs:label "Money, projects and obligations" ;
+    rdfs:comment "Preserve ceilings, exclusions, conditions, cash timing, approval stages, bargaining units and funding sources. Do not infer execution or expenditure from authorization." ;
+    cs:adoptsPatternFrom <urn:civicspec:standard:ocds>,
+        <urn:civicspec:standard:qb> ;
+    cs:containsConcept cs:Condition,
+        cs:DebtAuthorization,
+        cs:FinancialObservation,
+        cs:GrantLifecycle,
+        cs:LaborRelationship,
+        cs:ProcurementStage,
+        cs:QualifiedObligation ;
+    cs:dependsOn layer:procedure,
+        layer:registry ;
+    cs:exampleCaseLabel "C10",
+        "D19",
+        "H10",
+        "H13" ;
+    cs:layer 4 ;
+    cs:status "Selected cases and historical research rows mapped" .
+
+<urn:civicspec:standard:annotation> rdfs:label "Web Annotation" ;
+    dcterms:source <https://www.w3.org/TR/annotation-model/> ;
+    rdfs:comment "Text quote and position selectors pinned to an exact text representation." .
+
+layer:evidence a cs:OntologyModule ;
+    rdfs:label "Source and evidence" ;
+    rdfs:comment "Keep source bytes identity, derived-text identity, exact quotation and interpretation activity separate. Reported PDF hashes are not fresh verification." ;
+    cs:adoptsPatternFrom <urn:civicspec:standard:annotation>,
+        <urn:civicspec:standard:prov> ;
+    cs:containsConcept cs:DerivedText,
+        cs:EvidenceSpan,
+        cs:ExtractionActivity,
+        cs:SourceVersion ;
+    cs:exampleCaseLabel "D03",
+        "H17",
+        "V07" ;
+    cs:layer 0 ;
+    cs:status "Implemented on retained text" .
+
+layer:procedure a cs:OntologyModule ;
+    rdfs:label "Meeting treatment and decisions" ;
+    rdfs:comment "Track agenda matter, successive treatments, amendments, votes, proposed effects, actual recorded outcomes and time-sensitive attendance." ;
+    cs:adoptsPatternFrom <urn:civicspec:standard:besluit>,
+        <urn:civicspec:standard:legistar>,
+        <urn:civicspec:standard:popolo>,
+        <urn:civicspec:standard:time> ;
+    cs:containsConcept cs:DocumentMeetingContext,
+        cs:MeetingSession,
+        cs:MotionTreatment,
+        cs:ReportedAction,
+        cs:TemporalAttendance,
+        cs:VoteEvent ;
+    cs:dependsOn layer:document,
+        layer:registry ;
+    cs:exampleCaseLabel "D21",
+        "H01",
+        "H09",
+        "V01" ;
+    cs:layer 3 ;
+    cs:status "Candidate graph implemented and query-tested" .
+
+layer:registry a cs:OntologyModule ;
+    rdfs:label "Government, public body and capacity" ;
+    rdfs:comment "Separate municipality, board, membership, service district, geographic overlap and the capacity in which a board acts." ;
+    cs:adoptsPatternFrom <urn:civicspec:standard:org>,
+        <urn:civicspec:standard:popolo> ;
+    cs:containsConcept cs:GovernmentProfile,
+        cs:JurisdictionRelationship,
+        cs:LegalCapacityAssignment,
+        cs:PublicBodyProfile ;
+    cs:dependsOn layer:evidence ;
+    cs:exampleCaseLabel "D08",
+        "D09",
+        "D10",
+        "H11" ;
+    cs:layer 2 ;
+    cs:status "Candidate profiles and qualified contexts implemented" .
+

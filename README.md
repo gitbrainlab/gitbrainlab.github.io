@@ -366,3 +366,8 @@ Note: DNS changes are handled outside this repository.
 ## License
 
 See individual project repositories for their respective licenses.
+
+## Civic specifications
+
+[CivicSpec](specs/civicspec/README.md) provides a shared contract for evidence-backed civic knowledge, including the full specification, worked examples, agent guidance, contributor workflow, validation tools, and improvement roadmap. The initial publication is experimental; production adoption and assertion review are separate decisions.
+

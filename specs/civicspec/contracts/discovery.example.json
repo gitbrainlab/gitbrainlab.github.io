@@ -1,0 +1,21 @@
+{
+  "example_only": true,
+  "publication_status": "unpublished",
+  "registry_id": "urn:example:civicspec-registry",
+  "registry_origin": null,
+  "discovery_revision": null,
+  "trust_policy_ref": null,
+  "channels": {
+    "candidate": null,
+    "stable": null
+  },
+  "channel_entry_contract": {
+    "release_id": "nonempty immutable identifier",
+    "manifest_url": "absolute HTTPS URL on approved origin",
+    "manifest_sha256": "64 lowercase hex characters",
+    "published_at": "RFC3339 timestamp",
+    "status": "candidate or stable"
+  },
+  "note": "Template only. For the actual published candidate use the repository .well-known/civicspec.json and verify its pinned manifest.",
+  "proposed_repository": "https://github.com/gitbrainlab/gitbrainlab.github.io"
+}

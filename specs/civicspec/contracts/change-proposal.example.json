@@ -1,0 +1,40 @@
+{
+  "example_only": true,
+  "change_id": "urn:example:change:1",
+  "lesson_refs": [
+    "urn:example:lesson:amended-application"
+  ],
+  "status": "proposed",
+  "change_class": "semantic_adapter",
+  "scope": {
+    "profile": "example-producer-profile",
+    "global_term_change": false
+  },
+  "problem": "Loss of underlying action when amended text is present",
+  "proposed_behavior": "Separate amendment treatment and vote on amended target",
+  "alternatives": [
+    "Abstain on ambiguous action spans and request a longer source window"
+  ],
+  "baseline_release": null,
+  "candidate_revision": null,
+  "evidence_refs": [],
+  "test_refs": [],
+  "compatibility": {
+    "wire_shape_change": false,
+    "output_meaning_change": true,
+    "requires_impact_review": true
+  },
+  "migration": {
+    "affected_output_query": null,
+    "replay_budget": null,
+    "rollback_release": null
+  },
+  "evaluation": {
+    "state": "not_run",
+    "reference_label_revision": null,
+    "unseen_sample": null,
+    "metrics": null
+  },
+  "approval": null,
+  "note": "No release or policy change is authorized by a proposal record."
+}

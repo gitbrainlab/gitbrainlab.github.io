@@ -1,0 +1,50 @@
+schema_version: civicspec-onboarding-proposal.v0.5
+status: proposed_not_executed
+composition_order:
+  - state_authority_profile
+  - statutory_government_class
+  - charter_and_local_provisions
+  - public_body
+  - document_family
+  - production_era
+identity:
+  government_id: null
+  registry_identifiers: []
+  public_body_id: null
+  aliases: []
+  capacity_assignments: []
+  unresolved_identity_assertions: []
+legal_and_practice_profile:
+  source_provisions: []
+  effective_intervals: []
+  authority_and_exceptions: []
+  observed_practices: []
+  rule_validation_status: not_tested
+syntax_profile:
+  document_families: []
+  producer_eras: []
+  header_and_section_patterns: []
+  page_and_table_interpretation: []
+  local_lexical_aliases: []
+  treatment_and_vote_patterns: []
+  negative_patterns: []
+  unresolved_raw_fields: []
+  source_example_selectors: []
+validation:
+  training_sources: []
+  validation_sources: []
+  municipality_and_era_holdouts: []
+  source_lineage_deduplication: required
+  freeze_hashes: []
+  field_representability: null
+  controlled_code_recognition: null
+  independently_adjudicated_extraction_accuracy: null
+  original_source_review: null
+  unsupported_promotion_rate: null
+  identity_collision_checks: []
+release_gate:
+  automatic_publication: false
+  legal_conclusion_promotion: false
+  preserve_unknowns: true
+  preserve_superseded_assertions: true
+  require_examples_and_counterexamples_for_new_mapping: true

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "besluit",
+    "name": "OSLO Besluit",
+    "url": "https://data.vlaanderen.be/ns/besluit/",
+    "use": "Meeting, agenda item, treatment, vote, decision and condition patterns; no import of Flemish legal applicability.",
+    "review_date_local": "2026-09-07"
+  },
+  {
+    "id": "popolo",
+    "name": "Popolo",
+    "url": "https://www.popoloproject.com/specs/",
+    "use": "People, organizations, posts, memberships, motions, vote events, votes and counts.",
+    "review_date_local": "2026-09-07"
+  },
+  {
+    "id": "legistar",
+    "name": "Legistar API",
+    "url": "https://webapi.legistar.com/Help",
+    "use": "Operational interchange model for events, event items, matters and votes; not a vendor integration in this run.",
+    "review_date_local": "2026-09-07"
+  },
+  {
+    "id": "akoma",
+    "name": "Akoma Ntoso / LegalDocML",
+    "url": "https://docs.oasis-open.org/legaldocml/akn-core/v1.0/akn-core-v1.0-part1-vocabulary.html",
+    "use": "Legal-document structure, metadata, references and versions; complete XML exporter not tested.",
+    "review_date_local": "2026-09-07"
+  },
+  {
+    "id": "org",
+    "name": "W3C ORG",
+    "url": "https://www.w3.org/TR/vocab-org/",
+    "use": "Organization/post/membership patterns; vendor or lessee is not automatically an organizational member.",
+    "review_date_local": "2026-09-07"
+  },
+  {
+    "id": "prov",
+    "name": "PROV-O",
+    "url": "https://www.w3.org/TR/prov-o/",
+    "use": "Entities, activities, agents and derivation for source and interpretation lineage.",
+    "review_date_local": "2026-09-07"
+  },
+  {
+    "id": "annotation",
+    "name": "Web Annotation",
+    "url": "https://www.w3.org/TR/annotation-model/",
+    "use": "Text quote and position selectors pinned to an exact text representation.",
+    "review_date_local": "2026-09-07"
+  },
+  {
+    "id": "qb",
+    "name": "RDF Data Cube",
+    "url": "https://www.w3.org/TR/vocab-data-cube/",
+    "use": "Financial research observations with explicit dimensions; not a GASB accounting taxonomy.",
+    "review_date_local": "2026-09-07"
+  },
+  {
+    "id": "ocds",
+    "name": "Open Contracting Data Standard",
+    "url": "https://standard.open-contracting.org/latest/en/schema/reference/",
+    "use": "Distinct planning, tender, award, contract and implementation stages.",
+    "review_date_local": "2026-09-07"
+  },
+  {
+    "id": "shacl",
+    "name": "SHACL",
+    "url": "https://www.w3.org/TR/shacl/",
+    "use": "Proposed structural validation; shapes were parsed, but no SHACL engine was run.",
+    "review_date_local": "2026-09-07"
+  },
+  {
+    "id": "time",
+    "name": "OWL-Time",
+    "url": "https://www.w3.org/TR/owl-time/",
+    "use": "Reference for temporal modeling; observed, effective, publication and verification times remain separate.",
+    "review_date_local": "2026-09-07"
+  },
+  {
+    "id": "pbo106",
+    "name": "NYS Public Officers Law \u00a7106",
+    "url": "https://www.nysenate.gov/legislation/laws/PBO/106",
+    "use": "Authority reference for minutes and matters voted on; not a complete OML applicability test.",
+    "review_date_local": "2026-09-07"
+  },
+  {
+    "id": "csl204a",
+    "name": "NYS Civil Service Law \u00a7204-a",
+    "url": "https://www.nysenate.gov/legislation/laws/CVS/204-A",
+    "use": "Authority reference for agreements requiring legislative action; executed agreement still needed.",
+    "review_date_local": "2026-09-07"
+  },
+  {
+    "id": "g42",
+    "name": "MSRB Rule G-42",
+    "url": "https://www.msrb.org/Rules-and-Interpretations/MSRB-Rules/General/Rule-G-42",
+    "use": "Role/client-specific municipal-advisor duties; not all financial participants have identical duties.",
+    "review_date_local": "2026-09-07"
+  }
+]

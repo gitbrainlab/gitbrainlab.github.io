@@ -1,0 +1,24 @@
+@prefix cs: <https://example.invalid/civicspec/v0.5/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+# Proposed executable SHACL shapes. This run parsed Turtle but did not execute a SHACL engine.
+cs:AssertionShape a sh:NodeShape ; sh:targetClass cs:Assertion ;
+ sh:property [ sh:path rdf:subject ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+ sh:property [ sh:path rdf:predicate ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+ sh:property [ sh:path rdf:object ; sh:minCount 1 ; sh:maxCount 1 ] ;
+ sh:property [ sh:path cs:evidence ; sh:minCount 1 ; sh:class cs:EvidenceSpan ] ;
+ sh:property [ sh:path prov:wasGeneratedBy ; sh:minCount 1 ; sh:class cs:ExtractionActivity ] ;
+ sh:property [ sh:path cs:reviewStatus ; sh:minCount 1 ] .
+cs:SpanShape a sh:NodeShape ; sh:targetClass cs:EvidenceSpan ;
+ sh:property [ sh:path oa:hasSource ; sh:minCount 1 ; sh:maxCount 1 ; sh:class cs:DerivedText ] ;
+ sh:property [ sh:path oa:hasSelector ; sh:minCount 2 ] .
+cs:PositionShape a sh:NodeShape ; sh:targetClass oa:TextPositionSelector ;
+ sh:property [ sh:path oa:start ; sh:datatype xsd:nonNegativeInteger ; sh:minCount 1 ; sh:maxCount 1 ] ;
+ sh:property [ sh:path oa:end ; sh:datatype xsd:nonNegativeInteger ; sh:minCount 1 ; sh:maxCount 1 ] .
+cs:CandidateFrameShape a sh:NodeShape ; sh:targetClass cs:CaseFrame ;
+ sh:property [ sh:path cs:caseId ; sh:minCount 1 ; sh:maxCount 1 ] ;
+ sh:property [ sh:path cs:evidence ; sh:minCount 1 ] ;
+ sh:property [ sh:path cs:reviewStatus ; sh:hasValue "candidate_not_original_verified" ] .

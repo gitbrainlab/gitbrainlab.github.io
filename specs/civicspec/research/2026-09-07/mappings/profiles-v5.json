@@ -1,0 +1,3665 @@
+{
+  "generic": {
+    "label": "Generic schema.org profile",
+    "mapping": {
+      "body.label": {
+        "target": "Event.organizer.name",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "matter.title": {
+        "target": "Event.about.name",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "time.meeting_date": {
+        "target": "Event.startDate",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "motion.mover": {
+        "target": "Action.agent.name",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "participation.speaker": {
+        "target": "Comment.author.name",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "money.amount": {
+        "target": "MonetaryAmount.value",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "money.currency": {
+        "target": "MonetaryAmount.currency",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "government.name": {
+        "target": "GovernmentOrganization.name",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "government.slug": {
+        "target": "GovernmentOrganization.identifier",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "participation.topic": {
+        "target": "Comment.about.name",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "action.kind": {
+        "target": "schema:Action/schema:additionalType",
+        "classification": "native_term_local_codes",
+        "source": "Generic schema.org profile plus CivicSpec action concepts"
+      }
+    },
+    "notes": "General event/organization/amount fields only; no passing action status inferred from CompletedActionStatus.",
+    "raw_fields_retained": true,
+    "native_service_or_schema_conformance_claimed": false
+  },
+  "popolo": {
+    "label": "Popolo civic profile",
+    "mapping": {
+      "body.label": {
+        "target": "Motion.organization.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "matter.title": {
+        "target": "Motion.text",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "matter.identifier": {
+        "target": "Motion.identifier",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "motion.mover": {
+        "target": "Motion.creator.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.result": {
+        "target": "VoteEvent.result",
+        "classification": "native_term_local_codes",
+        "source": "Popolo"
+      },
+      "vote.yes_count": {
+        "target": "VoteEvent.counts.yes",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.no_count": {
+        "target": "VoteEvent.counts.no",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.abstain_count": {
+        "target": "VoteEvent.counts.abstain",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.absent_count": {
+        "target": "VoteEvent.counts.absent",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.yes_voters": {
+        "target": "VoteEvent.votes.yes.voters",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.absent_voters": {
+        "target": "VoteEvent.votes.absent.voters",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "time.meeting_date": {
+        "target": "Event.start_date",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "participation.speaker": {
+        "target": "Speech.creator.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "participation.topic": {
+        "target": "Speech.text",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "government.name": {
+        "target": "Organization.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "government.slug": {
+        "target": "Organization.identifiers",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "action.kind": {
+        "target": "Motion.classification",
+        "classification": "native_term_local_codes",
+        "source": "Popolo civic profile plus CivicSpec action concepts"
+      }
+    },
+    "notes": "Explicit Motion / VoteEvent / Vote / Count separation; arrays remain associated with their event. Mover only; seconder needs extension.",
+    "raw_fields_retained": true,
+    "native_service_or_schema_conformance_claimed": false
+  },
+  "legistar": {
+    "label": "Legistar-shaped interchange profile",
+    "mapping": {
+      "body.label": {
+        "target": "Event.EventBodyName",
+        "classification": "native",
+        "source": "Legistar"
+      },
+      "matter.title": {
+        "target": "Matter.MatterTitle",
+        "classification": "native",
+        "source": "Legistar"
+      },
+      "matter.identifier": {
+        "target": "Matter.MatterFile",
+        "classification": "native",
+        "source": "Legistar"
+      },
+      "motion.mover": {
+        "target": "EventItem.EventItemMover",
+        "classification": "native",
+        "source": "Legistar"
+      },
+      "motion.seconder": {
+        "target": "EventItem.EventItemSeconder",
+        "classification": "native",
+        "source": "Legistar"
+      },
+      "vote.result": {
+        "target": "EventItem.EventItemPassedFlag+EventItemActionName",
+        "classification": "native_term_local_codes",
+        "source": "Legistar"
+      },
+      "vote.yes_voters": {
+        "target": "EventItem.Votes.VotePersonName[VoteValueName=Yes]",
+        "classification": "native",
+        "source": "Legistar"
+      },
+      "time.meeting_date": {
+        "target": "Event.EventDate",
+        "classification": "native",
+        "source": "Legistar"
+      },
+      "reference.prior_act_date": {
+        "target": "MatterRelation.relatedMatter.date",
+        "classification": "composition",
+        "source": "Legistar"
+      },
+      "action.reason": {
+        "target": "EventItem.MinutesNote",
+        "classification": "text_only",
+        "source": "Legistar"
+      },
+      "government.name": {
+        "target": "Client.name",
+        "classification": "local_extension",
+        "source": "Legistar"
+      },
+      "action.kind": {
+        "target": "EventItem.EventItemActionName",
+        "classification": "native_term_local_codes",
+        "source": "Legistar-shaped interchange profile plus CivicSpec action concepts"
+      }
+    },
+    "notes": "Maps documented API fields; not a call to Legistar and not validated vendor payloads. Free-text MinutesNote is preserved but not semantic credit.",
+    "raw_fields_retained": true,
+    "native_service_or_schema_conformance_claimed": false
+  },
+  "besluit": {
+    "label": "OSLO Besluit decision profile",
+    "mapping": {
+      "body.label": {
+        "target": "Bestuursorgaan.label",
+        "classification": "composition",
+        "source": "OSLO Besluit"
+      },
+      "matter.title": {
+        "target": "Agendapunt.onderwerp",
+        "classification": "native",
+        "source": "OSLO Besluit"
+      },
+      "time.meeting_date": {
+        "target": "schema:Event/schema:startDate",
+        "classification": "composition",
+        "source": "schema.org date semantics; not necessarily planned start"
+      },
+      "vote.yes_count": {
+        "target": "Stemming.aantalVoorstanders",
+        "classification": "native",
+        "source": "OSLO Besluit"
+      },
+      "vote.no_count": {
+        "target": "Stemming.aantalTegenstanders",
+        "classification": "native",
+        "source": "OSLO Besluit"
+      },
+      "vote.abstain_count": {
+        "target": "Stemming.aantalOnthouders",
+        "classification": "native",
+        "source": "OSLO Besluit"
+      },
+      "vote.yes_voters": {
+        "target": "Stemming.heeftVoorstander",
+        "classification": "native",
+        "source": "OSLO Besluit"
+      },
+      "action.reason": {
+        "target": "Besluit.motivering",
+        "classification": "native",
+        "source": "OSLO Besluit"
+      },
+      "condition.text": {
+        "target": "Besluit.heeftVoorwaarde",
+        "classification": "native",
+        "source": "OSLO Besluit"
+      },
+      "government.name": {
+        "target": "Bestuurseenheid.label",
+        "classification": "composition",
+        "source": "OSLO Besluit"
+      },
+      "government.slug": {
+        "target": "Bestuurseenheid.identifier",
+        "classification": "composition",
+        "source": "OSLO Besluit"
+      }
+    },
+    "notes": "Uses meeting, agenda item, treatment, vote and decision patterns; close mappings, no import of Flemish statutory applicability.",
+    "raw_fields_retained": true,
+    "native_service_or_schema_conformance_claimed": false
+  },
+  "akoma": {
+    "label": "Akoma Ntoso legal-document profile",
+    "mapping": {
+      "body.label": {
+        "target": "debate.meta.references.TLCOrganization",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "matter.title": {
+        "target": "docTitle",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "matter.identifier": {
+        "target": "docNumber",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "time.meeting_date": {
+        "target": "docDate",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "motion.mover": {
+        "target": "docProponent/person",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "vote.yes_voters": {
+        "target": "summary/outcome/vote/person",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "vote.result": {
+        "target": "summary/outcome",
+        "classification": "native_term_local_codes",
+        "source": "Akoma Ntoso"
+      },
+      "legal.citation": {
+        "target": "ref.href",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "reference.prior_act_date": {
+        "target": "activeModifications.destination",
+        "classification": "composition",
+        "source": "Akoma Ntoso"
+      },
+      "time.effective_date": {
+        "target": "temporalData/eventRef",
+        "classification": "composition",
+        "source": "Akoma Ntoso"
+      },
+      "participation.speaker": {
+        "target": "speech.by",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "participation.topic": {
+        "target": "speech.p",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "government.name": {
+        "target": "TLCOrganization.showAs",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "government.slug": {
+        "target": "TLCOrganization.href",
+        "classification": "composition",
+        "source": "Akoma Ntoso"
+      },
+      "action.kind": {
+        "target": "proceduralMotions.refersTo",
+        "classification": "native_term_local_codes",
+        "source": "Akoma Ntoso legal-document profile plus CivicSpec action concepts"
+      }
+    },
+    "notes": "XML structure/metadata mapping only; no XSD-validation or complete LegalDocML exporter claimed. Narrative/summary content is not automatic municipal semantics.",
+    "raw_fields_retained": true,
+    "native_service_or_schema_conformance_claimed": false
+  },
+  "composed_v0": {
+    "label": "Composed standards, initial mapping",
+    "mapping": {
+      "body.label": {
+        "target": "Motion.organization.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "matter.title": {
+        "target": "Motion.text",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "time.meeting_date": {
+        "target": "Event.start_date",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "motion.mover": {
+        "target": "Motion.creator.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "participation.speaker": {
+        "target": "Speech.creator.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "money.amount": {
+        "target": "MonetaryAmount.value",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "money.currency": {
+        "target": "MonetaryAmount.currency",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "government.name": {
+        "target": "Organization.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "government.slug": {
+        "target": "Organization.identifiers",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "participation.topic": {
+        "target": "Speech.text",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.yes_count": {
+        "target": "VoteEvent.counts.yes",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.no_count": {
+        "target": "VoteEvent.counts.no",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.abstain_count": {
+        "target": "VoteEvent.counts.abstain",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.yes_voters": {
+        "target": "VoteEvent.votes.yes.voters",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "action.reason": {
+        "target": "EventItem.MinutesNote",
+        "classification": "text_only",
+        "source": "Legistar"
+      },
+      "condition.text": {
+        "target": "Besluit.heeftVoorwaarde",
+        "classification": "native",
+        "source": "OSLO Besluit"
+      },
+      "matter.identifier": {
+        "target": "Motion.identifier",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.result": {
+        "target": "VoteEvent.result",
+        "classification": "native_term_local_codes",
+        "source": "Popolo"
+      },
+      "legal.citation": {
+        "target": "ref.href",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "reference.prior_act_date": {
+        "target": "MatterRelation.relatedMatter.date",
+        "classification": "composition",
+        "source": "Legistar"
+      },
+      "time.effective_date": {
+        "target": "temporalData/eventRef",
+        "classification": "composition",
+        "source": "Akoma Ntoso"
+      },
+      "motion.seconder": {
+        "target": "EventItem.EventItemSeconder",
+        "classification": "native",
+        "source": "Legistar"
+      },
+      "vote.absent_count": {
+        "target": "VoteEvent.counts.absent",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.absent_voters": {
+        "target": "VoteEvent.votes.absent.voters",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "party.supplier": {
+        "target": "ocds.award.suppliers.name",
+        "classification": "composition",
+        "source": "OCDS"
+      },
+      "procurement.contract_number": {
+        "target": "ocds.contract.id",
+        "classification": "composition",
+        "source": "OCDS"
+      },
+      "procurement.contract_scope": {
+        "target": "ocds.contract.description",
+        "classification": "native",
+        "source": "OCDS"
+      },
+      "time.bid_open_date": {
+        "target": "cs:BidOpeningEvent/cs:occurredOn",
+        "classification": "local_extension",
+        "source": "CivicSpec"
+      },
+      "money.components": {
+        "target": "qb.ObservationGroup/qualifiedMonetaryObservation",
+        "classification": "local_extension",
+        "source": "RDF Data Cube"
+      },
+      "money.fund": {
+        "target": "qb.DimensionProperty[fund]",
+        "classification": "local_extension",
+        "source": "RDF Data Cube"
+      },
+      "party.role_assignments": {
+        "target": "cs:QualifiedPartyRole/{party,role,scope}",
+        "classification": "local_extension",
+        "source": "CivicSpec; not org:Membership for vendor/owner/lessee roles"
+      },
+      "statement.attributed_to": {
+        "target": "prov.wasAttributedTo",
+        "classification": "native",
+        "source": "PROV-O"
+      },
+      "action.kind": {
+        "target": "Motion.classification",
+        "classification": "native_term_local_codes",
+        "source": "Popolo plus CivicSpec action concepts"
+      }
+    },
+    "notes": "Union of inspected mappings plus explicit financial/contract shape composition; not a complete municipal semantic model.",
+    "raw_fields_retained": true,
+    "native_service_or_schema_conformance_claimed": false
+  },
+  "layered_v1": {
+    "label": "Layered v1: development extensions",
+    "mapping": {
+      "body.label": {
+        "target": "Motion.organization.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "matter.title": {
+        "target": "Motion.text",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "time.meeting_date": {
+        "target": "Event.start_date",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "motion.mover": {
+        "target": "Motion.creator.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "participation.speaker": {
+        "target": "Speech.creator.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "money.amount": {
+        "target": "MonetaryAmount.value",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "money.currency": {
+        "target": "MonetaryAmount.currency",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "government.name": {
+        "target": "Organization.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "government.slug": {
+        "target": "Organization.identifiers",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "participation.topic": {
+        "target": "Speech.text",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.yes_count": {
+        "target": "VoteEvent.counts.yes",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.no_count": {
+        "target": "VoteEvent.counts.no",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.abstain_count": {
+        "target": "VoteEvent.counts.abstain",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.yes_voters": {
+        "target": "VoteEvent.votes.yes.voters",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "action.reason": {
+        "target": "cs:actionAssertion/reason",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "condition.text": {
+        "target": "Besluit.heeftVoorwaarde",
+        "classification": "native",
+        "source": "OSLO Besluit"
+      },
+      "matter.identifier": {
+        "target": "Motion.identifier",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.result": {
+        "target": "VoteEvent.result",
+        "classification": "native_term_local_codes",
+        "source": "Popolo"
+      },
+      "legal.citation": {
+        "target": "ref.href",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "reference.prior_act_date": {
+        "target": "MatterRelation.relatedMatter.date",
+        "classification": "composition",
+        "source": "Legistar"
+      },
+      "time.effective_date": {
+        "target": "temporalData/eventRef",
+        "classification": "composition",
+        "source": "Akoma Ntoso"
+      },
+      "motion.seconder": {
+        "target": "EventItem.EventItemSeconder",
+        "classification": "native",
+        "source": "Legistar"
+      },
+      "vote.absent_count": {
+        "target": "VoteEvent.counts.absent",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.absent_voters": {
+        "target": "VoteEvent.votes.absent.voters",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "party.supplier": {
+        "target": "ocds.award.suppliers.name",
+        "classification": "composition",
+        "source": "OCDS"
+      },
+      "procurement.contract_number": {
+        "target": "ocds.contract.id",
+        "classification": "composition",
+        "source": "OCDS"
+      },
+      "procurement.contract_scope": {
+        "target": "ocds.contract.description",
+        "classification": "native",
+        "source": "OCDS"
+      },
+      "time.bid_open_date": {
+        "target": "cs:BidOpeningEvent/cs:occurredOn",
+        "classification": "local_extension",
+        "source": "CivicSpec"
+      },
+      "money.components": {
+        "target": "qb.ObservationGroup/qualifiedMonetaryObservation",
+        "classification": "local_extension",
+        "source": "RDF Data Cube"
+      },
+      "money.fund": {
+        "target": "qb.DimensionProperty[fund]",
+        "classification": "local_extension",
+        "source": "RDF Data Cube"
+      },
+      "party.role_assignments": {
+        "target": "cs:QualifiedPartyRole/{party,role,scope}",
+        "classification": "local_extension",
+        "source": "CivicSpec; not org:Membership for vendor/owner/lessee roles"
+      },
+      "statement.attributed_to": {
+        "target": "prov.wasAttributedTo",
+        "classification": "native",
+        "source": "PROV-O"
+      },
+      "action.kind": {
+        "target": "Motion.classification",
+        "classification": "native_term_local_codes",
+        "source": "Popolo plus CivicSpec action concepts"
+      },
+      "action.target_date": {
+        "target": "cs:actionAssertion/target_date",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "action.target_document_state": {
+        "target": "cs:actionAssertion/target_document_state",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.bridge_instrument": {
+        "target": "cs:debtAssertion/bridge_instrument",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.instrument_type": {
+        "target": "cs:debtAssertion/instrument_type",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.probable_useful_life_years": {
+        "target": "cs:debtAssertion/probable_useful_life_years",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.proposed_maturity": {
+        "target": "cs:debtAssertion/proposed_maturity",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.security": {
+        "target": "cs:debtAssertion/security",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "delegation.action": {
+        "target": "cs:delegationAssertion/action",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "delegation.actor": {
+        "target": "cs:delegationAssertion/actor",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.acknowledgment": {
+        "target": "cs:disclosureAssertion/acknowledgment",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.document_type": {
+        "target": "cs:disclosureAssertion/document_type",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.location": {
+        "target": "cs:disclosureAssertion/location",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.mitigation": {
+        "target": "cs:disclosureAssertion/mitigation",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "duty.asserted_priority": {
+        "target": "cs:dutyAssertion/asserted_priority",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "duty.asserted_type": {
+        "target": "cs:dutyAssertion/asserted_type",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "duty.claimed_limitation": {
+        "target": "cs:dutyAssertion/claimed_limitation",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "labor.bargaining_unit": {
+        "target": "cs:laborAssertion/bargaining_unit",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "money.role": {
+        "target": "cs:moneyAssertion/role",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "obligation.action": {
+        "target": "cs:obligationAssertion/action",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "obligation.actor": {
+        "target": "cs:obligationAssertion/actor",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "participation.slot_label": {
+        "target": "cs:participationAssertion/slot_label",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "participation.speaker_role": {
+        "target": "cs:participationAssertion/speaker_role",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.advisor": {
+        "target": "cs:partyAssertion/advisor",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.employee_organization": {
+        "target": "cs:partyAssertion/employee_organization",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.employer": {
+        "target": "cs:partyAssertion/employer",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.funder": {
+        "target": "cs:partyAssertion/funder",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.information_providers": {
+        "target": "cs:partyAssertion/information_providers",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.recommender": {
+        "target": "cs:partyAssertion/recommender",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "procurement.contract_references": {
+        "target": "cs:procurementAssertion/contract_references",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "project.funding_mechanism": {
+        "target": "cs:projectAssertion/funding_mechanism",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "project.funding_status": {
+        "target": "cs:projectAssertion/funding_status",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "project.stage": {
+        "target": "cs:projectAssertion/stage",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "regulatory.action": {
+        "target": "cs:regulatoryAssertion/action",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.actual_call_to_order": {
+        "target": "cs:timeAssertion/actual_call_to_order",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.close": {
+        "target": "cs:timeAssertion/close",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.corrected_month": {
+        "target": "cs:timeAssertion/corrected_month",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.meeting_time": {
+        "target": "cs:timeAssertion/meeting_time",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.new_hearing_date": {
+        "target": "cs:timeAssertion/new_hearing_date",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.new_hearing_time": {
+        "target": "cs:timeAssertion/new_hearing_time",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.old_hearing_date": {
+        "target": "cs:timeAssertion/old_hearing_date",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.open": {
+        "target": "cs:timeAssertion/open",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.prior_award_month": {
+        "target": "cs:timeAssertion/prior_award_month",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.scheduled": {
+        "target": "cs:timeAssertion/scheduled",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.superseded_month": {
+        "target": "cs:timeAssertion/superseded_month",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.workshop_days": {
+        "target": "cs:timeAssertion/workshop_days",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.workshop_window": {
+        "target": "cs:timeAssertion/workshop_window",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      }
+    },
+    "notes": "Explicit NY-domain/local semantic mappings, based on development cases. Complex ordered actions and some uncertainty/quantity types remain gaps.",
+    "raw_fields_retained": true,
+    "native_service_or_schema_conformance_claimed": false
+  },
+  "layered_v2_dev": {
+    "label": "Layered v2: development refinement",
+    "mapping": {
+      "body.label": {
+        "target": "Motion.organization.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "matter.title": {
+        "target": "Motion.text",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "time.meeting_date": {
+        "target": "Event.start_date",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "motion.mover": {
+        "target": "Motion.creator.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "participation.speaker": {
+        "target": "Speech.creator.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "money.amount": {
+        "target": "MonetaryAmount.value",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "money.currency": {
+        "target": "MonetaryAmount.currency",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "government.name": {
+        "target": "Organization.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "government.slug": {
+        "target": "Organization.identifiers",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "participation.topic": {
+        "target": "Speech.text",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.yes_count": {
+        "target": "VoteEvent.counts.yes",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.no_count": {
+        "target": "VoteEvent.counts.no",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.abstain_count": {
+        "target": "VoteEvent.counts.abstain",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.yes_voters": {
+        "target": "VoteEvent.votes.yes.voters",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "action.reason": {
+        "target": "cs:actionAssertion/reason",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "condition.text": {
+        "target": "Besluit.heeftVoorwaarde",
+        "classification": "native",
+        "source": "OSLO Besluit"
+      },
+      "matter.identifier": {
+        "target": "Motion.identifier",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.result": {
+        "target": "VoteEvent.result",
+        "classification": "native_term_local_codes",
+        "source": "Popolo"
+      },
+      "legal.citation": {
+        "target": "ref.href",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "reference.prior_act_date": {
+        "target": "MatterRelation.relatedMatter.date",
+        "classification": "composition",
+        "source": "Legistar"
+      },
+      "time.effective_date": {
+        "target": "temporalData/eventRef",
+        "classification": "composition",
+        "source": "Akoma Ntoso"
+      },
+      "motion.seconder": {
+        "target": "EventItem.EventItemSeconder",
+        "classification": "native",
+        "source": "Legistar"
+      },
+      "vote.absent_count": {
+        "target": "VoteEvent.counts.absent",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.absent_voters": {
+        "target": "VoteEvent.votes.absent.voters",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "party.supplier": {
+        "target": "ocds.award.suppliers.name",
+        "classification": "composition",
+        "source": "OCDS"
+      },
+      "procurement.contract_number": {
+        "target": "ocds.contract.id",
+        "classification": "composition",
+        "source": "OCDS"
+      },
+      "procurement.contract_scope": {
+        "target": "ocds.contract.description",
+        "classification": "native",
+        "source": "OCDS"
+      },
+      "time.bid_open_date": {
+        "target": "cs:BidOpeningEvent/cs:occurredOn",
+        "classification": "local_extension",
+        "source": "CivicSpec"
+      },
+      "money.components": {
+        "target": "qb.ObservationGroup/qualifiedMonetaryObservation",
+        "classification": "local_extension",
+        "source": "RDF Data Cube"
+      },
+      "money.fund": {
+        "target": "qb.DimensionProperty[fund]",
+        "classification": "local_extension",
+        "source": "RDF Data Cube"
+      },
+      "party.role_assignments": {
+        "target": "cs:QualifiedPartyRole/{party,role,scope}",
+        "classification": "local_extension",
+        "source": "CivicSpec; not org:Membership for vendor/owner/lessee roles"
+      },
+      "statement.attributed_to": {
+        "target": "prov.wasAttributedTo",
+        "classification": "native",
+        "source": "PROV-O"
+      },
+      "action.kind": {
+        "target": "Motion.classification",
+        "classification": "native_term_local_codes",
+        "source": "Popolo plus CivicSpec action concepts"
+      },
+      "action.target_date": {
+        "target": "cs:actionAssertion/target_date",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "action.target_document_state": {
+        "target": "cs:actionAssertion/target_document_state",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.bridge_instrument": {
+        "target": "cs:debtAssertion/bridge_instrument",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.instrument_type": {
+        "target": "cs:debtAssertion/instrument_type",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.probable_useful_life_years": {
+        "target": "cs:debtAssertion/probable_useful_life_years",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.proposed_maturity": {
+        "target": "cs:debtAssertion/proposed_maturity",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.security": {
+        "target": "cs:debtAssertion/security",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "delegation.action": {
+        "target": "cs:delegationAssertion/action",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "delegation.actor": {
+        "target": "cs:delegationAssertion/actor",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.acknowledgment": {
+        "target": "cs:disclosureAssertion/acknowledgment",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.document_type": {
+        "target": "cs:disclosureAssertion/document_type",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.location": {
+        "target": "cs:disclosureAssertion/location",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.mitigation": {
+        "target": "cs:disclosureAssertion/mitigation",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "duty.asserted_priority": {
+        "target": "cs:dutyAssertion/asserted_priority",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "duty.asserted_type": {
+        "target": "cs:dutyAssertion/asserted_type",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "duty.claimed_limitation": {
+        "target": "cs:dutyAssertion/claimed_limitation",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "labor.bargaining_unit": {
+        "target": "cs:laborAssertion/bargaining_unit",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "money.role": {
+        "target": "cs:moneyAssertion/role",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "obligation.action": {
+        "target": "cs:obligationAssertion/action",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "obligation.actor": {
+        "target": "cs:obligationAssertion/actor",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "participation.slot_label": {
+        "target": "cs:participationAssertion/slot_label",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "participation.speaker_role": {
+        "target": "cs:participationAssertion/speaker_role",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.advisor": {
+        "target": "cs:partyAssertion/advisor",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.employee_organization": {
+        "target": "cs:partyAssertion/employee_organization",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.employer": {
+        "target": "cs:partyAssertion/employer",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.funder": {
+        "target": "cs:partyAssertion/funder",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.information_providers": {
+        "target": "cs:partyAssertion/information_providers",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.recommender": {
+        "target": "cs:partyAssertion/recommender",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "procurement.contract_references": {
+        "target": "cs:procurementAssertion/contract_references",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "project.funding_mechanism": {
+        "target": "cs:projectAssertion/funding_mechanism",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "project.funding_status": {
+        "target": "cs:projectAssertion/funding_status",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "project.stage": {
+        "target": "cs:projectAssertion/stage",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "regulatory.action": {
+        "target": "cs:regulatoryAssertion/action",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.actual_call_to_order": {
+        "target": "cs:timeAssertion/actual_call_to_order",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.close": {
+        "target": "cs:timeAssertion/close",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.corrected_month": {
+        "target": "cs:timeAssertion/corrected_month",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.meeting_time": {
+        "target": "cs:timeAssertion/meeting_time",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.new_hearing_date": {
+        "target": "cs:timeAssertion/new_hearing_date",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.new_hearing_time": {
+        "target": "cs:timeAssertion/new_hearing_time",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.old_hearing_date": {
+        "target": "cs:timeAssertion/old_hearing_date",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.open": {
+        "target": "cs:timeAssertion/open",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.prior_award_month": {
+        "target": "cs:timeAssertion/prior_award_month",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.scheduled": {
+        "target": "cs:timeAssertion/scheduled",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.superseded_month": {
+        "target": "cs:timeAssertion/superseded_month",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.workshop_days": {
+        "target": "cs:timeAssertion/workshop_days",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.workshop_window": {
+        "target": "cs:timeAssertion/workshop_window",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.waiver": {
+        "target": "cs:disclosureAssertion/waiver",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "money.local_share_percent": {
+        "target": "cs:moneyAssertion/local_share_percent",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "money.reported_total": {
+        "target": "cs:moneyAssertion/reported_total",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "motion.sequence": {
+        "target": "cs:motionAssertion/sequence",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "project.current_dependency": {
+        "target": "cs:projectAssertion/current_dependency",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "registration.msrb_reported": {
+        "target": "cs:registrationAssertion/msrb_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "registration.sec_reported": {
+        "target": "cs:registrationAssertion/sec_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "time.forecast": {
+        "target": "cs:timeAssertion/forecast",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "vote.abstain_name_field": {
+        "target": "cs:voteAssertion/abstain_name_field",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      }
+    },
+    "notes": "Adds ordered motions, incomplete roll-call fields, monetary aggregate provenance, forecasts/dependencies and attributed registrations/disclosures.",
+    "raw_fields_retained": true,
+    "native_service_or_schema_conformance_claimed": false
+  },
+  "layered_v3_frozen": {
+    "label": "Layered v3: frozen before held-out annotation",
+    "mapping": {
+      "body.label": {
+        "target": "Motion.organization.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "matter.title": {
+        "target": "Motion.text",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "time.meeting_date": {
+        "target": "Event.start_date",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "motion.mover": {
+        "target": "Motion.creator.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "participation.speaker": {
+        "target": "Speech.creator.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "money.amount": {
+        "target": "MonetaryAmount.value",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "money.currency": {
+        "target": "MonetaryAmount.currency",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "government.name": {
+        "target": "Organization.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "government.slug": {
+        "target": "Organization.identifiers",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "participation.topic": {
+        "target": "Speech.text",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.yes_count": {
+        "target": "VoteEvent.counts.yes",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.no_count": {
+        "target": "VoteEvent.counts.no",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.abstain_count": {
+        "target": "VoteEvent.counts.abstain",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.yes_voters": {
+        "target": "VoteEvent.votes.yes.voters",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "action.reason": {
+        "target": "cs:actionAssertion/reason",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "condition.text": {
+        "target": "Besluit.heeftVoorwaarde",
+        "classification": "native",
+        "source": "OSLO Besluit"
+      },
+      "matter.identifier": {
+        "target": "Motion.identifier",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.result": {
+        "target": "VoteEvent.result",
+        "classification": "native_term_local_codes",
+        "source": "Popolo"
+      },
+      "legal.citation": {
+        "target": "ref.href",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "reference.prior_act_date": {
+        "target": "MatterRelation.relatedMatter.date",
+        "classification": "composition",
+        "source": "Legistar"
+      },
+      "time.effective_date": {
+        "target": "temporalData/eventRef",
+        "classification": "composition",
+        "source": "Akoma Ntoso"
+      },
+      "motion.seconder": {
+        "target": "EventItem.EventItemSeconder",
+        "classification": "native",
+        "source": "Legistar"
+      },
+      "vote.absent_count": {
+        "target": "VoteEvent.counts.absent",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.absent_voters": {
+        "target": "VoteEvent.votes.absent.voters",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "party.supplier": {
+        "target": "ocds.award.suppliers.name",
+        "classification": "composition",
+        "source": "OCDS"
+      },
+      "procurement.contract_number": {
+        "target": "ocds.contract.id",
+        "classification": "composition",
+        "source": "OCDS"
+      },
+      "procurement.contract_scope": {
+        "target": "ocds.contract.description",
+        "classification": "native",
+        "source": "OCDS"
+      },
+      "time.bid_open_date": {
+        "target": "cs:BidOpeningEvent/cs:occurredOn",
+        "classification": "local_extension",
+        "source": "CivicSpec"
+      },
+      "money.components": {
+        "target": "qb.ObservationGroup/qualifiedMonetaryObservation",
+        "classification": "local_extension",
+        "source": "RDF Data Cube"
+      },
+      "money.fund": {
+        "target": "qb.DimensionProperty[fund]",
+        "classification": "local_extension",
+        "source": "RDF Data Cube"
+      },
+      "party.role_assignments": {
+        "target": "cs:QualifiedPartyRole/{party,role,scope}",
+        "classification": "local_extension",
+        "source": "CivicSpec; not org:Membership for vendor/owner/lessee roles"
+      },
+      "statement.attributed_to": {
+        "target": "prov.wasAttributedTo",
+        "classification": "native",
+        "source": "PROV-O"
+      },
+      "action.kind": {
+        "target": "Motion.classification",
+        "classification": "native_term_local_codes",
+        "source": "Popolo plus CivicSpec action concepts"
+      },
+      "action.target_date": {
+        "target": "cs:actionAssertion/target_date",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "action.target_document_state": {
+        "target": "cs:actionAssertion/target_document_state",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.bridge_instrument": {
+        "target": "cs:debtAssertion/bridge_instrument",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.instrument_type": {
+        "target": "cs:debtAssertion/instrument_type",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.probable_useful_life_years": {
+        "target": "cs:debtAssertion/probable_useful_life_years",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.proposed_maturity": {
+        "target": "cs:debtAssertion/proposed_maturity",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.security": {
+        "target": "cs:debtAssertion/security",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "delegation.action": {
+        "target": "cs:delegationAssertion/action",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "delegation.actor": {
+        "target": "cs:delegationAssertion/actor",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.acknowledgment": {
+        "target": "cs:disclosureAssertion/acknowledgment",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.document_type": {
+        "target": "cs:disclosureAssertion/document_type",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.location": {
+        "target": "cs:disclosureAssertion/location",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.mitigation": {
+        "target": "cs:disclosureAssertion/mitigation",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "duty.asserted_priority": {
+        "target": "cs:dutyAssertion/asserted_priority",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "duty.asserted_type": {
+        "target": "cs:dutyAssertion/asserted_type",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "duty.claimed_limitation": {
+        "target": "cs:dutyAssertion/claimed_limitation",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "labor.bargaining_unit": {
+        "target": "cs:laborAssertion/bargaining_unit",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "money.role": {
+        "target": "cs:moneyAssertion/role",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "obligation.action": {
+        "target": "cs:obligationAssertion/action",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "obligation.actor": {
+        "target": "cs:obligationAssertion/actor",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "participation.slot_label": {
+        "target": "cs:participationAssertion/slot_label",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "participation.speaker_role": {
+        "target": "cs:participationAssertion/speaker_role",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.advisor": {
+        "target": "cs:partyAssertion/advisor",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.employee_organization": {
+        "target": "cs:partyAssertion/employee_organization",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.employer": {
+        "target": "cs:partyAssertion/employer",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.funder": {
+        "target": "cs:partyAssertion/funder",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.information_providers": {
+        "target": "cs:partyAssertion/information_providers",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.recommender": {
+        "target": "cs:partyAssertion/recommender",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "procurement.contract_references": {
+        "target": "cs:procurementAssertion/contract_references",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "project.funding_mechanism": {
+        "target": "cs:projectAssertion/funding_mechanism",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "project.funding_status": {
+        "target": "cs:projectAssertion/funding_status",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "project.stage": {
+        "target": "cs:projectAssertion/stage",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "regulatory.action": {
+        "target": "cs:regulatoryAssertion/action",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.actual_call_to_order": {
+        "target": "cs:timeAssertion/actual_call_to_order",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.close": {
+        "target": "cs:timeAssertion/close",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.corrected_month": {
+        "target": "cs:timeAssertion/corrected_month",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.meeting_time": {
+        "target": "cs:timeAssertion/meeting_time",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.new_hearing_date": {
+        "target": "cs:timeAssertion/new_hearing_date",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.new_hearing_time": {
+        "target": "cs:timeAssertion/new_hearing_time",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.old_hearing_date": {
+        "target": "cs:timeAssertion/old_hearing_date",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.open": {
+        "target": "cs:timeAssertion/open",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.prior_award_month": {
+        "target": "cs:timeAssertion/prior_award_month",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.scheduled": {
+        "target": "cs:timeAssertion/scheduled",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.superseded_month": {
+        "target": "cs:timeAssertion/superseded_month",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.workshop_days": {
+        "target": "cs:timeAssertion/workshop_days",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.workshop_window": {
+        "target": "cs:timeAssertion/workshop_window",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.waiver": {
+        "target": "cs:disclosureAssertion/waiver",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "money.local_share_percent": {
+        "target": "cs:moneyAssertion/local_share_percent",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "money.reported_total": {
+        "target": "cs:moneyAssertion/reported_total",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "motion.sequence": {
+        "target": "cs:motionAssertion/sequence",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "project.current_dependency": {
+        "target": "cs:projectAssertion/current_dependency",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "registration.msrb_reported": {
+        "target": "cs:registrationAssertion/msrb_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "registration.sec_reported": {
+        "target": "cs:registrationAssertion/sec_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "time.forecast": {
+        "target": "cs:timeAssertion/forecast",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "vote.abstain_name_field": {
+        "target": "cs:voteAssertion/abstain_name_field",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "body.venue": {
+        "target": "cs:bodyAssertion/venue",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "debt.financing_reference": {
+        "target": "cs:debtAssertion/financing_reference",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "finance.abstract_number": {
+        "target": "cs:financeAssertion/abstract_number",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "identity.resolution_status": {
+        "target": "cs:identityAssertion/resolution_status",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "identity.role_conflict": {
+        "target": "cs:identityAssertion/role_conflict",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "labor.agreement_period": {
+        "target": "cs:laborAssertion/agreement_period",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "labor.position": {
+        "target": "cs:laborAssertion/position",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "labor.salary_reference": {
+        "target": "cs:laborAssertion/salary_reference",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "meeting.phase_type": {
+        "target": "cs:meetingAssertion/phase_type",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "money.increment": {
+        "target": "cs:moneyAssertion/increment",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "money.material_impact": {
+        "target": "cs:moneyAssertion/material_impact",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "money.new_ceiling": {
+        "target": "cs:moneyAssertion/new_ceiling",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "money.previous_ceiling": {
+        "target": "cs:moneyAssertion/previous_ceiling",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "party.appointee": {
+        "target": "cs:partyAssertion/appointee",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "party.counterparty": {
+        "target": "cs:partyAssertion/counterparty",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "procedure.ambiguity": {
+        "target": "cs:procedureAssertion/ambiguity",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "procedure.proposed_effect": {
+        "target": "cs:procedureAssertion/proposed_effect",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "procurement.next_step": {
+        "target": "cs:procurementAssertion/next_step",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "procurement.response_count": {
+        "target": "cs:procurementAssertion/response_count",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "procurement.sole_provider_claim": {
+        "target": "cs:procurementAssertion/sole_provider_claim",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "project.proposed_funding": {
+        "target": "cs:projectAssertion/proposed_funding",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "project.reported_delay_reason": {
+        "target": "cs:projectAssertion/reported_delay_reason",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "reference.prior_act_identifier": {
+        "target": "cs:referenceAssertion/prior_act_identifier",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "regulatory.classification": {
+        "target": "cs:regulatoryAssertion/classification",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "statement.content": {
+        "target": "cs:statementAssertion/content",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "time.calendar_check": {
+        "target": "cs:timeAssertion/calendar_check",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "time.date_assertions": {
+        "target": "cs:timeAssertion/date_assertions",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "time.previous_forecast": {
+        "target": "cs:timeAssertion/previous_forecast",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "time.requested_decision": {
+        "target": "cs:timeAssertion/requested_decision",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "time.target_use": {
+        "target": "cs:timeAssertion/target_use",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "vote.raw_role_names": {
+        "target": "cs:voteAssertion/raw_role_names",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      }
+    },
+    "notes": "Validation adds proposed-effect versus procedural outcome, dated source conflicts, conditional appointments, referenced salary periods and typed financial ceilings. Opaque raw fallback is not semantic credit.",
+    "raw_fields_retained": true,
+    "native_service_or_schema_conformance_claimed": false
+  },
+  "layered_v4_cold_frozen": {
+    "label": "Layered v4: first holdout repaired, frozen for second cold test",
+    "mapping": {
+      "body.label": {
+        "target": "Motion.organization.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "matter.title": {
+        "target": "Motion.text",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "time.meeting_date": {
+        "target": "Event.start_date",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "motion.mover": {
+        "target": "Motion.creator.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "participation.speaker": {
+        "target": "Speech.creator.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "money.amount": {
+        "target": "MonetaryAmount.value",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "money.currency": {
+        "target": "MonetaryAmount.currency",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "government.name": {
+        "target": "Organization.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "government.slug": {
+        "target": "Organization.identifiers",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "participation.topic": {
+        "target": "Speech.text",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.yes_count": {
+        "target": "VoteEvent.counts.yes",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.no_count": {
+        "target": "VoteEvent.counts.no",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.abstain_count": {
+        "target": "VoteEvent.counts.abstain",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.yes_voters": {
+        "target": "VoteEvent.votes.yes.voters",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "action.reason": {
+        "target": "cs:actionAssertion/reason",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "condition.text": {
+        "target": "Besluit.heeftVoorwaarde",
+        "classification": "native",
+        "source": "OSLO Besluit"
+      },
+      "matter.identifier": {
+        "target": "Motion.identifier",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.result": {
+        "target": "VoteEvent.result",
+        "classification": "native_term_local_codes",
+        "source": "Popolo"
+      },
+      "legal.citation": {
+        "target": "ref.href",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "reference.prior_act_date": {
+        "target": "MatterRelation.relatedMatter.date",
+        "classification": "composition",
+        "source": "Legistar"
+      },
+      "time.effective_date": {
+        "target": "temporalData/eventRef",
+        "classification": "composition",
+        "source": "Akoma Ntoso"
+      },
+      "motion.seconder": {
+        "target": "EventItem.EventItemSeconder",
+        "classification": "native",
+        "source": "Legistar"
+      },
+      "vote.absent_count": {
+        "target": "VoteEvent.counts.absent",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.absent_voters": {
+        "target": "VoteEvent.votes.absent.voters",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "party.supplier": {
+        "target": "ocds.award.suppliers.name",
+        "classification": "composition",
+        "source": "OCDS"
+      },
+      "procurement.contract_number": {
+        "target": "ocds.contract.id",
+        "classification": "composition",
+        "source": "OCDS"
+      },
+      "procurement.contract_scope": {
+        "target": "ocds.contract.description",
+        "classification": "native",
+        "source": "OCDS"
+      },
+      "time.bid_open_date": {
+        "target": "cs:BidOpeningEvent/cs:occurredOn",
+        "classification": "local_extension",
+        "source": "CivicSpec"
+      },
+      "money.components": {
+        "target": "qb.ObservationGroup/qualifiedMonetaryObservation",
+        "classification": "local_extension",
+        "source": "RDF Data Cube"
+      },
+      "money.fund": {
+        "target": "qb.DimensionProperty[fund]",
+        "classification": "local_extension",
+        "source": "RDF Data Cube"
+      },
+      "party.role_assignments": {
+        "target": "cs:QualifiedPartyRole/{party,role,scope}",
+        "classification": "local_extension",
+        "source": "CivicSpec; not org:Membership for vendor/owner/lessee roles"
+      },
+      "statement.attributed_to": {
+        "target": "prov.wasAttributedTo",
+        "classification": "native",
+        "source": "PROV-O"
+      },
+      "action.kind": {
+        "target": "Motion.classification",
+        "classification": "native_term_local_codes",
+        "source": "Popolo plus CivicSpec action concepts"
+      },
+      "action.target_date": {
+        "target": "cs:actionAssertion/target_date",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "action.target_document_state": {
+        "target": "cs:actionAssertion/target_document_state",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.bridge_instrument": {
+        "target": "cs:debtAssertion/bridge_instrument",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.instrument_type": {
+        "target": "cs:debtAssertion/instrument_type",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.probable_useful_life_years": {
+        "target": "cs:debtAssertion/probable_useful_life_years",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.proposed_maturity": {
+        "target": "cs:debtAssertion/proposed_maturity",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.security": {
+        "target": "cs:debtAssertion/security",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "delegation.action": {
+        "target": "cs:delegationAssertion/action",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "delegation.actor": {
+        "target": "cs:delegationAssertion/actor",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.acknowledgment": {
+        "target": "cs:disclosureAssertion/acknowledgment",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.document_type": {
+        "target": "cs:disclosureAssertion/document_type",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.location": {
+        "target": "cs:disclosureAssertion/location",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.mitigation": {
+        "target": "cs:disclosureAssertion/mitigation",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "duty.asserted_priority": {
+        "target": "cs:dutyAssertion/asserted_priority",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "duty.asserted_type": {
+        "target": "cs:dutyAssertion/asserted_type",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "duty.claimed_limitation": {
+        "target": "cs:dutyAssertion/claimed_limitation",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "labor.bargaining_unit": {
+        "target": "cs:laborAssertion/bargaining_unit",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "money.role": {
+        "target": "cs:moneyAssertion/role",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "obligation.action": {
+        "target": "cs:obligationAssertion/action",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "obligation.actor": {
+        "target": "cs:obligationAssertion/actor",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "participation.slot_label": {
+        "target": "cs:participationAssertion/slot_label",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "participation.speaker_role": {
+        "target": "cs:participationAssertion/speaker_role",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.advisor": {
+        "target": "cs:partyAssertion/advisor",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.employee_organization": {
+        "target": "cs:partyAssertion/employee_organization",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.employer": {
+        "target": "cs:partyAssertion/employer",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.funder": {
+        "target": "cs:partyAssertion/funder",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.information_providers": {
+        "target": "cs:partyAssertion/information_providers",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.recommender": {
+        "target": "cs:partyAssertion/recommender",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "procurement.contract_references": {
+        "target": "cs:procurementAssertion/contract_references",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "project.funding_mechanism": {
+        "target": "cs:projectAssertion/funding_mechanism",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "project.funding_status": {
+        "target": "cs:projectAssertion/funding_status",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "project.stage": {
+        "target": "cs:projectAssertion/stage",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "regulatory.action": {
+        "target": "cs:regulatoryAssertion/action",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.actual_call_to_order": {
+        "target": "cs:timeAssertion/actual_call_to_order",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.close": {
+        "target": "cs:timeAssertion/close",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.corrected_month": {
+        "target": "cs:timeAssertion/corrected_month",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.meeting_time": {
+        "target": "cs:timeAssertion/meeting_time",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.new_hearing_date": {
+        "target": "cs:timeAssertion/new_hearing_date",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.new_hearing_time": {
+        "target": "cs:timeAssertion/new_hearing_time",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.old_hearing_date": {
+        "target": "cs:timeAssertion/old_hearing_date",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.open": {
+        "target": "cs:timeAssertion/open",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.prior_award_month": {
+        "target": "cs:timeAssertion/prior_award_month",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.scheduled": {
+        "target": "cs:timeAssertion/scheduled",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.superseded_month": {
+        "target": "cs:timeAssertion/superseded_month",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.workshop_days": {
+        "target": "cs:timeAssertion/workshop_days",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.workshop_window": {
+        "target": "cs:timeAssertion/workshop_window",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.waiver": {
+        "target": "cs:disclosureAssertion/waiver",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "money.local_share_percent": {
+        "target": "cs:moneyAssertion/local_share_percent",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "money.reported_total": {
+        "target": "cs:moneyAssertion/reported_total",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "motion.sequence": {
+        "target": "cs:motionAssertion/sequence",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "project.current_dependency": {
+        "target": "cs:projectAssertion/current_dependency",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "registration.msrb_reported": {
+        "target": "cs:registrationAssertion/msrb_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "registration.sec_reported": {
+        "target": "cs:registrationAssertion/sec_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "time.forecast": {
+        "target": "cs:timeAssertion/forecast",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "vote.abstain_name_field": {
+        "target": "cs:voteAssertion/abstain_name_field",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "body.venue": {
+        "target": "cs:bodyAssertion/venue",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "debt.financing_reference": {
+        "target": "cs:debtAssertion/financing_reference",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "finance.abstract_number": {
+        "target": "cs:financeAssertion/abstract_number",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "identity.resolution_status": {
+        "target": "cs:identityAssertion/resolution_status",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "identity.role_conflict": {
+        "target": "cs:identityAssertion/role_conflict",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "labor.agreement_period": {
+        "target": "cs:laborAssertion/agreement_period",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "labor.position": {
+        "target": "cs:laborAssertion/position",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "labor.salary_reference": {
+        "target": "cs:laborAssertion/salary_reference",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "meeting.phase_type": {
+        "target": "cs:meetingAssertion/phase_type",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "money.increment": {
+        "target": "cs:moneyAssertion/increment",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "money.material_impact": {
+        "target": "cs:moneyAssertion/material_impact",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "money.new_ceiling": {
+        "target": "cs:moneyAssertion/new_ceiling",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "money.previous_ceiling": {
+        "target": "cs:moneyAssertion/previous_ceiling",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "party.appointee": {
+        "target": "cs:partyAssertion/appointee",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "party.counterparty": {
+        "target": "cs:partyAssertion/counterparty",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "procedure.ambiguity": {
+        "target": "cs:procedureAssertion/ambiguity",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "procedure.proposed_effect": {
+        "target": "cs:procedureAssertion/proposed_effect",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "procurement.next_step": {
+        "target": "cs:procurementAssertion/next_step",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "procurement.response_count": {
+        "target": "cs:procurementAssertion/response_count",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "procurement.sole_provider_claim": {
+        "target": "cs:procurementAssertion/sole_provider_claim",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "project.proposed_funding": {
+        "target": "cs:projectAssertion/proposed_funding",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "project.reported_delay_reason": {
+        "target": "cs:projectAssertion/reported_delay_reason",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "reference.prior_act_identifier": {
+        "target": "cs:referenceAssertion/prior_act_identifier",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "regulatory.classification": {
+        "target": "cs:regulatoryAssertion/classification",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "statement.content": {
+        "target": "cs:statementAssertion/content",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "time.calendar_check": {
+        "target": "cs:timeAssertion/calendar_check",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "time.date_assertions": {
+        "target": "cs:timeAssertion/date_assertions",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "time.previous_forecast": {
+        "target": "cs:timeAssertion/previous_forecast",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "time.requested_decision": {
+        "target": "cs:timeAssertion/requested_decision",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "time.target_use": {
+        "target": "cs:timeAssertion/target_use",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "vote.raw_role_names": {
+        "target": "cs:voteAssertion/raw_role_names",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "appointment.correction_reason": {
+        "target": "cs:QualifiedAppointment/correction_reason",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "appointment.term_end": {
+        "target": "cs:QualifiedAppointment/term_end",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "attendance.arrival": {
+        "target": "cs:TemporalAttendance/arrival",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "body.acting_capacity": {
+        "target": "cs:LegalCapacityAssignment/acting_capacity",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "document.approval_date_reported": {
+        "target": "cs:DocumentVersion/approval_date_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "document.author_role": {
+        "target": "cs:DocumentVersion/author_role",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "extraction.suspect_text": {
+        "target": "cs:ExtractionQualityIssue/suspect_text",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "finance.budget_stage": {
+        "target": "cs:FinancialObservation/budget_stage",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "finance.column_equation": {
+        "target": "cs:FinancialObservation/column_equation",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "finance.column_semantics_status": {
+        "target": "cs:FinancialObservation/column_semantics_status",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "finance.fiscal_year": {
+        "target": "cs:FinancialObservation/fiscal_year",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.account_aliases": {
+        "target": "cs:FinancialObservation/account_aliases",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.budget_amendment": {
+        "target": "cs:FinancialObservation/budget_amendment",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.existing_line_approx": {
+        "target": "cs:FinancialObservation/existing_line_approx",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.qualifier": {
+        "target": "cs:FinancialObservation/qualifier",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.source_timing": {
+        "target": "cs:FinancialObservation/source_timing",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.budget_legs": {
+        "target": "cs:FinancialTransfer/budget_legs",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.from_account": {
+        "target": "cs:FinancialTransfer/from_account",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.to_account_assertions": {
+        "target": "cs:FinancialTransfer/to_account_assertions",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "grant.amount_awarded_reported": {
+        "target": "cs:GrantLifecycle/amount_awarded_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "grant.disbursement_stage": {
+        "target": "cs:GrantLifecycle/disbursement_stage",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "grant.program": {
+        "target": "cs:GrantLifecycle/program",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "jurisdiction.request_route": {
+        "target": "cs:JurisdictionRelationship/request_route",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "jurisdiction.service_district": {
+        "target": "cs:JurisdictionRelationship/service_district",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "jurisdiction.service_relation": {
+        "target": "cs:JurisdictionRelationship/service_relation",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "parcel.local_identifier": {
+        "target": "cs:JurisdictionRelationship/local_identifier",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "party.property_owner": {
+        "target": "cs:JurisdictionRelationship/property_owner",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "legal.local_law_number": {
+        "target": "cs:LegalDocumentVersion/local_law_number",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "reference.external_document": {
+        "target": "cs:LegalDocumentVersion/external_document",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "meeting.session_sequence": {
+        "target": "cs:MeetingSession/session_sequence",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "notice.posting_interval_reported": {
+        "target": "cs:PublicationObservation/posting_interval_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "notice.publication_dates_reported": {
+        "target": "cs:PublicationObservation/publication_dates_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "obligation.deadline_reported": {
+        "target": "cs:QualifiedObligation/deadline_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "participation.hearing_close": {
+        "target": "cs:ParticipationObservation/hearing_close",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "participation.hearing_open": {
+        "target": "cs:ParticipationObservation/hearing_open",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "participation.published_block_minutes": {
+        "target": "cs:ParticipationObservation/published_block_minutes",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "participation.reported_none": {
+        "target": "cs:ParticipationObservation/reported_none",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "procurement.stage": {
+        "target": "cs:ProcurementStage/stage",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "procurement.price_adjustment_clause": {
+        "target": "cs:ProcurementStage/price_adjustment_clause",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.exclusions": {
+        "target": "cs:ProcurementStage/exclusions",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "time.performance_date": {
+        "target": "cs:TemporalObservation/performance_date",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "vote.aggregate_description": {
+        "target": "cs:VoteEvent/aggregate_description",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "vote.no_voters": {
+        "target": "cs:VoteEvent/no_voters",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      }
+    },
+    "notes": "All first-holdout data used for refinement. Only second cold sample is untouched. No free-text escape hatch earns coverage.",
+    "raw_fields_retained": true,
+    "native_service_or_schema_conformance_claimed": false
+  },
+  "layered_v5_replay": {
+    "label": "Layered v5: final draft; replay only",
+    "mapping": {
+      "body.label": {
+        "target": "Motion.organization.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "matter.title": {
+        "target": "Motion.text",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "time.meeting_date": {
+        "target": "Event.start_date",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "motion.mover": {
+        "target": "Motion.creator.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "participation.speaker": {
+        "target": "Speech.creator.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "money.amount": {
+        "target": "MonetaryAmount.value",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "money.currency": {
+        "target": "MonetaryAmount.currency",
+        "classification": "native",
+        "source": "schema.org"
+      },
+      "government.name": {
+        "target": "Organization.name",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "government.slug": {
+        "target": "Organization.identifiers",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "participation.topic": {
+        "target": "Speech.text",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.yes_count": {
+        "target": "VoteEvent.counts.yes",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.no_count": {
+        "target": "VoteEvent.counts.no",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.abstain_count": {
+        "target": "VoteEvent.counts.abstain",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.yes_voters": {
+        "target": "VoteEvent.votes.yes.voters",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "action.reason": {
+        "target": "cs:actionAssertion/reason",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "condition.text": {
+        "target": "Besluit.heeftVoorwaarde",
+        "classification": "native",
+        "source": "OSLO Besluit"
+      },
+      "matter.identifier": {
+        "target": "Motion.identifier",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.result": {
+        "target": "VoteEvent.result",
+        "classification": "native_term_local_codes",
+        "source": "Popolo"
+      },
+      "legal.citation": {
+        "target": "ref.href",
+        "classification": "native",
+        "source": "Akoma Ntoso"
+      },
+      "reference.prior_act_date": {
+        "target": "MatterRelation.relatedMatter.date",
+        "classification": "composition",
+        "source": "Legistar"
+      },
+      "time.effective_date": {
+        "target": "temporalData/eventRef",
+        "classification": "composition",
+        "source": "Akoma Ntoso"
+      },
+      "motion.seconder": {
+        "target": "EventItem.EventItemSeconder",
+        "classification": "native",
+        "source": "Legistar"
+      },
+      "vote.absent_count": {
+        "target": "VoteEvent.counts.absent",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "vote.absent_voters": {
+        "target": "VoteEvent.votes.absent.voters",
+        "classification": "native",
+        "source": "Popolo"
+      },
+      "party.supplier": {
+        "target": "ocds.award.suppliers.name",
+        "classification": "composition",
+        "source": "OCDS"
+      },
+      "procurement.contract_number": {
+        "target": "ocds.contract.id",
+        "classification": "composition",
+        "source": "OCDS"
+      },
+      "procurement.contract_scope": {
+        "target": "ocds.contract.description",
+        "classification": "native",
+        "source": "OCDS"
+      },
+      "time.bid_open_date": {
+        "target": "cs:BidOpeningEvent/cs:occurredOn",
+        "classification": "local_extension",
+        "source": "CivicSpec"
+      },
+      "money.components": {
+        "target": "qb.ObservationGroup/qualifiedMonetaryObservation",
+        "classification": "local_extension",
+        "source": "RDF Data Cube"
+      },
+      "money.fund": {
+        "target": "qb.DimensionProperty[fund]",
+        "classification": "local_extension",
+        "source": "RDF Data Cube"
+      },
+      "party.role_assignments": {
+        "target": "cs:QualifiedPartyRole/{party,role,scope}",
+        "classification": "local_extension",
+        "source": "CivicSpec; not org:Membership for vendor/owner/lessee roles"
+      },
+      "statement.attributed_to": {
+        "target": "prov.wasAttributedTo",
+        "classification": "native",
+        "source": "PROV-O"
+      },
+      "action.kind": {
+        "target": "Motion.classification",
+        "classification": "native_term_local_codes",
+        "source": "Popolo plus CivicSpec action concepts"
+      },
+      "action.target_date": {
+        "target": "cs:actionAssertion/target_date",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "action.target_document_state": {
+        "target": "cs:actionAssertion/target_document_state",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.bridge_instrument": {
+        "target": "cs:debtAssertion/bridge_instrument",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.instrument_type": {
+        "target": "cs:debtAssertion/instrument_type",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.probable_useful_life_years": {
+        "target": "cs:debtAssertion/probable_useful_life_years",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.proposed_maturity": {
+        "target": "cs:debtAssertion/proposed_maturity",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "debt.security": {
+        "target": "cs:debtAssertion/security",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "delegation.action": {
+        "target": "cs:delegationAssertion/action",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "delegation.actor": {
+        "target": "cs:delegationAssertion/actor",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.acknowledgment": {
+        "target": "cs:disclosureAssertion/acknowledgment",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.document_type": {
+        "target": "cs:disclosureAssertion/document_type",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.location": {
+        "target": "cs:disclosureAssertion/location",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.mitigation": {
+        "target": "cs:disclosureAssertion/mitigation",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "duty.asserted_priority": {
+        "target": "cs:dutyAssertion/asserted_priority",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "duty.asserted_type": {
+        "target": "cs:dutyAssertion/asserted_type",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "duty.claimed_limitation": {
+        "target": "cs:dutyAssertion/claimed_limitation",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "labor.bargaining_unit": {
+        "target": "cs:laborAssertion/bargaining_unit",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "money.role": {
+        "target": "cs:moneyAssertion/role",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "obligation.action": {
+        "target": "cs:obligationAssertion/action",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "obligation.actor": {
+        "target": "cs:obligationAssertion/actor",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "participation.slot_label": {
+        "target": "cs:participationAssertion/slot_label",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "participation.speaker_role": {
+        "target": "cs:participationAssertion/speaker_role",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.advisor": {
+        "target": "cs:partyAssertion/advisor",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.employee_organization": {
+        "target": "cs:partyAssertion/employee_organization",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.employer": {
+        "target": "cs:partyAssertion/employer",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.funder": {
+        "target": "cs:partyAssertion/funder",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.information_providers": {
+        "target": "cs:partyAssertion/information_providers",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "party.recommender": {
+        "target": "cs:partyAssertion/recommender",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "procurement.contract_references": {
+        "target": "cs:procurementAssertion/contract_references",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "project.funding_mechanism": {
+        "target": "cs:projectAssertion/funding_mechanism",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "project.funding_status": {
+        "target": "cs:projectAssertion/funding_status",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "project.stage": {
+        "target": "cs:projectAssertion/stage",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "regulatory.action": {
+        "target": "cs:regulatoryAssertion/action",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.actual_call_to_order": {
+        "target": "cs:timeAssertion/actual_call_to_order",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.close": {
+        "target": "cs:timeAssertion/close",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.corrected_month": {
+        "target": "cs:timeAssertion/corrected_month",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.meeting_time": {
+        "target": "cs:timeAssertion/meeting_time",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.new_hearing_date": {
+        "target": "cs:timeAssertion/new_hearing_date",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.new_hearing_time": {
+        "target": "cs:timeAssertion/new_hearing_time",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.old_hearing_date": {
+        "target": "cs:timeAssertion/old_hearing_date",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.open": {
+        "target": "cs:timeAssertion/open",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.prior_award_month": {
+        "target": "cs:timeAssertion/prior_award_month",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.scheduled": {
+        "target": "cs:timeAssertion/scheduled",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.superseded_month": {
+        "target": "cs:timeAssertion/superseded_month",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.workshop_days": {
+        "target": "cs:timeAssertion/workshop_days",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "time.workshop_window": {
+        "target": "cs:timeAssertion/workshop_window",
+        "classification": "local_extension",
+        "source": "CivicSpec development extension"
+      },
+      "disclosure.waiver": {
+        "target": "cs:disclosureAssertion/waiver",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "money.local_share_percent": {
+        "target": "cs:moneyAssertion/local_share_percent",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "money.reported_total": {
+        "target": "cs:moneyAssertion/reported_total",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "motion.sequence": {
+        "target": "cs:motionAssertion/sequence",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "project.current_dependency": {
+        "target": "cs:projectAssertion/current_dependency",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "registration.msrb_reported": {
+        "target": "cs:registrationAssertion/msrb_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "registration.sec_reported": {
+        "target": "cs:registrationAssertion/sec_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "time.forecast": {
+        "target": "cs:timeAssertion/forecast",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "vote.abstain_name_field": {
+        "target": "cs:voteAssertion/abstain_name_field",
+        "classification": "local_extension",
+        "source": "CivicSpec development refinement"
+      },
+      "body.venue": {
+        "target": "cs:bodyAssertion/venue",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "debt.financing_reference": {
+        "target": "cs:debtAssertion/financing_reference",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "finance.abstract_number": {
+        "target": "cs:financeAssertion/abstract_number",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "identity.resolution_status": {
+        "target": "cs:identityAssertion/resolution_status",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "identity.role_conflict": {
+        "target": "cs:identityAssertion/role_conflict",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "labor.agreement_period": {
+        "target": "cs:laborAssertion/agreement_period",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "labor.position": {
+        "target": "cs:laborAssertion/position",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "labor.salary_reference": {
+        "target": "cs:laborAssertion/salary_reference",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "meeting.phase_type": {
+        "target": "cs:meetingAssertion/phase_type",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "money.increment": {
+        "target": "cs:moneyAssertion/increment",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "money.material_impact": {
+        "target": "cs:moneyAssertion/material_impact",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "money.new_ceiling": {
+        "target": "cs:moneyAssertion/new_ceiling",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "money.previous_ceiling": {
+        "target": "cs:moneyAssertion/previous_ceiling",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "party.appointee": {
+        "target": "cs:partyAssertion/appointee",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "party.counterparty": {
+        "target": "cs:partyAssertion/counterparty",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "procedure.ambiguity": {
+        "target": "cs:procedureAssertion/ambiguity",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "procedure.proposed_effect": {
+        "target": "cs:procedureAssertion/proposed_effect",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "procurement.next_step": {
+        "target": "cs:procurementAssertion/next_step",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "procurement.response_count": {
+        "target": "cs:procurementAssertion/response_count",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "procurement.sole_provider_claim": {
+        "target": "cs:procurementAssertion/sole_provider_claim",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "project.proposed_funding": {
+        "target": "cs:projectAssertion/proposed_funding",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "project.reported_delay_reason": {
+        "target": "cs:projectAssertion/reported_delay_reason",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "reference.prior_act_identifier": {
+        "target": "cs:referenceAssertion/prior_act_identifier",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "regulatory.classification": {
+        "target": "cs:regulatoryAssertion/classification",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "statement.content": {
+        "target": "cs:statementAssertion/content",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "time.calendar_check": {
+        "target": "cs:timeAssertion/calendar_check",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "time.date_assertions": {
+        "target": "cs:timeAssertion/date_assertions",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "time.previous_forecast": {
+        "target": "cs:timeAssertion/previous_forecast",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "time.requested_decision": {
+        "target": "cs:timeAssertion/requested_decision",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "time.target_use": {
+        "target": "cs:timeAssertion/target_use",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "vote.raw_role_names": {
+        "target": "cs:voteAssertion/raw_role_names",
+        "classification": "local_extension",
+        "source": "CivicSpec validation refinement"
+      },
+      "appointment.correction_reason": {
+        "target": "cs:QualifiedAppointment/correction_reason",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "appointment.term_end": {
+        "target": "cs:QualifiedAppointment/term_end",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "attendance.arrival": {
+        "target": "cs:TemporalAttendance/arrival",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "body.acting_capacity": {
+        "target": "cs:LegalCapacityAssignment/acting_capacity",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "document.approval_date_reported": {
+        "target": "cs:DocumentVersion/approval_date_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "document.author_role": {
+        "target": "cs:DocumentVersion/author_role",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "extraction.suspect_text": {
+        "target": "cs:ExtractionQualityIssue/suspect_text",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "finance.budget_stage": {
+        "target": "cs:FinancialObservation/budget_stage",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "finance.column_equation": {
+        "target": "cs:FinancialObservation/column_equation",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "finance.column_semantics_status": {
+        "target": "cs:FinancialObservation/column_semantics_status",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "finance.fiscal_year": {
+        "target": "cs:FinancialObservation/fiscal_year",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.account_aliases": {
+        "target": "cs:FinancialObservation/account_aliases",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.budget_amendment": {
+        "target": "cs:FinancialObservation/budget_amendment",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.existing_line_approx": {
+        "target": "cs:FinancialObservation/existing_line_approx",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.qualifier": {
+        "target": "cs:FinancialObservation/qualifier",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.source_timing": {
+        "target": "cs:FinancialObservation/source_timing",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.budget_legs": {
+        "target": "cs:FinancialTransfer/budget_legs",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.from_account": {
+        "target": "cs:FinancialTransfer/from_account",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.to_account_assertions": {
+        "target": "cs:FinancialTransfer/to_account_assertions",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "grant.amount_awarded_reported": {
+        "target": "cs:GrantLifecycle/amount_awarded_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "grant.disbursement_stage": {
+        "target": "cs:GrantLifecycle/disbursement_stage",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "grant.program": {
+        "target": "cs:GrantLifecycle/program",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "jurisdiction.request_route": {
+        "target": "cs:JurisdictionRelationship/request_route",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "jurisdiction.service_district": {
+        "target": "cs:JurisdictionRelationship/service_district",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "jurisdiction.service_relation": {
+        "target": "cs:JurisdictionRelationship/service_relation",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "parcel.local_identifier": {
+        "target": "cs:JurisdictionRelationship/local_identifier",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "party.property_owner": {
+        "target": "cs:JurisdictionRelationship/property_owner",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "legal.local_law_number": {
+        "target": "cs:LegalDocumentVersion/local_law_number",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "reference.external_document": {
+        "target": "cs:LegalDocumentVersion/external_document",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "meeting.session_sequence": {
+        "target": "cs:MeetingSession/session_sequence",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "notice.posting_interval_reported": {
+        "target": "cs:PublicationObservation/posting_interval_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "notice.publication_dates_reported": {
+        "target": "cs:PublicationObservation/publication_dates_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "obligation.deadline_reported": {
+        "target": "cs:QualifiedObligation/deadline_reported",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "participation.hearing_close": {
+        "target": "cs:ParticipationObservation/hearing_close",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "participation.hearing_open": {
+        "target": "cs:ParticipationObservation/hearing_open",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "participation.published_block_minutes": {
+        "target": "cs:ParticipationObservation/published_block_minutes",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "participation.reported_none": {
+        "target": "cs:ParticipationObservation/reported_none",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "procurement.stage": {
+        "target": "cs:ProcurementStage/stage",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "procurement.price_adjustment_clause": {
+        "target": "cs:ProcurementStage/price_adjustment_clause",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "money.exclusions": {
+        "target": "cs:ProcurementStage/exclusions",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "time.performance_date": {
+        "target": "cs:TemporalObservation/performance_date",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "vote.aggregate_description": {
+        "target": "cs:VoteEvent/aggregate_description",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "vote.no_voters": {
+        "target": "cs:VoteEvent/no_voters",
+        "classification": "local_extension",
+        "source": "CivicSpec post-first-holdout refinement"
+      },
+      "meeting.mode": {
+        "target": "cs:MeetingSession/cs:participationMode",
+        "classification": "local_extension",
+        "source": "CivicSpec post-cold refinement"
+      },
+      "participation.mode": {
+        "target": "cs:ParticipationObservation/cs:submissionMode",
+        "classification": "local_extension",
+        "source": "CivicSpec post-cold refinement"
+      },
+      "finance.report_period": {
+        "target": "cs:FinancialObservation/cs:reportingPeriod",
+        "classification": "local_extension",
+        "source": "CivicSpec post-cold refinement"
+      },
+      "debt.forecast_savings": {
+        "target": "cs:Forecast/cs:estimatedSavingsSchedule",
+        "classification": "local_extension",
+        "source": "CivicSpec post-cold refinement"
+      },
+      "document.change_operation": {
+        "target": "cs:RecordCorrection/cs:operation",
+        "classification": "local_extension",
+        "source": "CivicSpec post-cold refinement"
+      },
+      "regulatory.approval_status": {
+        "target": "cs:RegulatoryAction/cs:reportedStage",
+        "classification": "local_extension",
+        "source": "CivicSpec post-cold refinement"
+      }
+    },
+    "notes": "Six new cold-sample field paths represented. No untouched test remains after this refinement. Numeric coverage is representational, not extraction accuracy.",
+    "raw_fields_retained": true,
+    "native_service_or_schema_conformance_claimed": false
+  }
+}

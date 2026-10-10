@@ -1,0 +1,221 @@
+[
+  {
+    "id": "evidence",
+    "index": 0,
+    "title": "Source and evidence",
+    "standards": [
+      "prov",
+      "annotation"
+    ],
+    "objects": [
+      "SourceVersion",
+      "DerivedText",
+      "EvidenceSpan",
+      "ExtractionActivity"
+    ],
+    "depends_on": [],
+    "status": "Implemented on retained text",
+    "meaning": "Keep source bytes identity, derived-text identity, exact quotation and interpretation activity separate. Reported PDF hashes are not fresh verification.",
+    "examples": [
+      "D03",
+      "V07",
+      "H17"
+    ]
+  },
+  {
+    "id": "document",
+    "index": 1,
+    "title": "Document structure and versions",
+    "standards": [
+      "akoma",
+      "annotation"
+    ],
+    "objects": [
+      "DocumentIR",
+      "DocumentVersion",
+      "RecordCorrection"
+    ],
+    "depends_on": [
+      "evidence"
+    ],
+    "status": "Exact retained-text IR implemented; full PDF layout not reconstructed",
+    "meaning": "Retain text lines and page markers with offsets. A document is not a meeting, and a draft resolution is not an adopted act.",
+    "examples": [
+      "H01",
+      "H09",
+      "C11"
+    ]
+  },
+  {
+    "id": "registry",
+    "index": 2,
+    "title": "Government, public body and capacity",
+    "standards": [
+      "org",
+      "popolo"
+    ],
+    "objects": [
+      "GovernmentProfile",
+      "PublicBodyProfile",
+      "LegalCapacityAssignment",
+      "JurisdictionRelationship"
+    ],
+    "depends_on": [
+      "evidence"
+    ],
+    "status": "Candidate profiles and qualified contexts implemented",
+    "meaning": "Separate municipality, board, membership, service district, geographic overlap and the capacity in which a board acts.",
+    "examples": [
+      "H11",
+      "D08",
+      "D09",
+      "D10"
+    ]
+  },
+  {
+    "id": "procedure",
+    "index": 3,
+    "title": "Meeting treatment and decisions",
+    "standards": [
+      "besluit",
+      "popolo",
+      "legistar",
+      "time"
+    ],
+    "objects": [
+      "DocumentMeetingContext",
+      "MeetingSession",
+      "MotionTreatment",
+      "VoteEvent",
+      "ReportedAction",
+      "TemporalAttendance"
+    ],
+    "depends_on": [
+      "registry",
+      "document"
+    ],
+    "status": "Candidate graph implemented and query-tested",
+    "meaning": "Track agenda matter, successive treatments, amendments, votes, proposed effects, actual recorded outcomes and time-sensitive attendance.",
+    "examples": [
+      "D21",
+      "H09",
+      "V01",
+      "H01"
+    ]
+  },
+  {
+    "id": "domain",
+    "index": 4,
+    "title": "Money, projects and obligations",
+    "standards": [
+      "qb",
+      "ocds"
+    ],
+    "objects": [
+      "FinancialObservation",
+      "DebtAuthorization",
+      "GrantLifecycle",
+      "ProcurementStage",
+      "LaborRelationship",
+      "QualifiedObligation",
+      "Condition"
+    ],
+    "depends_on": [
+      "procedure",
+      "registry"
+    ],
+    "status": "Selected cases and historical research rows mapped",
+    "meaning": "Preserve ceilings, exclusions, conditions, cash timing, approval stages, bargaining units and funding sources. Do not infer execution or expenditure from authorization.",
+    "examples": [
+      "D19",
+      "H10",
+      "H13",
+      "C10"
+    ]
+  },
+  {
+    "id": "assertion",
+    "index": 5,
+    "title": "Claims, uncertainty and review",
+    "standards": [
+      "prov",
+      "annotation"
+    ],
+    "objects": [
+      "Assertion",
+      "AttributedStatement",
+      "UnresolvedIssue"
+    ],
+    "depends_on": [
+      "evidence",
+      "document",
+      "registry",
+      "procedure",
+      "domain"
+    ],
+    "status": "551 source-anchored assertions plus unknown boundaries",
+    "meaning": "The source says X; an extractor interpreted Y; a reviewer checked Z. Keep these separate and preserve contradictory observations.",
+    "examples": [
+      "H07",
+      "D03",
+      "H17",
+      "V07"
+    ]
+  },
+  {
+    "id": "question",
+    "index": 6,
+    "title": "Questions, answers and crosswalks",
+    "standards": [
+      "shacl"
+    ],
+    "objects": [
+      "Question",
+      "Mapping"
+    ],
+    "depends_on": [
+      "assertion",
+      "domain",
+      "procedure"
+    ],
+    "status": "20 graph-backed competency question checks",
+    "meaning": "Answers must state evidence, dates and unresolved facts. Mapping acceptance does not prove an answer is true.",
+    "examples": [
+      "D06",
+      "D19",
+      "H09",
+      "C12"
+    ]
+  },
+  {
+    "id": "authority",
+    "index": 7,
+    "title": "Legal applicability overlay",
+    "standards": [
+      "pbo106",
+      "csl204a",
+      "g42"
+    ],
+    "objects": [
+      "LegalProvisionVersion",
+      "ApplicabilityAssertion",
+      "DutyScope",
+      "Trigger",
+      "Exception",
+      "DeadlineRule"
+    ],
+    "depends_on": [
+      "registry",
+      "procedure",
+      "domain",
+      "evidence"
+    ],
+    "status": "Design overlay; no end-to-end legal conformance backtest",
+    "meaning": "Bind a rule version to a jurisdiction, actor capacity, action type, effective period, conditions and exceptions. Do not apply current law retrospectively without checking.",
+    "examples": [
+      "D12",
+      "D19",
+      "C10"
+    ]
+  }
+]
