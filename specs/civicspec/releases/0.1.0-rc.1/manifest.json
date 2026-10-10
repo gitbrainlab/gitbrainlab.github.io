@@ -1,0 +1,369 @@
+{
+  "release_id": "0.1.0-rc.1",
+  "status": "candidate",
+  "scope": "experimental_specification_and_reference_toolkit",
+  "contract_version": "0.1.0-rc.1",
+  "ontology_profile": {
+    "id": "layered_v5_replay",
+    "baseline_date": "2026-09-07",
+    "inventory_path": "research/baseline-manifest.json",
+    "inventory_sha256": "ea00b08a30bc590948b01c27a6bb3456bb389162fae098b5c25217f537482f62"
+  },
+  "repository": "https://github.com/gitbrainlab/gitbrainlab.github.io",
+  "component_base_path": "specs/civicspec",
+  "source_revision": "21d9122925b5cc36cecf53ce5ce367a1ffec0459",
+  "built_at": "2026-10-10T15:31:11.416428Z",
+  "compatibility": {
+    "production_contract": false,
+    "supported_consumer_contracts": [
+      "civicspec-github-discovery-v1"
+    ],
+    "requires_explicit_candidate_opt_in": true,
+    "breaking_changes": [],
+    "note": "Initial public candidate; fixture schema only. No production ontology conformance or bot adoption implied."
+  },
+  "components": [
+    {
+      "path": ".gitattributes",
+      "media_type": "text/plain",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+      "media_type": "text/markdown",
+      "bytes": 626,
+      "sha256": "351f17e72a93c474f05c6550e6e52b7d6b145fa84caec0e2b4364f69eae6b0eb"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/semantic-proposal.md",
+      "media_type": "text/markdown",
+      "bytes": 975,
+      "sha256": "adfda1d8415dc09b03340f388c6f860f94d43875f5f17e9086184dca1f203aaf"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "media_type": "text/markdown",
+      "bytes": 619,
+      "sha256": "042111c41b5cccdb50e784bffa0d5ed9cc9c7c7bb4defae55c3d7d377d7b301b"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "media_type": "application/yaml",
+      "bytes": 1153,
+      "sha256": "8e38864d6b6075e347ac35b1bb9f5e97e14f09ef2f3ba50cf6077eb138cd8c1e"
+    },
+    {
+      "path": ".gitignore",
+      "media_type": "text/plain",
+      "bytes": 36,
+      "sha256": "f8d6fc5b1fc7ae047e42c6920bfdb6e3773adda4177c12e927be06e9f4d01d5a"
+    },
+    {
+      "path": "AGENTS.md",
+      "media_type": "text/markdown",
+      "bytes": 2745,
+      "sha256": "e0444c27bc1bb26e196e24ab34522461f9ff02c1d895c5a875d11dea66a93a9e"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "media_type": "text/markdown",
+      "bytes": 978,
+      "sha256": "bf8f4902e7ed4f423004d3e08e2d584b5f7b0df1355d2c82358042a8e63b6054"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "media_type": "text/markdown",
+      "bytes": 3431,
+      "sha256": "0e59d617d1c9aacf86a44e2a2f62488624de1f3c2595048bd6219f458f87d214"
+    },
+    {
+      "path": "GOVERNANCE.md",
+      "media_type": "text/markdown",
+      "bytes": 2433,
+      "sha256": "c711929acd0c4ed6f569124597f8ec9d52ddf36cbdcd4d1525bd38af07996fd7"
+    },
+    {
+      "path": "LICENSE_STATUS.md",
+      "media_type": "text/markdown",
+      "bytes": 903,
+      "sha256": "389538bdd37b2a6ca00cd95e6f7e9a424287797409aff5e932b4beff243a7a3a"
+    },
+    {
+      "path": "README.md",
+      "media_type": "text/markdown",
+      "bytes": 5390,
+      "sha256": "9d11c7d842d924f9ee7d544905208e43af88ab6b5c1d2072c81d09ea7f3c75dd"
+    },
+    {
+      "path": "ROADMAP.md",
+      "media_type": "text/markdown",
+      "bytes": 5068,
+      "sha256": "2eb0271570340f8cc93f426ce3fa2b26d6ac2b3061fff4e62b0d2dcc7093bd94"
+    },
+    {
+      "path": "bootstrap/core-instructions.md",
+      "media_type": "text/markdown",
+      "bytes": 2756,
+      "sha256": "0d1f55c0adaa987876ab6160b3389f2ab1fb67031e5e96475a862cc401055818"
+    },
+    {
+      "path": "contracts/README.md",
+      "media_type": "text/markdown",
+      "bytes": 1260,
+      "sha256": "7f58e34c1bedf7c77baf1318742ab476107edfe5ba2417a2af6606856266474d"
+    },
+    {
+      "path": "contracts/change-proposal.example.json",
+      "media_type": "application/json",
+      "bytes": 1113,
+      "sha256": "4e60e7ce471d17b4bb850f14fa67a876d087442aa0e73a08f2cdcb52eaa55d6a"
+    },
+    {
+      "path": "contracts/discovery.example.json",
+      "media_type": "application/json",
+      "bytes": 765,
+      "sha256": "cc6a19d0246938c23a3baf4996d34d74dec4902854113ed852debcee17affb9a"
+    },
+    {
+      "path": "contracts/lesson.example.json",
+      "media_type": "application/json",
+      "bytes": 1414,
+      "sha256": "781b1d868454ecac010a027f5aaa328051dddf44911fee11d5776044405970bd"
+    },
+    {
+      "path": "contracts/release-manifest.example.json",
+      "media_type": "application/json",
+      "bytes": 996,
+      "sha256": "099d759a6db85517e52dcde54704d12dbe6c8275bfad60a546708ac24e000644"
+    },
+    {
+      "path": "contracts/run-receipt.example.json",
+      "media_type": "application/json",
+      "bytes": 983,
+      "sha256": "a1954419d9307d7d48a4fd3bfb1894e1ebef54a247861af94f79d5a07ab07f2f"
+    },
+    {
+      "path": "docs/README.md",
+      "media_type": "text/markdown",
+      "bytes": 975,
+      "sha256": "2a224d25435614a2f3111210099e5966c6a3642a6b9d61f7b65ccf8ecbfdc919"
+    },
+    {
+      "path": "docs/agents.md",
+      "media_type": "text/markdown",
+      "bytes": 5088,
+      "sha256": "795c04219cb1112b0c3bb049145023e7093e6a63eb887440edbfc9e248713682"
+    },
+    {
+      "path": "docs/integration.md",
+      "media_type": "text/markdown",
+      "bytes": 3525,
+      "sha256": "9e240f5b494625ddfab21b9ed86710ff8838997acab90a82993aa59a1fcfc077"
+    },
+    {
+      "path": "docs/model.md",
+      "media_type": "text/markdown",
+      "bytes": 4851,
+      "sha256": "74fe5d4b1097a74f4f2a445bbe84f44698d22d91d31ba60fe474a01b647f7301"
+    },
+    {
+      "path": "docs/profiles.md",
+      "media_type": "text/markdown",
+      "bytes": 3066,
+      "sha256": "42d80d7f5d781918a7cd93c3a695a9024185e181eead32576a23478c1a527443"
+    },
+    {
+      "path": "docs/publication.md",
+      "media_type": "text/markdown",
+      "bytes": 6052,
+      "sha256": "de325efd2ead4451e753d810db75ae940d922a8cfd4d7ad87a354a7d0c47f0eb"
+    },
+    {
+      "path": "docs/specification.md",
+      "media_type": "text/markdown",
+      "bytes": 43209,
+      "sha256": "7c587974275ccb2110012c2af1d609335909598c53ce88f9102fddbb4b326e18"
+    },
+    {
+      "path": "docs/tutorial.md",
+      "media_type": "text/markdown",
+      "bytes": 4880,
+      "sha256": "06b7cc90e495a1c86942fca18c4eaa3f3d299493369cf46270c4e1b7dd1a76e6"
+    },
+    {
+      "path": "docs/validation.md",
+      "media_type": "text/markdown",
+      "bytes": 4283,
+      "sha256": "755f3511e7f440e5c1d756fcb52259ffcc2b6df947564a9b896e6b6f3e28ce18"
+    },
+    {
+      "path": "examples/README.md",
+      "media_type": "text/markdown",
+      "bytes": 1191,
+      "sha256": "3be0b3fb3b90b68922579595ce836719fe4af5f99538e432f3b0175db0c95f4d"
+    },
+    {
+      "path": "examples/assertions.example.json",
+      "media_type": "application/json",
+      "bytes": 11550,
+      "sha256": "0c65af03bde90520beb823d5d9f3d88bd9d662e8337cab8b75bed7d52801a4b5"
+    },
+    {
+      "path": "examples/synthetic-source.txt",
+      "media_type": "text/plain",
+      "bytes": 398,
+      "sha256": "077810b34e65bcc26589178ac94f62317ea4d8c7f3012d3a4d6089a19f7db8f8"
+    },
+    {
+      "path": "publication-files.json",
+      "media_type": "application/json",
+      "bytes": 2194,
+      "sha256": "642afafc8f1c2eb41afb846821265bc0d9f71d9e25ff3fcf88bd3e2e3ab6f2d1"
+    },
+    {
+      "path": "releases/README.md",
+      "media_type": "text/markdown",
+      "bytes": 761,
+      "sha256": "de9eeef62adf2a92742981be0fe15ba90447d1b36350fd9da3f264a410228e39"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "media_type": "text/plain",
+      "bytes": 133,
+      "sha256": "c8b410ce81bc57c451aa72f475b1d039a66c009c217155bc83e616e965fab77e"
+    },
+    {
+      "path": "research/2026-09-07/mappings/controlled-vocab-v4.json",
+      "media_type": "application/json",
+      "bytes": 1665,
+      "sha256": "4aeb1c17880e5c8519439e4e0ddd8eca17730967494b8b7157656450ce541516"
+    },
+    {
+      "path": "research/2026-09-07/mappings/controlled-vocab.json",
+      "media_type": "application/json",
+      "bytes": 1271,
+      "sha256": "4f730e9cd4160ee2899e4a9f9b987ee7b1e661c48ccae1e692be7a522b65ac07"
+    },
+    {
+      "path": "research/2026-09-07/mappings/profiles-v5.json",
+      "media_type": "application/json",
+      "bytes": 132433,
+      "sha256": "8162dc4cfd1b62e735907c443f003c17953c9f968ab95dfbd2302c2d64264137"
+    },
+    {
+      "path": "research/2026-09-07/ontology/constraints.md",
+      "media_type": "text/markdown",
+      "bytes": 1683,
+      "sha256": "708d9fd9fa784515f5ff76222bd67e7d161282f27a7063676bcfe0dc6d713eb0"
+    },
+    {
+      "path": "research/2026-09-07/ontology/layer-graph.ttl",
+      "media_type": "text/turtle",
+      "bytes": 9420,
+      "sha256": "837fcdc79bd93b901fc74ccc23b159db09e570a3a52ce89b674b844372425e94"
+    },
+    {
+      "path": "research/2026-09-07/ontology/layers.json",
+      "media_type": "application/json",
+      "bytes": 5175,
+      "sha256": "d935349559f34a966918da312feea0a2a895192d48c62b53fae4589889e343a3"
+    },
+    {
+      "path": "research/2026-09-07/ontology/question-definitions.json",
+      "media_type": "application/json",
+      "bytes": 4714,
+      "sha256": "d565eb67e94c7723c150bfc063af39de22168c1855d52b71fe2dbcb98fc868d7"
+    },
+    {
+      "path": "research/2026-09-07/ontology/shapes.ttl",
+      "media_type": "text/turtle",
+      "bytes": 1738,
+      "sha256": "dc1a0bbc6a83110ab7d9a41bfcd6f6ffdf2e4d97fff0736f94e0b08e9a4a81fa"
+    },
+    {
+      "path": "research/2026-09-07/profiles/onboarding-template.yaml",
+      "media_type": "application/yaml",
+      "bytes": 1436,
+      "sha256": "8916b3d094c9007937e3b2d4c8f0385093d6a98ea4f654c2b5d33fe0112cc596"
+    },
+    {
+      "path": "research/2026-09-07/scripts/action_classifier.py",
+      "media_type": "text/x-python",
+      "bytes": 3612,
+      "sha256": "f8de8d2299755a25ad6eb97d915b23c9a04f023422bd6d90346d53d59c5ebc9f"
+    },
+    {
+      "path": "research/2026-09-07/scripts/action_classifier_v2.py",
+      "media_type": "text/x-python",
+      "bytes": 1678,
+      "sha256": "a2d8b60821bce7f08ca6116d60c4e1efee21760c6f932ed2b7b35fa8716060c5"
+    },
+    {
+      "path": "research/2026-09-07/sources/standards.json",
+      "media_type": "application/json",
+      "bytes": 3711,
+      "sha256": "60c22b46bff1df96ced06df27212333e1e24ed41496fa9bbfab690059dcca3fb"
+    },
+    {
+      "path": "research/README.md",
+      "media_type": "text/markdown",
+      "bytes": 2616,
+      "sha256": "895dfb3cd8ae7888a13802f7700b2804211351ff0d7419fa4c77d154c630eadd"
+    },
+    {
+      "path": "research/baseline-manifest.json",
+      "media_type": "application/json",
+      "bytes": 2349,
+      "sha256": "ea00b08a30bc590948b01c27a6bb3456bb389162fae098b5c25217f537482f62"
+    },
+    {
+      "path": "schemas/README.md",
+      "media_type": "text/markdown",
+      "bytes": 954,
+      "sha256": "2948b747d093524956b20dc125a4b7d1ece24af995f3115f43d3cff3f3accc6f"
+    },
+    {
+      "path": "schemas/assertion-fixture.schema.json",
+      "media_type": "application/json",
+      "bytes": 11645,
+      "sha256": "750cc80231c63f313d222e80563a2a4c2321a9231a1a5ea117b9d8de62e6e354"
+    },
+    {
+      "path": "scripts/build_release.py",
+      "media_type": "text/x-python",
+      "bytes": 2989,
+      "sha256": "ec0b62bf19606f421512f068e662b137416965f3885a035243c2e70ef0e775c9"
+    },
+    {
+      "path": "scripts/validate.py",
+      "media_type": "text/x-python",
+      "bytes": 6466,
+      "sha256": "24b6df0ffcc71218c9605dc91aca921090ab7fbe223ab38feff56c95c42e0f97"
+    },
+    {
+      "path": "scripts/verify_published.py",
+      "media_type": "text/x-python",
+      "bytes": 1166,
+      "sha256": "864fd4eee40dbe5622a0ef4f0292783cb781dd607bbfd6007ada11d151222223"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "media_type": "text/x-python",
+      "bytes": 5815,
+      "sha256": "4c4993e651b813c46b7c83314dc8dbe24fbc0f1ab64bdc414314f19a7c96e1c3"
+    },
+    {
+      "path": "tests/test_reference_contract.py",
+      "media_type": "text/x-python",
+      "bytes": 7785,
+      "sha256": "e9a5bf79bf315cd9435935f32e631be37600538b4cc0cf30f1416e74e76ef3c5"
+    }
+  ],
+  "evaluation_refs": [
+    "docs/validation.md"
+  ],
+  "migration_refs": [],
+  "previous_release": null,
+  "license_status": "No project license selected; see LICENSE_STATUS.md."
+}
